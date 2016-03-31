@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/style.css">
     <script type="text/javascript" src="angular.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.js"></script>
-    <script type="text/javascript" src="/js/checkLogin.js"></script>
-    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/createAppController.js"></script>
     <title>Thesis</title>
 </head>
-<body>
+<body ng-controller="CreationController as creation">
 
 <header id="header" style="height: 80px">
     <div id="stuck_container">
@@ -31,7 +30,11 @@
 
 
 
-<buttons ng-controller="ButtonController as button"></buttons>
+<p style="color: #ff0000" ng-show="creation.alreadyExists">This name already exists</p>
+<form  ng-submit="submitForm()"  name="form">
+    Naam van de applicatie: <input type="text" name="name" ng-model="nameValue"><br>
+    <input type="submit" value="Submit">
+</form>
 
 </body>
 </html>

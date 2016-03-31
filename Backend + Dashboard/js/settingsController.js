@@ -16,6 +16,10 @@
             settings.enabled = parseInt(data);
         });
 
+        $http.get('../php/getAppCode.php?app=' + app).success(function(data){
+            $scope.appCode = data;
+        });
+
         $scope.changeCallback = function() {
             var value = settings.enabled ? 1 : 0;
             $http.get('../php/ChangeShouldMonitor.php?app=' + app +'&value=' + value).success(function(data){

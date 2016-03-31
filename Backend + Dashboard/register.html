@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/style.css">
     <script type="text/javascript" src="angular.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.js"></script>
-    <script type="text/javascript" src="/js/checkLogin.js"></script>
-    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/register.js"></script>
     <title>Thesis</title>
 </head>
-<body>
+<body ng-controller="RegisterController as register">
 
 <header id="header" style="height: 80px">
     <div id="stuck_container">
@@ -29,9 +28,11 @@
     </div>
 </header>
 
-
-
-<buttons ng-controller="ButtonController as button"></buttons>
+<form  ng-submit="submitForm()"  name="form">
+    <input type="text" name="email" ng-model="emailValue">
+    <input type="password" name="password" ng-model="passwordValue">
+    <input type="submit" value="Submit">
+</form>
 
 </body>
 </html>

@@ -11,14 +11,22 @@
         };
     });
 
-    app.controller("ButtonController", ['$http', function($http) {
+    app.controller("ButtonController", ['$scope', '$http', function($scope, $http) {
         var button = this;
         this.apps = ["test"];
 
-        $http.get('../php/getApps.php').success(function(data){
+        var error = location.search.split('error=')[1];
+        var error = parseInt(decodeURIComponent(error));
+        switch(error) {
+            case 2:
+                $scope.error = true;
+                console.log("test");
+                break;
+        }
 
+
+        $http.get('../php/getApps.php').success(function(data){
             button.apps = data;
-            console.log(this.apps.length);
         });
 
     }]);
