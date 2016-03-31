@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.11.14)  30 MAR 2016 16:51
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.11.14)  31 MAR 2016 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1310,10 +1310,6 @@ Package babel Info: Redefining dutch shorthand "y
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 91.
  [14]
-
-LaTeX Warning: Reference `Klassediagram:MeterInferface' on page 15 undefined on
- input line 92.
-
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 99.
 Package babel Info: Redefining dutch shorthand "~
@@ -1422,6 +1418,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 190.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 190.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 190.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 190.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 190.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 190.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 190.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 190.
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
 )
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 79.
@@ -1439,27 +1471,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 79.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 79.
- [19]
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 91.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 91.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 91.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 91.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 91.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 91.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 91.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 91.
- [20
-
-
-] (./masterproef.bbl
+ [20] (./masterproef.bbl
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining dutch shorthand "~
@@ -1488,6 +1500,8 @@ Package babel Info: Redefining dutch shorthand "y
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 99.
  [21
+
+
 
 ]
 Package babel Info: Redefining dutch shorthand "|
@@ -1523,19 +1537,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
  (./masterproef.aux (./architectuur.aux) (./implementatie.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 99.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 99.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
  ) 
 Here is how much of TeX's memory you used:
  12773 strings out of 493706
  180040 string characters out of 6145768
- 392553 words of memory out of 5000000
+ 392616 words of memory out of 5000000
  15968 multiletter control sequences out of 15000+600000
  62245 words of font info for 46 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191

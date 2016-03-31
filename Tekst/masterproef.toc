@@ -59,6 +59,7 @@
 \contentsline {section}{\numberline {2.4}Openstaande uitdagingen}{18}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}AB Testing}{18}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Operating systems}{19}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Aggregatie}{19}{subsection.2.4.3}
 \contentsline {chapter}{Bibliografie}{21}{section*.29}
 \select@language {dutch}
 \select@language {dutch}
