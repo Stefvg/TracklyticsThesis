@@ -69,7 +69,8 @@
 \contentsline {subsection}{\numberline {3.4.1}AB Testing}{24}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Operating systems}{25}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Aggregatie}{25}{subsection.3.4.3}
-\contentsline {chapter}{Bibliografie}{27}{section*.33}
+\contentsline {subsection}{\numberline {3.4.4}Alarmen}{26}{subsection.3.4.4}
+\contentsline {chapter}{Bibliografie}{29}{section*.33}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
