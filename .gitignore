@@ -6,4 +6,4 @@ tex files
 *.out
 *.synctex.gz
 *.toc
-workspace.xml
+*.xml
