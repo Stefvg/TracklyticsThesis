@@ -6,18 +6,23 @@ De eerste invalshoek gaat over hoe we developers kunnen helpen bij het ontwikkel
 Langs de andere kant is het belangrijk om te weten wat de impact is van het verkrijgen van de informatie op de prestaties van de applicatie en hoeveel moeite en tijd er nodig is van de developer om deze informatie te kunnen vergaren.\\
 
 
-Om dit onderzoek te doen slagen wordt er een library gebouwd die developers in de applicatie kunnen inbouwen om deze applicatie te monitoren. In de volgende sectie wordt uitgelegd wat het doel is van deze library. In het verdere verloop van deze thesis wordt de architectuur hiervan besproken en de huidige toestand waarin deze library zich bevindt. 
+Om dit onderzoek te doen slagen wordt er een library gebouwd die developers in hun applicaties kunnen inbouwen om deze applicatie te monitoren. In de volgende sectie wordt uitgelegd wat het doel is van deze library. In het verdere verloop van deze thesis wordt uitgelegd hoe de architectuur achter de gebouwde library in elkaar zit en waarom de keuzes zijn gemaakt voor die structuur. Nadat deze architectuur beschreven is wordt er een uitleg gegeven over de implementatie van de Tracklytics library. Ten slotte wordt de library ge\"evalueerd om te kijken of de kwaliteit van de library voldoende is om gebruikt te worden in de applicaties. 
 
 \section{Library}
 Dit onderzoek baseert zich op developers die mobiele applicaties ontwikkelen en eigenaars van die applicaties die meer informatie over die applicaties willen verzamelen. De library heeft de naam Tracklytics gekregen en wordt in de rest van deze thesis gebruikt als het over deze library gaat. In deze thesis is een iOS library ontwikkeld, maar de concepten en de architectuur kunnen gebruikt worden voor het ontwikkelen van een library voor andere mobiele platformen. In deze sectie focussen we ons op het doel van deze library. \\
 
-\noindent Het doel van de library is om developers deze library te laten inbouwen in hun applicatie en met behulp van de methodes aangeboden door deze library de applicatie te kunnen monitoren. Om een kwaliteitsvolle library te bouwen zijn er een aantal aspecten die belangrijk zijn om in het achterhoofd te houden:
+
+\noindent Het doel van de library is om developers deze library te laten inbouwen in hun applicatie en met behulp van de methodes aangeboden door deze library de applicatie te kunnen monitoren. Deze methodes moeten voldoende zijn om alle aspecten van de applicatie te kunnen monitoren. De Tracklytics library biedt een aantal methodes aan om de developer de mogelijkheid te geven om meetpunten in zijn applicatie in te voeren. Deze methodes staan beschreven in het hoofdstuk over de implementatie \ref{documentatie}. De library is open source gemaakt om ervoor te zorgen dat developers een beeld kunnen krijgen van welke informatie er verzameld wordt en hoe deze gebruikt wordt. Met deze informatie kunnen de developers er zeker van zijn dat privacygevoelige informatie niet verzonden wordt naar de Tracklytics servers.\\
+
+Om een kwaliteitsvolle library te bouwen zijn er een aantal aspecten die belangrijk zijn om in het achterhoofd te houden:
 \begin{itemize}
 \item performance impact
 \item schaalbaarheid
 \item bruikbaarheid
 \item beschikbaarheid
 \end{itemize}
+
+Deze aspecten worden besproken in het komende deel van dit hoofdstuk. 
 
 \subsection{Performance impact}
 Het is van cruciaal belang dat een applicatie niet traag is en responsief is naar de gebruiker toe. De verwerkingskracht (CPU) van een mobiel apparaat is relatief beperkt. Deze twee gegevens gecombineerd zorgt ervoor dat de library die gebouwd wordt zo beperkt mogelijk impact heeft op deze verwerkingskracht. Indien deze library relatief veel CPU tijd inneemt, dan blijft er minder CPU tijd over voor de applicatie, wat ervoor zorgt dat de applicatie trager wordt indien deze CPU-intensief is. Het is dus van cruciaal belang dat de library geoptimaliseerd wordt om zo weinig mogelijk CPU tijd te verbruiken. Een bijkomend voordeel dat verschijnt indien de library zo minimaal mogelijk CPU tijd nodig heeft is dat de impact van de applicatie op het batterijverbruik verminderd wordt.  \\
@@ -56,6 +61,10 @@ Met beschikbaarheid wordt bedoeld dat alle gecollecteerde data opgeslagen wordt 
 
 
 Deze aspecten moeten in rekening genomen worden bij het ontwerpen en ontwikkelen van een mobiele monitoring library. De belangrijkste aspecten zijn de performance aspecten, omdat in mobiele applicaties de verwerkingskracht en batterij de bottlenecks zijn. 
+
+
+\section{Data Visualisatie}
+De library beschreven in de vorige sectie collecteert de data van de applicaties op de mobiele toestellen en verstuurt deze naar de server die deze data dan opslaat. Om deze data overzichtelijk voor de developers en de eigenaars te maken moet deze data gevisualiseerd worden. De data van de Tracklytics library wordt gevisualiseerd in een dashboard dat per applicatie de data weergeeft. De implementatie en de verschillende voorstellingen die Tracklytics gebruikt wordt uitgelegd in de implementatie sectie \ref{visualisatie}. Deze implementatie is gekozen voor de Tracklytics library omdat deze een handig en algemeen overzicht geeft. Andere implementaties geven mogelijks een beter resultaat in bepaalde situaties. 
 
 %%% Local Variables: 
 %%% mode: latex

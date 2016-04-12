@@ -22,64 +22,65 @@
 \contentsline {subsection}{\numberline {2.1.1}Performance impact}{8}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Schaalbaarheid}{9}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Bruikbaarheid}{9}{subsection.2.1.3}
-\contentsline {paragraph}{Installatie}{9}{section*.10}
-\contentsline {paragraph}{Configuratie}{9}{section*.11}
+\contentsline {paragraph}{Installatie}{10}{section*.10}
+\contentsline {paragraph}{Configuratie}{10}{section*.11}
 \contentsline {paragraph}{Documentatie}{10}{section*.12}
 \contentsline {subsection}{\numberline {2.1.4}Beschikbaarheid}{10}{subsection.2.1.4}
-\contentsline {chapter}{\chapternumberline {3}Architectuur}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Architecturale beslissingen}{11}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Deployment Diagram}{11}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Component Diagram}{12}{subsection.3.1.2}
-\contentsline {subsubsection}{UserApplication}{13}{section*.13}
-\contentsline {subsubsection}{TracklyticsCore}{13}{section*.14}
-\contentsline {paragraph}{Monitoring}{13}{section*.15}
-\contentsline {paragraph}{Data availability}{13}{section*.16}
-\contentsline {paragraph}{On Demand}{14}{section*.17}
-\contentsline {paragraph}{Aggregatie}{14}{section*.18}
-\contentsline {paragraph}{AB Testing}{14}{section*.19}
-\contentsline {paragraph}{Security \& Privacy}{15}{section*.20}
-\contentsline {subsubsection}{TracklyticsBackend}{15}{section*.21}
-\contentsline {subsubsection}{Dashboard}{16}{section*.22}
-\contentsline {subsection}{\numberline {3.1.3}Belangrijkste flows}{16}{subsection.3.1.3}
-\contentsline {subsubsection}{Tracking en monitoring van gegevens}{16}{section*.23}
-\contentsline {subsubsection}{Verzenden en opslaan van de gegevens}{17}{section*.24}
-\contentsline {chapter}{\chapternumberline {4}Implementatie}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Details Implementatie}{19}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}iOS Library}{19}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Back end}{20}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Dashboard}{21}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Connectie tussen Front end en Back end}{22}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}Klassediagram}{23}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}TrackLytics}{23}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Core}{23}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Counter}{24}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Gauge}{24}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Histogram}{24}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Timer}{24}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}Meter}{24}{subsection.4.2.7}
-\contentsline {subsubsection}{Meter}{24}{section*.25}
-\contentsline {subsubsection}{MeterController}{25}{section*.26}
-\contentsline {subsubsection}{MeterInterface}{25}{section*.27}
-\contentsline {section}{\numberline {4.3}Documentatie}{25}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Initialisatie}{25}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Counter}{25}{subsection.4.3.2}
-\contentsline {paragraph}{Parameters}{26}{section*.28}
-\contentsline {subsubsection}{CounterObject}{26}{section*.29}
-\contentsline {subsection}{\numberline {4.3.3}Gauge}{26}{subsection.4.3.3}
-\contentsline {paragraph}{Parameters}{26}{section*.30}
-\contentsline {subsection}{\numberline {4.3.4}Histogram}{27}{subsection.4.3.4}
-\contentsline {paragraph}{Parameters}{27}{section*.31}
-\contentsline {subsection}{\numberline {4.3.5}Meter}{27}{subsection.4.3.5}
-\contentsline {paragraph}{Parameters}{27}{section*.32}
-\contentsline {subsubsection}{MeterController}{27}{section*.33}
-\contentsline {subsection}{\numberline {4.3.6}Timer}{28}{subsection.4.3.6}
-\contentsline {paragraph}{Parameters}{28}{section*.34}
-\contentsline {section}{\numberline {4.4}Openstaande uitdagingen}{28}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}AB Testing}{28}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Operating systems}{29}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Aggregatie}{29}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Alarmen}{30}{subsection.4.4.4}
-\contentsline {chapter}{Bibliografie}{33}{section*.36}
+\contentsline {section}{\numberline {2.2}Data Visualisatie}{10}{section.2.2}
+\contentsline {chapter}{\chapternumberline {3}Architectuur}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Architecturale beslissingen}{13}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Deployment Diagram}{13}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Component Diagram}{14}{subsection.3.1.2}
+\contentsline {subsubsection}{UserApplication}{15}{section*.13}
+\contentsline {subsubsection}{TracklyticsCore}{15}{section*.14}
+\contentsline {paragraph}{Monitoring}{15}{section*.15}
+\contentsline {paragraph}{Data availability}{15}{section*.16}
+\contentsline {paragraph}{On Demand}{16}{section*.17}
+\contentsline {paragraph}{Aggregatie}{16}{section*.18}
+\contentsline {paragraph}{AB Testing}{16}{section*.19}
+\contentsline {paragraph}{Security \& Privacy}{17}{section*.20}
+\contentsline {subsubsection}{TracklyticsBackend}{17}{section*.21}
+\contentsline {subsubsection}{Dashboard}{18}{section*.22}
+\contentsline {subsection}{\numberline {3.1.3}Belangrijkste flows}{18}{subsection.3.1.3}
+\contentsline {subsubsection}{Tracking en monitoring van gegevens}{18}{section*.23}
+\contentsline {subsubsection}{Verzenden en opslaan van de gegevens}{19}{section*.24}
+\contentsline {chapter}{\chapternumberline {4}Implementatie}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Details Implementatie}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}iOS Library}{21}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Back end}{22}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Dashboard}{23}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Connectie tussen Front end en Back end}{24}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Klassediagram}{25}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}TrackLytics}{25}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Core}{25}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Counter}{26}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Gauge}{26}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Histogram}{26}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Timer}{26}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Meter}{26}{subsection.4.2.7}
+\contentsline {subsubsection}{Meter}{26}{section*.25}
+\contentsline {subsubsection}{MeterController}{27}{section*.26}
+\contentsline {subsubsection}{MeterInterface}{27}{section*.27}
+\contentsline {section}{\numberline {4.3}Documentatie}{27}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Initialisatie}{27}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Counter}{27}{subsection.4.3.2}
+\contentsline {paragraph}{Parameters}{28}{section*.28}
+\contentsline {subsubsection}{CounterObject}{28}{section*.29}
+\contentsline {subsection}{\numberline {4.3.3}Gauge}{28}{subsection.4.3.3}
+\contentsline {paragraph}{Parameters}{28}{section*.30}
+\contentsline {subsection}{\numberline {4.3.4}Histogram}{29}{subsection.4.3.4}
+\contentsline {paragraph}{Parameters}{29}{section*.31}
+\contentsline {subsection}{\numberline {4.3.5}Meter}{29}{subsection.4.3.5}
+\contentsline {paragraph}{Parameters}{29}{section*.32}
+\contentsline {subsubsection}{MeterController}{29}{section*.33}
+\contentsline {subsection}{\numberline {4.3.6}Timer}{30}{subsection.4.3.6}
+\contentsline {paragraph}{Parameters}{30}{section*.34}
+\contentsline {section}{\numberline {4.4}Openstaande uitdagingen}{30}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}AB Testing}{30}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Operating systems}{31}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Aggregatie}{31}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Alarmen}{32}{subsection.4.4.4}
+\contentsline {chapter}{Bibliografie}{35}{section*.36}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
