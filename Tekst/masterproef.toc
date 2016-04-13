@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {1.2.1}General Purpose App}{4}{subsection.1.2.1}
 \contentsline {paragraph}{Eigenaar}{4}{section*.6}
 \contentsline {paragraph}{Developer}{4}{section*.7}
-\contentsline {subsection}{\numberline {1.2.2}Game}{4}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.2}Game}{5}{subsection.1.2.2}
 \contentsline {paragraph}{Eigenaar}{5}{section*.8}
 \contentsline {paragraph}{Developer}{5}{section*.9}
 \contentsline {chapter}{\chapternumberline {2}Doelstelling}{7}{chapter.2}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.11.14)  13 APR 2016 19:49
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.11.14)  13 APR 2016 21:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,6 +1009,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
+
+Underfull \vbox (badness 2050) has occurred while \output is active []
+
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining dutch shorthand "~
@@ -1025,7 +1028,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 53.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 53.
-[4]
+ [4]
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
@@ -1176,21 +1179,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 46.
 [9]
 Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
