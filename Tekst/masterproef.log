@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.11.14)  12 APR 2016 23:20
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.11.14)  13 APR 2016 19:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -961,75 +961,77 @@ Package babel Info: Redefining dutch shorthand "y
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 17.
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 19--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 32.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 32.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 32.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 32.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 35.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 35.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 35.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 35.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 35.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 35.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 35.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 35.
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 33.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 33.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 33.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 33.
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 53.
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
@@ -1128,10 +1130,6 @@ Package babel Info: Redefining dutch shorthand "y
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 13.
 [7]
-
-LaTeX Warning: Reference `documentatie' on page 8 undefined on input line 15.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
@@ -1973,22 +1971,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
 (./architectuur.aux) (./implementatie.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 101.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 101.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
  ) 
 Here is how much of TeX's memory you used:
  12797 strings out of 493706
  180386 string characters out of 6145768
- 395684 words of memory out of 5000000
+ 395741 words of memory out of 5000000
  15978 multiletter control sequences out of 15000+600000
  62245 words of font info for 46 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 35i,12n,48p,2171b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,12n,48p,2256b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on masterproef.pdf (42 pages).
