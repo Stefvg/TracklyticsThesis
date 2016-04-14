@@ -137,6 +137,17 @@ Een histogram heeft dezelfde eigenschappen als een gauge in termen van collectie
 \item value: De waarde die gesynchroniseerd moet worden naar de server.
 \end{itemize}
 
+\subsection{Timer}
+Een timer meet de tijd dat een evenement nodig heeft. Om een timer aan te maken moet de volgende call gemaakt worden naar de Tracklytics library: \texttt{\justify [Tracklytics createNewTimerWithType:type withName:name]} 
+
+\paragraph{Parameters}
+\begin{itemize}
+\item type: Het type evenement. Deze parameter zorgt ervoor dat de data verdeeld wordt over de verschillende grafieken in het dashboard.
+\item name: De naam van het evenement. Deze parameter zorgt ervoor dat de data in de grafieken verder opgedeeld worden per naam.
+\end{itemize} 
+
+Deze methode geeft een Timer object terug. Vanaf dat deze methode uitgevoerd is begint de timer te lopen. Deze blijft lopen tot de \texttt{\justify stop} methode aangeroepen wordt op het Timer object. De timer heeft dan een exacte waarde hoeveel tijd het evenement in beslag nam. Tracklytics houdt deeze waarde bij en synchroniseert deze naar de server. 
+
 
 \subsection{Meter}
 Een meter is complexer dan alle andere meetobjecten in de Tracklytics library. Dit is omdat ervoor gekozen is om de mogelijkheid aan te bieden om data automatisch op een bepaald interval te collecteren. Zo moet de developer hier niet meer naar omkijken. Om dit te kunnen verwezenlijken is er een controller gemaakt, de MeterController, die de mogelijkheid biedt voor de automatische collectie van data en van de manuele invoer van data. Een MeterController can gecre\"eerd worden door de volgende call naar de Tracklytics library: \texttt{\justify [Tracklytics createNewMeter:type]}. 
@@ -155,16 +166,7 @@ Om de date automatisch te laten collecteren moet de methode \texttt{\justify add
 Het MeterInterface object implementeerd de \texttt{\justify (float) getValue} methode die een float waarde terug geeft die de MeterController kan collecteren door die methode.\\
 Het interval geeft aan (in seconden) hoeveel tijd er tussen twee cyclussen zit waarin de waarde opgehaald wordt.
 
-\subsection{Timer}
-Een timer meet de tijd dat een evenement nodig heeft. Om een timer aan te maken moet de volgende call gemaakt worden naar de Tracklytics library: \texttt{\justify [Tracklytics createNewTimerWithType:type withName:name]} 
 
-\paragraph{Parameters}
-\begin{itemize}
-\item type: Het type evenement. Deze parameter zorgt ervoor dat de data verdeeld wordt over de verschillende grafieken in het dashboard.
-\item name: De naam van het evenement. Deze parameter zorgt ervoor dat de data in de grafieken verder opgedeeld worden per naam.
-\end{itemize} 
-
-Deze methode geeft een Timer object terug. Vanaf dat deze methode uitgevoerd is begint de timer te lopen. Deze blijft lopen tot de \texttt{\justify stop} methode aangeroepen wordt op het Timer object. De timer heeft dan een exacte waarde hoeveel tijd het evenement in beslag nam. Tracklytics houdt deeze waarde bij en synchroniseert deze naar de server. 
 
 
 \section{Openstaande uitdagingen}
