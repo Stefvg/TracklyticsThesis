@@ -25,7 +25,18 @@ while ($row = mysql_fetch_assoc($result)) {
     array_push($array, $row['device']);
 }
 
-echo(json_encode($array));
+
+$query = "SELECT DISTINCT device FROM TimerAgg_View WHERE type='$type' AND appName='$app' ";
+$result = mysql_query($query);
+if (!$result) {
+    die('Invalid query: ' . mysql_error());
+}
+
+while ($row = mysql_fetch_assoc($result)) {
+    array_push($array, $row['device']);
+}
+
+echo(json_encode(array_unique($array)));
 
 
 ?>

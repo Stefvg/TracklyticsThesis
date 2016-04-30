@@ -42,7 +42,11 @@ while ($row = mysql_fetch_assoc($result)) {
 
 
     $object['name'] = $row['name'];
-    $object['durationTime'] = (doubleval($row['durationTime']) * $count + $aggregate['durationTime'] * $aggregate['numberOfMeasurements'])/ ($count + $aggregate['numberOfMeasurements']);
+    if($aggregate){
+        $object['durationTime'] = (doubleval($row['durationTime']) * $count + $aggregate['durationTime'] * $aggregate['numberOfMeasurements'])/ ($count + $aggregate['numberOfMeasurements']);
+    }else {
+        $object['durationTime'] = doubleval($row['durationTime']);
+    }
     $object['device'] = $row['device'];
     array_push($array, $object);
 }

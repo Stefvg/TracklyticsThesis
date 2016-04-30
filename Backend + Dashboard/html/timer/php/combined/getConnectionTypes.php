@@ -16,6 +16,7 @@ $number = $_GET['number'];
 $number2 = $_GET['number2'];
 $device = $_GET['device'];
 
+
 $query = "SELECT DISTINCT connectionType FROM Timer_View WHERE type='$type' AND version='$version' AND device='$device' AND appName='$app' ";
 $result = mysql_query($query);
 if (!$result) {
@@ -29,7 +30,20 @@ while ($row = mysql_fetch_assoc($result)) {
     array_push($array, $row['connectionType']);
 }
 
-$outputObject['array'] = $array;
+$query = "SELECT DISTINCT connectionType FROM TimerAgg_View WHERE type='$type' AND version='$version' AND device='$device' AND appName='$app' ";
+$result = mysql_query($query);
+if (!$result) {
+    die('Invalid query: ' . mysql_error());
+}
+
+
+
+while ($row = mysql_fetch_assoc($result)) {
+    array_push($array, $row['connectionType']);
+}
+
+
+$outputObject['array'] = array_unique($array);
 $outputObject['number2'] = $number2;
 
 //$output['number'] = $number;
