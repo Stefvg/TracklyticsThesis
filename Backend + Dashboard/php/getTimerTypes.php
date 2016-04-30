@@ -23,6 +23,21 @@ $array = array();
 while ($row = mysql_fetch_assoc($result)) {
     array_push($array, $row['type']);
 }
+
+$query = "SELECT DISTINCT type FROM TimerAgg_View WHERE appName='$app' GROUP BY type ORDER BY type ASC";
+$result = mysql_query($query);
+if (!$result) {
+    die('Invalid query: ' . mysql_error());
+}
+
+
+
+while ($row = mysql_fetch_assoc($result)) {
+    array_push($array, $row['type']);
+}
+
+$array = array_unique($array);
+
 echo(json_encode($array));
 
 
