@@ -1,6 +1,28 @@
 \begin{thebibliography}{1}
 
-\bibitem{tracklytics}
+\bibitem{fu2013people}
+B.~Fu, J.~Lin, L.~Li, C.~Faloutsos, J.~Hong, and N.~Sadeh.
+\newblock Why people hate your app: Making sense of user feedback in a mobile
+  app store.
+\newblock In {\em Proceedings of the 19th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 1276--1284. ACM, 2013.
 
+\bibitem{AppSucks}
+K.~MacLaine.
+\newblock Why your app sucks: The 20 most common complaints about mobile apps.
+\newblock
+  http://appealingstudio.com/why-your-app-sucks-the-20-most-common-complaints-about-mobile-apps-2/.
+
+\bibitem{MarketShare}
+NetMarketShare.
+\newblock Mobile/tablet operating system market share.
+\newblock
+  https://www.netmarketshare.com/operating-system-market-share.aspx?qprid=8\&qpcustomd=1.
+
+\bibitem{SmartphoneUsers}
+Statistica.
+\newblock Number of smartphone users worldwide from 2014 to 2019 (in millions).
+\newblock
+  http://www.statista.com/statistics/330695/number-of-smartphone-users-worldwide/.
 
 \end{thebibliography}
