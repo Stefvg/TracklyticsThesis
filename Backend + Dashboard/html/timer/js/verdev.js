@@ -27,7 +27,7 @@
                     var deviceArray = data[Object.keys(data)];
                     var versionIndex = Object.keys(data)[0];
                     controller.devices[versionIndex] = deviceArray;
-
+                    console.log(deviceArray);
                     for(var j=0; j<deviceArray.length; j++){
                         controller.objects[versionIndex][j] = [];
                         $http.get('./php/verdev/getData.php?app=' + appName + '&type=' + type + '&version=' + controller.versions[versionIndex] +"&device=" + deviceArray[j] + '&number=' + versionIndex +'&number2=' + j).success(function(data) {

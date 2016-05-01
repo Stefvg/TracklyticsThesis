@@ -13,11 +13,14 @@ $app = $_GET['app'];
 $number = $_GET['number'];
 $type = $_GET['type'];
 $device = $_GET['device'];
-
+$query = "SELECT * FROM Timer_View WHERE type='$type' AND appName='$app'";
+$result = mysql_query($query);
+$count = mysql_num_rows($result);
 $query = "SELECT name, AVG(durationTime) AS durationTime, SUM(numberOfMeasurements) AS numberOfMeasurements  FROM TimerAgg_View WHERE type='$type' AND device='$device'";
 $result = mysql_query($query);
 
 while ($row = mysql_fetch_assoc($result)) {
+    $object['name'] = $row['name'];
     $object['durationTime'] = doubleval($row['durationTime']);
     $object['numberOfMeasurements'] = intval($row['numberOfMeasurements']);
 
@@ -34,14 +37,26 @@ if (!$result) {
 $array = array();
 
 while ($row = mysql_fetch_assoc($result)) {
-    $aggregate = $aggArray[$row['name']];
-    $object['name'] = $row['name'];
-    if($aggregate){
-        $object['durationTime'] = (doubleval($row['durationTime']) * $count + $aggregate['durationTime'] * $aggregate['numberOfMeasurements'])/ ($count + $aggregate['numberOfMeasurements']);
-    }else {
-        $object['durationTime'] = doubleval($row['durationTime']);
+    if($row['name']) {
+        $aggregate = $aggArray[$row['name']];
+        $object['name'] = $row['name'];
+        if ($aggregate) {
+            $object['durationTime'] = (doubleval($row['durationTime']) * $count + $aggregate['durationTime'] * $aggregate['numberOfMeasurements']) / ($count + $aggregate['numberOfMeasurements']);
+        } else {
+            $object['durationTime'] = doubleval($row['durationTime']);
+        }
+        unset($aggArray[$row['name']]);
+        array_push($array, $object);
     }
+}
+
+foreach($aggArray as $row) {
+
+
+    $object['name'] = $row['name'];
+    $object['durationTime'] = doubleval($row['durationTime']);
     array_push($array, $object);
+
 }
 
 //$output['number'] = $number;

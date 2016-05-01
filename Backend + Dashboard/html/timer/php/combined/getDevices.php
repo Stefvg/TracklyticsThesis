@@ -25,6 +25,7 @@ if (!$result) {
 $array = array();
 
 while ($row = mysql_fetch_assoc($result)) {
+    if($row['device'])
     array_push($array, $row['device']);
 }
 
@@ -37,10 +38,15 @@ if (!$result) {
 
 
 while ($row = mysql_fetch_assoc($result)) {
+    if($row['device'])
     array_push($array, $row['device']);
 }
+$arr = array();
+foreach(array_unique($array) as $value){
+    array_push($arr, $value);
+}
 
-$output[$number] = array_unique($array);
+$output[$number] = $arr;
 echo(json_encode($output));
 
 

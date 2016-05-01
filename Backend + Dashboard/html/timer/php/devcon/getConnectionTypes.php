@@ -38,8 +38,12 @@ if (!$result) {
 while ($row = mysql_fetch_assoc($result)) {
     array_push($array, $row['connectionType']);
 }
+$arr = array();
+foreach(array_unique($array) as $value){
+    array_push($arr, $value);
+}
 
-$output[$number] = array_unique($array);
+$output[$number] = $arr;
 echo(json_encode($output));
 
 

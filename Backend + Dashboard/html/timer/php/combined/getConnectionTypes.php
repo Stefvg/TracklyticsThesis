@@ -42,8 +42,13 @@ while ($row = mysql_fetch_assoc($result)) {
     array_push($array, $row['connectionType']);
 }
 
+$arr = array();
+foreach(array_unique($array) as $value){
+    array_push($arr, $value);
+}
 
-$outputObject['array'] = array_unique($array);
+
+$outputObject['array'] = $arr;
 $outputObject['number2'] = $number2;
 
 //$output['number'] = $number;

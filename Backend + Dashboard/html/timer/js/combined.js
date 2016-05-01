@@ -33,6 +33,7 @@
                     for(var j=0; j<deviceArray.length; j++){
                         controller.connectionTypes[versionIndex][j] = [];
                         controller.objects[versionIndex][j] = [];
+
                         $http.get('./php/combined/getConnectionTypes.php?app=' + appName + '&type=' + type + '&version=' + controller.versions[versionIndex] +"&device=" + deviceArray[j] + '&number=' + versionIndex +'&number2=' + j).success(function(data) {
                             var versionIndex = Object.keys(data)[0];
                             var dataArray = data[versionIndex];
@@ -50,7 +51,7 @@
                                     var connectionIndex = dataArray['number3'];
                                     dataArray = dataArray['array'];
                                     controller.objects[versionIndex][deviceIndex][connectionIndex] = dataArray;
-                                    console.log(controller.objects);
+
                                 });
 
                             }

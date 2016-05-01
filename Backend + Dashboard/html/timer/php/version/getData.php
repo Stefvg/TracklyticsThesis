@@ -14,6 +14,9 @@ $number = $_GET['number'];
 $type = $_GET['type'];
 $version = $_GET['version'];
 
+$query = "SELECT * FROM Timer_View WHERE type='$type' AND appName='$app'";
+$result = mysql_query($query);
+$count = mysql_num_rows($result);
 $query = "SELECT name, AVG(durationTime) AS durationTime, SUM(numberOfMeasurements) AS numberOfMeasurements FROM TimerAgg_View WHERE type='$type' AND version='$version' AND appName='$app'";
 $result = mysql_query($query);
 $aggArray = array();
