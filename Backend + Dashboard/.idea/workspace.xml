@@ -32,113 +32,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="getData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/timer/php/combined/getData.php">
+      <file leaf-file-name="settings.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-extensions/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1245">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="330">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               <folding>
-                <marker date="1462094547000" expanded="true" signature="401:463" placeholder="SELECT * FRO..Timer_View..." />
-                <marker date="1462094547000" expanded="true" signature="541:776" placeholder="SELECT name,..TimerAgg_View..." />
-                <marker date="1462094547000" expanded="true" signature="1169:1349" placeholder="SELECT name,..Timer_View..." />
+                <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#form#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/timer/php/connection/getData.php">
+      <file leaf-file-name="ChangeAggregationOnDevice.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/ChangeAggregationOnDevice.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1125">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="285">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
               <folding>
-                <marker date="1462094551000" expanded="true" signature="286:348" placeholder="SELECT * FRO..Timer_View..." />
-                <marker date="1462094551000" expanded="true" signature="426:618" placeholder="SELECT name,..TimerAgg_View..." />
-                <marker date="1462094551000" expanded="true" signature="1011:1148" placeholder="SELECT name,..Timer_View..." />
+                <marker date="1462095364000" expanded="true" signature="209:277" placeholder="UPDATE Apps ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/timer/php/devcon/getData.php">
+      <file leaf-file-name="ShouldAggregateOnDevice.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/ShouldAggregateOnDevice.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1200">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
-                <marker date="1462094554000" expanded="true" signature="343:405" placeholder="SELECT * FRO..Timer_View..." />
-                <marker date="1462094554000" expanded="true" signature="483:695" placeholder="SELECT name,..TimerAgg_View..." />
-                <marker date="1462094554000" expanded="true" signature="1086:1243" placeholder="SELECT name,..Timer_View..." />
+                <marker date="1462095392000" expanded="true" signature="182:240" placeholder="SELECT aggre..Apps..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/timer/php/device/getData.php">
+      <file leaf-file-name="settingsController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/settingsController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1020">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-              <folding>
-                <marker date="1462094557000" expanded="true" signature="270:332" placeholder="SELECT * FRO..Timer_View..." />
-                <marker date="1462094557000" expanded="true" signature="410:567" placeholder="SELECT name,..TimerAgg_View..." />
-                <marker date="1462094557000" expanded="true" signature="874:975" placeholder="SELECT name,..Timer_View..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/timer/php/vercon/getData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0416665" vertical-offset="104" max-vertical-offset="1170">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-              <folding>
-                <marker date="1462094559000" expanded="true" signature="345:407" placeholder="SELECT * FRO..Timer_View..." />
-                <marker date="1462094559000" expanded="true" signature="485:700" placeholder="SELECT name,..TimerAgg_View..." />
-                <marker date="1462094559000" expanded="true" signature="1090:1249" placeholder="SELECT name,..Timer_View..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getDevices.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/timer/php/verdev/getDevices.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="750">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding>
-                <marker date="1462093617000" expanded="true" signature="274:373" placeholder="SELECT DISTI..Timer_View..." />
-                <marker date="1462093617000" expanded="true" signature="587:689" placeholder="SELECT DISTI..TimerAgg_View..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/timer/php/verdev/getData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.4166665" vertical-offset="119" max-vertical-offset="1140">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-              <folding>
-                <marker date="1462094563000" expanded="true" signature="329:391" placeholder="SELECT * FRO..Timer_View..." />
-                <marker date="1462094563000" expanded="true" signature="469:667" placeholder="SELECT name,..TimerAgg_View..." />
-                <marker date="1462094563000" expanded="true" signature="994:1137" placeholder="SELECT name,..Timer_View..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getData.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/timer/php/version/getData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21311475" vertical-offset="0" max-vertical-offset="930">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-              <folding>
-                <marker date="1462094567000" expanded="true" signature="273:335" placeholder="SELECT * FRO..Timer_View..." />
-                <marker date="1462094567000" expanded="true" signature="413:590" placeholder="SELECT name,..TimerAgg_View..." />
-                <marker date="1462094567000" expanded="true" signature="944:1066" placeholder="SELECT name,..Timer_View..." />
-              </folding>
+            <state vertical-scroll-proportion="0.29936975" vertical-offset="0" max-vertical-offset="952">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,8 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/register.js" />
-        <option value="$PROJECT_DIR$/register.html" />
         <option value="$PROJECT_DIR$/php/authentication/register.php" />
         <option value="$PROJECT_DIR$/php/authentication/login.php" />
         <option value="$PROJECT_DIR$/php/authentication/logout.php" />
@@ -179,8 +113,6 @@
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/js/login.js" />
         <option value="$PROJECT_DIR$/js/index.js" />
-        <option value="$PROJECT_DIR$/js/settingsController.js" />
-        <option value="$PROJECT_DIR$/angular-extensions/settings.html" />
         <option value="$PROJECT_DIR$/php/getAppCode.php" />
         <option value="$PROJECT_DIR$/php/create.php" />
         <option value="$PROJECT_DIR$/js/createAppController.js" />
@@ -212,6 +144,10 @@
         <option value="$PROJECT_DIR$/html/timer/php/vercon/getData.php" />
         <option value="$PROJECT_DIR$/html/timer/php/verdev/getData.php" />
         <option value="$PROJECT_DIR$/html/timer/php/version/getData.php" />
+        <option value="$PROJECT_DIR$/js/settingsController.js" />
+        <option value="$PROJECT_DIR$/angular-extensions/settings.html" />
+        <option value="$PROJECT_DIR$/php/ChangeAggregationOnDevice.php" />
+        <option value="$PROJECT_DIR$/php/ShouldAggregateOnDevice.php" />
       </list>
     </option>
   </component>
@@ -349,206 +285,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="timer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backend + Dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="version" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backend + Dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="verdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backend + Dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vercon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backend + Dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="device" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backend + Dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devcon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backend + Dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backend + Dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="combined" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backend + Dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="counter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -596,8 +332,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/php" />
+      <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/html/meter/php/combinedReverse" />
       <recent name="$PROJECT_DIR$/html/meter/php/combined" />
       <recent name="$PROJECT_DIR$/html/meter" />
@@ -727,20 +463,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/gauge/gauge.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="525">
-          <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/counter/counter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="510">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/meter/meter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="585">
@@ -773,20 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="435">
           <caret line="26" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-extensions/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="255">
-          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/settingsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1110,98 +818,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/timer/php/combined/getData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1245">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <marker date="1462094547000" expanded="true" signature="401:463" placeholder="SELECT * FRO..Timer_View..." />
-            <marker date="1462094547000" expanded="true" signature="541:776" placeholder="SELECT name,..TimerAgg_View..." />
-            <marker date="1462094547000" expanded="true" signature="1169:1349" placeholder="SELECT name,..Timer_View..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/timer/php/connection/getData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1125">
+        <state vertical-scroll-proportion="0.19672132" vertical-offset="0" max-vertical-offset="1125">
           <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding>
-            <marker date="1462094551000" expanded="true" signature="286:348" placeholder="SELECT * FRO..Timer_View..." />
-            <marker date="1462094551000" expanded="true" signature="426:618" placeholder="SELECT name,..TimerAgg_View..." />
-            <marker date="1462094551000" expanded="true" signature="1011:1148" placeholder="SELECT name,..Timer_View..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/timer/php/devcon/getData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1200">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <marker date="1462094554000" expanded="true" signature="343:405" placeholder="SELECT * FRO..Timer_View..." />
-            <marker date="1462094554000" expanded="true" signature="483:695" placeholder="SELECT name,..TimerAgg_View..." />
-            <marker date="1462094554000" expanded="true" signature="1086:1243" placeholder="SELECT name,..Timer_View..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/timer/php/device/getData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1020">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <marker date="1462094557000" expanded="true" signature="270:332" placeholder="SELECT * FRO..Timer_View..." />
-            <marker date="1462094557000" expanded="true" signature="410:567" placeholder="SELECT name,..TimerAgg_View..." />
-            <marker date="1462094557000" expanded="true" signature="874:975" placeholder="SELECT name,..Timer_View..." />
+            <marker date="1462094551000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Timer_View..." />
+            <marker date="1462094551000" expanded="true" signature="-1:-1" placeholder="SELECT name,..TimerAgg_View..." />
+            <marker date="1462094551000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Timer_View..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/timer/php/vercon/getData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0416665" vertical-offset="104" max-vertical-offset="1170">
+        <state vertical-scroll-proportion="0.13224044" vertical-offset="104" max-vertical-offset="1170">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
-            <marker date="1462094559000" expanded="true" signature="345:407" placeholder="SELECT * FRO..Timer_View..." />
-            <marker date="1462094559000" expanded="true" signature="485:700" placeholder="SELECT name,..TimerAgg_View..." />
-            <marker date="1462094559000" expanded="true" signature="1090:1249" placeholder="SELECT name,..Timer_View..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/timer/php/verdev/getDevices.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="750">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <marker date="1462093617000" expanded="true" signature="274:373" placeholder="SELECT DISTI..Timer_View..." />
-            <marker date="1462093617000" expanded="true" signature="587:689" placeholder="SELECT DISTI..TimerAgg_View..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/timer/php/verdev/getData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4166665" vertical-offset="119" max-vertical-offset="1140">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <marker date="1462094563000" expanded="true" signature="329:391" placeholder="SELECT * FRO..Timer_View..." />
-            <marker date="1462094563000" expanded="true" signature="469:667" placeholder="SELECT name,..TimerAgg_View..." />
-            <marker date="1462094563000" expanded="true" signature="994:1137" placeholder="SELECT name,..Timer_View..." />
+            <marker date="1462094559000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Timer_View..." />
+            <marker date="1462094559000" expanded="true" signature="-1:-1" placeholder="SELECT name,..TimerAgg_View..." />
+            <marker date="1462094559000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Timer_View..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/timer/php/version/getData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21311475" vertical-offset="0" max-vertical-offset="930">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.36065573" vertical-offset="0" max-vertical-offset="930">
+          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
           <folding>
-            <marker date="1462094567000" expanded="true" signature="273:335" placeholder="SELECT * FRO..Timer_View..." />
-            <marker date="1462094567000" expanded="true" signature="413:590" placeholder="SELECT name,..TimerAgg_View..." />
-            <marker date="1462094567000" expanded="true" signature="944:1066" placeholder="SELECT name,..Timer_View..." />
+            <marker date="1462094567000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Timer_View..." />
+            <marker date="1462094567000" expanded="true" signature="-1:-1" placeholder="SELECT name,..TimerAgg_View..." />
+            <marker date="1462094567000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Timer_View..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/timer/php/verdev/getData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11584699" vertical-offset="119" max-vertical-offset="1140">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <marker date="1462094563000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Timer_View..." />
+            <marker date="1462094563000" expanded="true" signature="-1:-1" placeholder="SELECT name,..TimerAgg_View..." />
+            <marker date="1462094563000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Timer_View..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/timer/php/verdev/getDevices.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6303879" vertical-offset="0" max-vertical-offset="928">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <marker date="1462093617000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..Timer_View..." />
+            <marker date="1462093617000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..TimerAgg_View..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/timer/php/device/getData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19672132" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <marker date="1462094557000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Timer_View..." />
+            <marker date="1462094557000" expanded="true" signature="-1:-1" placeholder="SELECT name,..TimerAgg_View..." />
+            <marker date="1462094557000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Timer_View..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/timer/php/devcon/getData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <marker date="1462094554000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Timer_View..." />
+            <marker date="1462094554000" expanded="true" signature="-1:-1" placeholder="SELECT name,..TimerAgg_View..." />
+            <marker date="1462094554000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Timer_View..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/timer/php/combined/getData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27868852" vertical-offset="0" max-vertical-offset="1245">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <marker date="1462094547000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Timer_View..." />
+            <marker date="1462094547000" expanded="true" signature="-1:-1" placeholder="SELECT name,..TimerAgg_View..." />
+            <marker date="1462094547000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Timer_View..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-extensions/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="330">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ChangeAggregationOnDevice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="285">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <marker date="1462095364000" expanded="true" signature="209:277" placeholder="UPDATE Apps ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ShouldAggregateOnDevice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <marker date="1462095392000" expanded="true" signature="182:240" placeholder="SELECT aggre..Apps..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/settingsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29936975" vertical-offset="0" max-vertical-offset="952">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>

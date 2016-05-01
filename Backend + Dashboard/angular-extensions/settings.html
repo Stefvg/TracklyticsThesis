@@ -6,6 +6,11 @@
         <p style="font-size:18px">
             Should Tracklytics monitor this application?
             <switch id="enabled" name="enabled" ng-model="settings.enabled" class="green" ng-change="changeCallback"></switch>
+
+        </p>
+        <p style="font-size:18px">
+            Do you want the aggregation to happen on the device?
+            <switch id="aggregation" name="aggregation" ng-model="settings.aggregation" class="green" ng-change="changeAggregation"></switch>
         </p>
     </form>
 
