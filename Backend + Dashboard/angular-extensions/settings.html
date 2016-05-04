@@ -12,6 +12,10 @@
             Do you want the aggregation to happen on the device?
             <switch id="aggregation" name="aggregation" ng-model="settings.aggregation" class="green" ng-change="changeAggregation"></switch>
         </p>
+        <p style="font-size:18px">
+            Do you want to save the data on the disk of the device? This takes more time to process.
+            <switch id="disk" name="disk" ng-model="settings.disk" class="green" ng-change="changeSaveOnDisk"></switch>
+        </p>
     </form>
 
 </div>
