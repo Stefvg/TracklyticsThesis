@@ -26,6 +26,7 @@
         var hist = this;
         hist.tempValues = [];
         hist.devices = [];
+        hist.objects = [];
 
         $scope.labels = [];
         $scope.data = [];
@@ -43,6 +44,7 @@
             for(var i =0; i< data.length; i++){
                 $scope.labels[i] = [];
                 hist.tempValues[i] = [];
+                hist.objects[i] = [];
                 $http.get('./php/devices/getValues.php?app=' + appName + '&type=' +type +'&device=' + data[i] +'&number=' + i).success(function(data){
                     var object = data[Object.keys(data)];
                     console.log(object);
@@ -82,7 +84,11 @@
                 });
 
                 //$scope.series = ['Series A', 'Series B'];
-
+                $http.get('./php/devices/getHistogramData.php?app=' + appName + '&type=' + type +'&device=' + data[i] + '&number=' + i).success(function(data) {
+                    var value = data[Object.keys(data)];
+                    var valueIndex = Object.keys(data)[0];
+                    hist.objects[valueIndex] = value;
+                });
 
 
             }
@@ -121,6 +127,11 @@ function updateChart($scope, sliderID, type, $http, hist) {
 
     });
 
+    $http.get('./php/devices/getHistogramData.php?app=' + appName + '&type=' +type +'&device=' + hist.devices[sliderID] +'&number=' + sliderID + '&min='+ min +'&max=' + max).success(function(data) {
+        var value = data[Object.keys(data)];
+        var valueIndex = Object.keys(data)[0];
+        hist.objects[valueIndex] = value;
+    });
     //$scope.series = ['Series A', 'Series B'];
 
 

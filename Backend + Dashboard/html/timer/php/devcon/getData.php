@@ -27,11 +27,13 @@ if (!$result) {
 }
 
 while ($row = mysql_fetch_assoc($result)) {
-    $object['name'] = $row['name'];
-    $object['durationTime'] = doubleval($row['durationTime']);
-    $object['numberOfMeasurements'] = intval($row['numberOfMeasurements']);
+    if ($row['name']) {
+        $object['name'] = $row['name'];
+        $object['durationTime'] = doubleval($row['durationTime']);
+        $object['numberOfMeasurements'] = intval($row['numberOfMeasurements']);
 
-    $aggArray[$row['name']] = $object;
+        $aggArray[$row['name']] = $object;
+    }
 }
 
 $query = "SELECT name,AVG(durationTime) AS durationTime FROM Timer_View WHERE type='$type' AND connectionType='$connectionType' AND device='$device' AND appName='$app' ";

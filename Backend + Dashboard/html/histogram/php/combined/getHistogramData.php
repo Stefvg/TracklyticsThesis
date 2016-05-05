@@ -11,8 +11,19 @@ $conn = getDatabase();
 
 $app = $_GET['app'];
 $type = $_GET['type'];
-$query = "SELECT value FROM Histogram_View WHERE type='$type' AND appName='$app' ORDER BY value ASC";
+$number = $_GET['number'];
+$device = $_GET['device'];
+$version = $_GET['version'];
+$versionNumber = $_GET['versionNumber'];
 
+$min = $_GET['min'];
+$max = $_GET['max'];
+
+if($min && $max) {
+    $query = "SELECT value FROM Histogram_View WHERE version = '$version' AND device = '$device' AND type='$type' AND appName='$app' AND value>='$min' AND value<='$max' ORDER BY value ASC";
+}else {
+    $query = "SELECT value FROM Histogram_View WHERE version = '$version' AND device = '$device' AND type='$type' AND appName='$app'  ORDER BY value ASC";
+}
 
 
 $result = mysql_query($query);
@@ -20,14 +31,12 @@ if (!$result) {
     die('Invalid query: ' . mysql_error());
 }
 
-
 $outputArray = array();
-
 $array = array();
 
 while ($row = mysql_fetch_assoc($result)) {
 
-        array_push($array, $row['value']);
+    array_push($array, $row['value']);
 
 }
 
@@ -94,8 +103,12 @@ $object['value'] = $sdev;
 array_push($outputArray, $object);
 
 
+$object['array'] = $outputArray;
+$object['versionNumber'] = $versionNumber;
+$output[$number] =  $object;
 
-echo(json_encode($outputArray));
-//echo(json_encode($array));
+
+echo(json_encode($output));
+
 
 ?>

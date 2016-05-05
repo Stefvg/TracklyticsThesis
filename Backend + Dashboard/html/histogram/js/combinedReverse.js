@@ -37,6 +37,7 @@
         hist.tempValues = [];
         hist.versions = [];
         hist.devices = [];
+        hist.objects = [];
 
         hist.scopeIndex = 0;
         $scope.labels = [];
@@ -48,6 +49,7 @@
             for(var i =0; i< data.length; i++){
                 hist.versions[i] = [];
                 hist.tempValues[i] = [];
+                hist.objects[i] = [];
                 $http.get('./php/combinedReverse/getVersions.php?app=' + appName + '&type=' +type +'&device=' + data[i] + '&number=' + hist.scopeIndex).success(function(data){
                     var versions = data[Object.keys(data)];
                     var deviceNumber = Object.keys(data)[0];
@@ -56,6 +58,7 @@
                     $scope.slider[deviceNumber] = [];
                     for(var k =0; k< versions.length; k++) {
                         hist.tempValues[deviceNumber][k] = [];
+
                         $http.get('./php/combinedReverse/getValues.php?app=' + appName + '&type=' + type + '&device=' + hist.devices[deviceNumber] + '&number=' + k +'&version=' + versions[k] + '&versionNumber=' + deviceNumber).success(function (data) {
 
                             var object = data[Object.keys(data)];
@@ -115,6 +118,13 @@
 
                         });
 
+                        $http.get('./php/combinedReverse/getHistogramData.php?app=' + appName + '&type=' + type + '&device=' + hist.devices[deviceNumber] + '&number=' + k +'&version=' + versions[k] + '&versionNumber=' + deviceNumber).success(function(data) {
+                            var value = data[Object.keys(data)];
+                            var valueIndex = Object.keys(data)[0];
+                            var index2 = data[valueIndex]['versionNumber'];
+                            hist.objects[index2][valueIndex] = value['array'];
+                            console.log(value);
+                        });
                     }
                 });
 
@@ -182,5 +192,12 @@ function updateChartCombinedReverse($scope, sliderID, deviceNumber, type, $http,
             });
         }
 
+    });
+    $http.get('./php/combinedReverse/getHistogramData.php?app=' + appName + '&type=' + type + '&device=' + hist.devices[deviceNumber] + '&number=' + sliderID +'&version=' + hist.versions[deviceNumber][sliderID] + '&versionNumber=' + deviceNumber +'&min=' + min + '&max=' +max).success(function(data) {
+        var value = data[Object.keys(data)];
+        var valueIndex = Object.keys(data)[0];
+        var index2 = data[valueIndex]['versionNumber'];
+        hist.objects[index2][valueIndex] = value['array'];
+        console.log(value);
     });
 }

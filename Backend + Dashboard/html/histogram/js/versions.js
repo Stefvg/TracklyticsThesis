@@ -38,6 +38,7 @@
         var versionController = this;
         versionController.tempValues = [];
         versionController.versions = [];
+        versionController.objects = [];
 
         $scope.labels = [];
         $scope.data = [];
@@ -47,6 +48,7 @@
             versionController.versions = data;
 
             for(var i =0; i< data.length; i++){
+                versionController.objects[i] = [];
                 $scope.labels[i] = [];
                 versionController.tempValues[i] = [];
                 $http.get('./php/versions/getValues.php?app=' + appName + '&type=' +type +'&version=' + data[i] +'&number=' + i).success(function(data){
@@ -88,6 +90,13 @@
                         });
                     }
 
+                });
+
+                $http.get('./php/versions/getHistogramData.php?app=' + appName + '&type=' +type +'&version=' + data[i] +'&number=' + i).success(function(data) {
+                    var value = data[Object.keys(data)];
+                    var valueIndex = Object.keys(data)[0];
+                    versionController.objects[valueIndex] = value;
+                    console.log(value);
                 });
 
                 //$scope.series = ['Series A', 'Series B'];
@@ -132,6 +141,13 @@ function updateChartVersions($scope, sliderID, versionController, $http, version
             });
         }
 
+    });
+
+    $http.get('./php/versions/getHistogramData.php?app=' + appName + '&type=' +type +'&version=' + version +'&number=' + sliderID + '&min='+ min +'&max=' + max).success(function(data) {
+        var value = data[Object.keys(data)];
+        var valueIndex = Object.keys(data)[0];
+        versionController.objects[valueIndex] = value;
+        console.log(value);
     });
 
 

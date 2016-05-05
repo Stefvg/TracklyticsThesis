@@ -42,6 +42,7 @@
         $scope.labels = [];
         $scope.data = [];
         $scope.slider = [];
+        hist.objects = [];
         $http.get('./php/combined/getVersions.php?app=' + appName + '&type=' + type).success(function(data){
             hist.versions = data;
 
@@ -53,6 +54,7 @@
                     hist.devices[versionNumber] = devices;
                     $scope.labels[versionNumber] =[];
                     $scope.slider[versionNumber] =[];
+                    hist.objects[versionNumber] = [];
                     for(var k =0; k< devices.length; k++) {
 
                         $http.get('./php/combined/getValues.php?app=' + appName + '&type=' + type + '&version=' + hist.versions[versionNumber] + '&number=' + k +'&device=' + devices[k] + '&versionNumber=' + versionNumber).success(function (data) {
@@ -109,6 +111,15 @@
                             }
 
                         });
+
+                        $http.get('./php/combined/getHistogramData.php?app=' + appName + '&type=' + type + '&version=' + hist.versions[versionNumber] + '&number=' + k +'&device=' + devices[k] + '&versionNumber=' + versionNumber).success(function(data) {
+                            var value = data[Object.keys(data)];
+                            var valueIndex = Object.keys(data)[0];
+                            var index2 = data[valueIndex]['versionNumber'];
+                            hist.objects[index2][valueIndex] = value['array'];
+                            console.log(value);
+                        });
+
 
                     }
                 });
@@ -172,5 +183,13 @@ function updateChartCombined($scope, sliderID, versionNumber, type, $http, hist)
             });
         }
 
+    });
+
+    $http.get('./php/combined/getHistogramData.php?app=' + appName + '&type=' + type + '&version=' + hist.versions[versionNumber] + '&number=' + sliderID +'&device=' + hist.devices[versionNumber][sliderID] + '&versionNumber=' + versionNumber + '&min=' + min + '&max=' + max).success(function(data) {
+        var value = data[Object.keys(data)];
+        var valueIndex = Object.keys(data)[0];
+        var index2 = data[valueIndex]['versionNumber'];
+        hist.objects[index2][valueIndex] = value['array'];
+        console.log(value);
     });
 }

@@ -1,5 +1,5 @@
-<div ng-repeat="version in version.versions">
-    <h3>{{version}}</h3>
+<div ng-repeat="versionN in version.versions">
+    <h3>{{versionN}}</h3>
     <rzslider
             rz-slider-model="slider[$index].min"
             rz-slider-high="slider[$index].max"
@@ -7,4 +7,16 @@
     <canvas id="bar" class="chart chart-bar"
             chart-data="data[$index]" chart-labels="labels[$index]">
     </canvas>
+    <table>
+        <thead>
+        <tr>
+            <th>Eigenschap</td>
+            <th>Waarde</td>
+        </tr>
+        </thead>
+        <tr style="width: 100%" ng-repeat="value in version.objects[$index]">
+            <td style="width: 50%">{{value.name}}</td>
+            <td style="width: 50%">{{value.value}}</td>
+        </tr>
+    </table>
 </div>

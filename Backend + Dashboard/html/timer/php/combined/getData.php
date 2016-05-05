@@ -29,12 +29,15 @@ if (!$result) {
     die('Invalid query: ' . mysql_error());
 }
 
-while ($row = mysql_fetch_assoc($result)) {
-    $object['name'] = $row['name'];
-    $object['durationTime'] = doubleval($row['durationTime']);
-    $object['numberOfMeasurements'] = intval($row['numberOfMeasurements']);
 
-    $aggArray[$row['name']] = $object;
+while ($row = mysql_fetch_assoc($result)) {
+    if ($row['name']) {
+        $object['name'] = $row['name'];
+        $object['durationTime'] = doubleval($row['durationTime']);
+        $object['numberOfMeasurements'] = intval($row['numberOfMeasurements']);
+
+        $aggArray[$row['name']] = $object;
+    }
 }
 
 

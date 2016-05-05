@@ -22,12 +22,16 @@ $count = mysql_num_rows($result);
 $query = "SELECT name, AVG(durationTime) AS durationTime, SUM(numberOfMeasurements) AS numberOfMeasurements FROM TimerAgg_View WHERE type='$type' AND device='$device' AND version='$version' AND appName='$app'";
 $result = mysql_query($query);
 $aggArray = array();
-while ($row = mysql_fetch_assoc($result)) {
-    $object['name'] = $row['name'];
-    $object['durationTime'] = doubleval($row['durationTime']);
-    $object['numberOfMeasurements'] = intval($row['numberOfMeasurements']);
 
-    $aggArray[$row['name']] = $object;
+
+while ($row = mysql_fetch_assoc($result)) {
+    if ($row['name']) {
+        $object['name'] = $row['name'];
+        $object['durationTime'] = doubleval($row['durationTime']);
+        $object['numberOfMeasurements'] = intval($row['numberOfMeasurements']);
+
+        $aggArray[$row['name']] = $object;
+    }
 }
 
 $query = "SELECT name,AVG(durationTime) AS durationTime FROM Timer_View WHERE type='$type' AND device='$device' AND version='$version' AND appName='$app'";

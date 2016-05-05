@@ -11,11 +11,17 @@ $conn = getDatabase();
 
 $app = $_GET['app'];
 $type = $_GET['type'];
-$version = $_GET['version'];
 $number = $_GET['number'];
+$device = $_GET['device'];
 
-$query = "SELECT value FROM Histogram_View WHERE type='$type' AND version='$version' AND appName='$app' ORDER BY value ASC";
+$min = $_GET['min'];
+$max = $_GET['max'];
 
+if($min && $max) {
+    $query = "SELECT value FROM Histogram_View WHERE device = '$device' AND type='$type' AND appName='$app' AND value>='$min' AND value<='$max' ORDER BY value ASC";
+}else {
+    $query = "SELECT value FROM Histogram_View WHERE device = '$device' AND type='$type' AND appName='$app'  ORDER BY value ASC";
+}
 
 
 $result = mysql_query($query);
