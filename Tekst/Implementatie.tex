@@ -1,5 +1,5 @@
 \chapter{Implementatie}
-In het vorige hoofdstuk is er beschreven hoe de architectuur van een monitoring library eruit kan zien. In dit hoofdstuk wordt er gekeken naar de implementatie van de Tracklytics library. %\cite{tracklytics}
+In het vorige hoofdstuk is er beschreven hoe de architectuur van een monitoring library eruit kan zien. In dit hoofdstuk wordt er gekeken naar de implementatie van de Tracklytics library \cite{Tracklytics}.
 Er wordt gekeken naar welke technologie\"en er gebruikt zijn bij het ontwikkelen van de library. Daarnaast wordt er uitgelegd hoe developers de library kunnen gebruiken in hun applicaties. Er wordt dieper ingegaan op de communicatie tussen de Tracklytics library en de server.
 
 \section{Details Implementatie}
@@ -10,7 +10,7 @@ De Tracklytics library beschreven in deze thesis is ontwikkeld voor het iOS best
 %cite swift
 
 De Tracklytics library slaat tijdelijk de data op op de harde schijf van het toestel. Dit heeft twee voordelen, namelijk: er gaat geen data verloren en de library gebruikt minder RAM.
-Als het toestel geen internet connectie zou hebben, kan de library de data niet verzenden naar de back end en indien de applicatie dan sluit zijn alle gegevens verloren. Dit scenario is opgelost door het tijdelijk opslaan van de gegevens op de harde schijf. De data wordt pas verwijderd als de library er zeker van is dat de data succesvol naar de back end is verstuurd. 
+Als het toestel geen internet connectie zou hebben, kan de library de data niet verzenden naar de back end en indien de applicatie dan sluit zijn alle gegevens verloren. Dit scenario kan opgelost worden door de data tijdelijk op de harde schijf op te slaan. De data zal dan pas verwijderd worden als de library er zeker van is dat de data succesvol naar de back end is verstuurd. Er is voor gekozen om de developer hier de keuze aan te laten. Hij kan via het dashboard aangeven of de gegevens tijdelijk op harde schijf opgeslagen moeten worden. \\
 
 Een mobiel toestel heeft een beperkte grootte RAM geheugen en applicaties kunnen hier niet volledig gebruik van maken omdat het besturingssysteem dit geheugen ook gebruikt. Als de applicatie teveel RAM geheugen gebruikt, dan gaat heel de applicatie deze trager werken, omdat het RAM geheugen dan uitgeswapt wordt naar de harde schijf. Het is dus noodzakelijk om het RAM gebruik zo laag mogelijk te houden. Indien alle data in RAM geheugen zou gehouden gestoken worden, dan kan dit snel vollopen. Het opslaan van de data op de harde schijf verhelpt dit probleem. Het is dan wel noodzakelijk dat het opslaan van de data op schijf in de achtergrond gebeurt, omdat I/O operaties relatief lang duren. \\
 
@@ -43,11 +43,18 @@ Om de webapplicatie te ontwikkelen is er gebruik gemaakt van AngularJS. De reden
 Om de grafieken weer te kunnen geven is ervoor gekozen om Chart.js (voor AngularJS) te gebruiken. Dit framework neemt data die in AngularJS variabelen gezet worden en geeft deze weer in een gekozen grafiek (bv. lijn-grafiek of staafdiagram). Chart.js is een simpele manier om snel een grafiek weer te kunnen geven, het werkt out-of-the-box en er zijn een aantal zeer handige opties die kunnen aangepast worden. 
 %/cite Chart.js
 
-Om de histogrammen en de meters bruikbaarder te maken zijn hier sliders bij toegevoegd om bij de histogrammen het interval te veranderen en zo een kleinere dataset te gebruiken. Bij de meters kan de dataset verkleind worden door het tijdsinterval te wijzigen. Omdat het dashboard gebouwd is in AngularJS en de histogrammen en meters herhaald worden over de pagina moest er een oplossing gevonden worden die compatibel was met AngularJS. Een andere moeilijkheid was dat de slider langs twee kanten zou moeten kunnen sliden om een minimum en maximum te kunnen defini\"eren. Door deze twee praktische zaken is er een keuze gemaakt voor de AngularJS-slider. Deze biedt alle functionaliteit aan die nodig is om de histogrammen en meters interactief te maken.
+Om de histogrammen en de meters bruikbaarder te maken zijn hier sliders bij toegevoegd om bij de histogrammen het interval te veranderen en zo een kleinere dataset te gebruiken. Bij de meters kan de dataset verkleind worden door het tijdsinterval te wijzigen. Omdat het dashboard gebouwd is in AngularJS en de histogrammen en meters herhaald worden over de pagina moest er een oplossing gevonden worden die compatibel was met AngularJS. Een andere moeilijkheid was dat de slider langs twee kanten zou moeten kunnen sliden om een minimum en maximum te kunnen defini\"eren. Door deze twee praktische zaken is er een keuze gemaakt voor de AngularJS-slider. Deze biedt alle functionaliteit aan die nodig is om de histogrammen en meters interactief te maken.\\
 %cite: https://github.com/angular-slider/angularjs-slider
 
 
-De data die nodig is om de titels en de gegevens voor de grafieken in te laden moet uit de backend gehaald worden. Deze is zoals in vorige sectie aangehaald geschreven in PHP. De data wordt via AngularJS opgehaald en aan de juiste variabelen gekoppeld die ervoor zorgen dat deze data correct kan worden weergegeven.\\ 
+De grafieken worden per soort meetobject weergegeven, er bestaat dus een aparte pagina voor de counters, de gauges, de timers, de meters en de histogrammen. Zo heeft een developer een overzicht per type meting. De grafieken die weergegeven worden zijn basisgrafieken, deze zijn enkel opgedeeld door de namen die aan de metingen gegeven zijn. De developer kan hier enkel basisinformatie uithalen. Om een dieper detailniveau te verkrijgen is ervoor gekozen om per grafiek een gedetailleerdere pagina weer te geven. De grafiek wordt dan opgesplitst door verschillende eigenschappen te gebruiken. De volgende eigenschappen worden gebruikt om de grafieken op te delen: het type toestel, de versie van de applicatie en het type connectie. Deze worden onderling nog gecombineerd om nog extra in detail de gemeten data te kunnen bekijken. Aan de hand hiervan kunnen developers een concreet overzicht krijgen over de prestaties en het gebruik van de applicatie. \\
+
+In het dashboard is ruimte voorzien om de instellingen van de applicatie te wijzigen. De developer kan kiezen of de applicatie gemonitord moet worden, of de aggregatie op het toestel moet gebeuren of in de backend en hij kan kiezen of de data tijdelijk op de harde schijf opgeslagen moet worden of niet. \\
+
+
+De data die nodig is om de titels en de gegevens voor de grafieken in te laden moet uit de backend gehaald worden. Deze is zoals in vorige sectie aangehaald geschreven in PHP. \\ 
+
+Er is enorm veel werk gekropen in het ontwikkelen van dit dashboard. Dit omdat het dashboard from scratch ontwikkeld is. De reden hiervoor is dat de bestaande dashboards die vrij te gebruiken zijn geen oplossing gaven voor de visualisatie die ik wou geven. Het ontwikkelen van het dashboard (inclusief het opzetten van alle achterliggende systemen zoals de database en dergelijke) in combinatie met het ontwikkelen en het tweaken van de library heeft meer dan 200 uur tijd in beslag genomen.
 
 \subsection{Connectie tussen Front end en Back end}
 Zoals eerder aangegeven stuurt de front end (de Tracklytics iOS library) data naar de back end over een internetverbinding. Om ervoor te zorgen dat deze data veilig overgedragen wordt is ervoor gekomen om een HTTPS verbinding te gebruiken. Dit zorgt er automatisch voor dat er een veilige verbinding tussen client en server is. Een alternatief is de data zelf encoderen aan de client zijde en decoderen aan de server zijde. Omdat HTTPS ervoor zorgt dat de data veilig wordt overgedragen is ervoor gekozen om encoderen en decoderen niet te gebruiken.
@@ -98,6 +105,16 @@ De meterinterface wordt gebruikt om automatisch een waarde op te halen. De meter
 
 \section{Documentatie}\label{documentatie}
 In deze sectie wordt er uit de doeken gedaan hoe je als developer de Tracklytics library in je applicatie kunt inbouwen. 
+
+\subsection{Installatie}
+In deze sectie wordt besproken hoe de installatie van de library in de applicatie in zijn werk gaat. \\
+
+Om de library snel en gemakkelijk in een applicatie in te bouwen is ervoor gekozen om CocoaPods te gebruiken \cite{CocoaPods}. Dit is de standaard methode om externe libraries te gebruiken in iOS. De volgende stappen moeten gebeuren om de Tracklytics library in te bouwen in de applicatie. \\
+
+\noindent Allereerst moet er in de root folder van het project (via een terminal) van de applicatie \textit{pod init} uitgevoerd worden. Dit maakt een PodFile bestand aan. Dit bestand moet aangepast worden, het platform moet aangegeven worden als \textit{ios, 7.0} en tussen \textit{target 'AppName' do} en \textit{end} moet de volgende tekst komen: \textit{pod "Tracklytics"}. Cocoapods selecteert automatisch de laatste versie van de library. \\
+
+\noindent Om de library dan te installeren moet in de root folder het commando (via een terminal) uitgevoerd worden: \textit{pod install}. Cocoapods installeert nu de library in de applicatie en zorgt dat alle dependencies geïnstalleerd worden. Dit commando genereert een nieuw project dat voortaan gebruikt moet worden in plaats van het andere project.
+
 
 
 \subsection{Initialisatie}
