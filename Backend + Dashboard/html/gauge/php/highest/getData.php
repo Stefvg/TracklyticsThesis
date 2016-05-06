@@ -14,10 +14,31 @@ $type = $_GET['type'];
 $version = $_GET['version'];
 $number = $_GET['number'];
 
-$query = "SELECT name,value FROM Gauge_View WHERE appName='$app' AND type='$type' AND version='$version' ORDER BY value DESC";
+$query = "SELECT name,highest FROM GaugeAgg_View WHERE appName='$app' AND type='$type' AND version='$version'";
+$result = mysql_query($query);
+
+$aggArray = array();
+while ($row = mysql_fetch_assoc($result)) {
+    if ($row['name']) {
+        $temp = $aggArray[$row['name']];
 
 
+        if($temp){
+            if($temp['highest'] < $row['highest']){
+                $object['highest'] = $temp['highest'];
+            }
+        }else {
+            $object['highest'] = $row['highest'];
+        }
 
+        $object['name'] = $row['name'];
+
+
+        $aggArray[$row['name']] = $object;
+    }
+}
+
+$query = "SELECT name,value FROM Gauge_View WHERE appName='$app' AND type='$type' AND version='$version' GROUP BY name ORDER BY value";
 $result = mysql_query($query);
 if (!$result) {
     die('Invalid query: ' . mysql_error());
@@ -39,11 +60,27 @@ while ($row = mysql_fetch_assoc($result)) {
 
 foreach ($arrayToGetMedianFrom as $key => $value) {
     $tempArray = $value;
+
+    $aggregate = $aggArray[$key];
+
+    if($aggregate && $aggregate['highest'] > $tempArray[0]){
+        $object['highest'] = $aggregate['highest'];
+    }else {
+        $object['highest'] = $tempArray[0];
+    }
+
     $object['name'] = $key;
-    $object['highest'] = $tempArray[0];
+    unset($aggArray[$key]);
     array_push($array, $object);
 
     $object =[];
+}
+
+foreach($aggArray as $row) {
+
+    $object['name'] = $row['name'];
+    $object['highest'] = $row['highest'];
+    array_push($array, $object);
 }
 
 $output[$number] = $array;

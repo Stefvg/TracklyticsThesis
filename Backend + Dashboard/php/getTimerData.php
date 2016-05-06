@@ -17,11 +17,13 @@ $query = "SELECT name, AVG(durationTime) AS durationTime, SUM(numberOfMeasuremen
 $result = mysql_query($query);
 $aggArray = array();
 while ($row = mysql_fetch_assoc($result)) {
-    $object['name'] = $row['name'];
-    $object['durationTime'] = doubleval($row['durationTime']);
-    $object['numberOfMeasurements'] = intval($row['numberOfMeasurements']);
-    $object['device'] = $row['device'];
-    $aggArray[$row['name']][$row['device']] = $object;
+    if ($row['name']) {
+        $object['name'] = $row['name'];
+        $object['durationTime'] = doubleval($row['durationTime']);
+        $object['numberOfMeasurements'] = intval($row['numberOfMeasurements']);
+        $object['device'] = $row['device'];
+        $aggArray[$row['name']][$row['device']] = $object;
+    }
 }
 
 $query = "SELECT * FROM Timer_View WHERE type='$type' AND appName='$app'";
@@ -41,20 +43,21 @@ $array = array();
 
 
 while ($row = mysql_fetch_assoc($result)) {
-    $aggregate = $aggArray[$row['name']][$row['device']];
+    if ($row['name']) {
+        $aggregate = $aggArray[$row['name']][$row['device']];
 
 
+        $object['name'] = $row['name'];
+        if ($aggregate) {
+            $object['durationTime'] = (doubleval($row['durationTime']) * $count + $aggregate['durationTime'] * $aggregate['numberOfMeasurements']) / ($count + $aggregate['numberOfMeasurements']);
+        } else {
+            $object['durationTime'] = doubleval($row['durationTime']);
+        }
+        $object['device'] = $row['device'];
 
-    $object['name'] = $row['name'];
-    if($aggregate){
-        $object['durationTime'] = (doubleval($row['durationTime']) * $count + $aggregate['durationTime'] * $aggregate['numberOfMeasurements'])/ ($count + $aggregate['numberOfMeasurements']);
-    }else {
-        $object['durationTime'] = doubleval($row['durationTime']);
+        unset($aggArray[$row['name']][$row['device']]);
+        array_push($array, $object);
     }
-    $object['device'] = $row['device'];
-
-    unset($aggArray[$row['name']][$row['device']]);
-    array_push($array, $object);
 }
 
 foreach($aggArray as $aggregate) {

@@ -22,7 +22,7 @@ if($databaseID=="") {
     $id = mysql_insert_id();
     echo($id . "#SUCCESS");
 }else {
-    $query = "UPDATE Timer SET durationTime='$durationTime', metadataID='$metadataID' WHERE id='$databaseID'";
+    $query = "UPDATE TimerAggregate SET durationTime='$durationTime', numberOfMeasurements='$numberOfMeasurements', metadataID='$metadataID' WHERE id='$databaseID'";
     $result = mysql_query($query);
     echo($databaseID . "#SUCCESS");
 }
