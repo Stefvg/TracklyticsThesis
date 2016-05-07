@@ -11,7 +11,7 @@ $conn = getDatabase();
 
 $app = $_GET['app'];
 $type = $_GET['type'];
-$query = "SELECT name,value FROM Gauge_View WHERE appName='$app' AND type='$type' ORDER BY value";
+$query = "SELECT name,value FROM Gauge_View WHERE appName='$app' AND type='$type' GROUP BY name ORDER BY value";
 
 
 
@@ -33,6 +33,31 @@ while ($row = mysql_fetch_assoc($result)) {
         $arrayToGetMedianFrom[$row['name']] = $tempArray;
     }
 }
+
+$query = "SELECT name,median, numberOfMeasurements FROM GaugeAgg_View WHERE appName='$app' AND type='$type'";
+$result = mysql_query($query);
+while ($row = mysql_fetch_assoc($result)) {
+    if($row['name']){
+        $medArray = array();
+        $numberOfMeasurements = $row['numberOfMeasurements'];
+        $median = $row['median'];
+        for($i=0; $i<$numberOfMeasurements; $i++){
+            array_push($medArray, $median);
+        }
+        if(!$arrayToGetMedianFrom[$row['name']]){
+            $arrayToGetMedianFrom[$row['name']] = $medArray;
+        }else {
+            $tempArray = $arrayToGetMedianFrom[$row['name']];
+            $tempArray = array_merge($tempArray, $medArray);
+            sort($tempArray);
+
+            $arrayToGetMedianFrom[$row['name']] = $tempArray;
+        }
+
+
+    }
+}
+
 
 foreach ($arrayToGetMedianFrom as $key => $value) {
     $tempArray = $value;

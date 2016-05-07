@@ -14,10 +14,7 @@ $type = $_GET['type'];
 $version = $_GET['version'];
 $number = $_GET['number'];
 
-$query = "SELECT name,value FROM Gauge_View WHERE appName='$app' AND type='$type' AND version='$version' ORDER BY value";
-
-
-
+$query = "SELECT name,value FROM Gauge_View WHERE appName='$app' AND type='$type' AND version='$version' GROUP BY name ORDER BY value";
 $result = mysql_query($query);
 if (!$result) {
     die('Invalid query: ' . mysql_error());
@@ -27,15 +24,42 @@ $array = array();
 
 $arrayToGetMedianFrom = array();
 while ($row = mysql_fetch_assoc($result)) {
-
-    if(!$arrayToGetMedianFrom[$row['name']]){
-        $arrayToGetMedianFrom[$row['name']] = array($row['value']);
-    }else {
-        $tempArray = $arrayToGetMedianFrom[$row['name']];
-        array_push($tempArray, $row['value']);
-        $arrayToGetMedianFrom[$row['name']] = $tempArray;
+    if($row['name']){
+        if(!$arrayToGetMedianFrom[$row['name']]){
+            $arrayToGetMedianFrom[$row['name']] = array($row['value']);
+        }else {
+            $tempArray = $arrayToGetMedianFrom[$row['name']];
+            array_push($tempArray, $row['value']);
+            $arrayToGetMedianFrom[$row['name']] = $tempArray;
+        }
     }
 }
+
+$query = "SELECT name,median, numberOfMeasurements FROM GaugeAgg_View WHERE appName='$app' AND type='$type' AND version='$version'";
+$result = mysql_query($query);
+while ($row = mysql_fetch_assoc($result)) {
+    if($row['name']){
+        $medArray = array();
+        $numberOfMeasurements = $row['numberOfMeasurements'];
+        $median = $row['median'];
+        for($i=0; $i<$numberOfMeasurements; $i++){
+            array_push($medArray, $median);
+        }
+        if(!$arrayToGetMedianFrom[$row['name']]){
+            $arrayToGetMedianFrom[$row['name']] = $medArray;
+        }else {
+            $tempArray = $arrayToGetMedianFrom[$row['name']];
+            $tempArray = array_merge($tempArray, $medArray);
+            sort($tempArray);
+
+            $arrayToGetMedianFrom[$row['name']] = $tempArray;
+        }
+
+
+    }
+}
+
+
 
 foreach ($arrayToGetMedianFrom as $key => $value) {
     $tempArray = $value;

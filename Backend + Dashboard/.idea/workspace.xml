@@ -32,92 +32,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="getGaugeData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/getGaugeData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1245">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
-              <folding>
-                <marker date="1462547461000" expanded="true" signature="229:374" placeholder="SELECT name,..GaugeAgg_View..." />
-                <marker date="1462547461000" expanded="true" signature="795:947" placeholder="SELECT name,..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="getData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/gauge/php/highest/getData.php">
+        <entry file="file://$PROJECT_DIR$/html/gauge/php/median/getData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.291666" vertical-offset="512" max-vertical-offset="1440">
-              <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+            <state vertical-scroll-proportion="-8.041667" vertical-offset="287" max-vertical-offset="1215">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="59" selection-end-column="1" />
               <folding>
-                <element signature="e#6#91#0#PHP" expanded="true" />
-                <marker date="1462551084000" expanded="true" signature="273:372" placeholder="SELECT name,..GaugeAgg_View..." />
-                <marker date="1462551084000" expanded="true" signature="860:983" placeholder="SELECT name,..Gauge_View..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lowest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/gauge/js/lowest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/gauge/php/lowest/getData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.041666" vertical-offset="332" max-vertical-offset="1365">
-              <caret line="72" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="2" />
-              <folding>
-                <marker date="1462550666000" expanded="true" signature="273:371" placeholder="SELECT name,..GaugeAgg_View..." />
-                <marker date="1462550666000" expanded="true" signature="273:371" placeholder="SELECT name,..GaugeAgg_View..." />
-                <marker date="1462550666000" expanded="true" signature="853:976" placeholder="SELECT name,..Gauge_View..." />
+                <marker date="1462610494000" expanded="true" signature="273:396" placeholder="SELECT name,..Gauge_View..." />
+                <marker date="1462610494000" expanded="true" signature="953:1073" placeholder="SELECT name,..GaugeAgg_View..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="getCombinedValue.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/gauge/php/lowest/getCombinedValue.php">
+        <entry file="file://$PROJECT_DIR$/html/gauge/php/median/getCombinedValue.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1365">
-              <caret line="16" column="69" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="2" />
+            <state vertical-scroll-proportion="-9.916667" vertical-offset="227" max-vertical-offset="1155">
+              <caret line="36" column="107" selection-start-line="36" selection-start-column="107" selection-end-line="36" selection-end-column="107" />
               <folding>
-                <marker date="1462551002000" expanded="true" signature="273:348" placeholder="SELECT name,..GaugeAgg_View..." />
-                <marker date="1462551002000" expanded="true" signature="830:930" placeholder="SELECT name,..Gauge_View..." />
-                <marker date="1462551002000" expanded="true" signature="1056:1142" placeholder="SELECT name,..Gauge_View..." />
-                <marker date="1462551002000" expanded="true" signature="1125:1205" placeholder="SELECT name,..Gauge_View..." />
+                <marker date="1462610572000" expanded="true" signature="216:316" placeholder="SELECT name,..Gauge_View..." />
+                <marker date="1462610572000" expanded="true" signature="821:918" placeholder="SELECT name,..GaugeAgg_View..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getCombinedValue.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/gauge/php/highest/getCombinedValue.php">
+      <file leaf-file-name="median.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/gauge/extensions/median.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4989224" vertical-offset="437" max-vertical-offset="1365">
-              <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
-              <folding>
-                <marker date="1462551164000" expanded="true" signature="273:349" placeholder="SELECT name,..GaugeAgg_View..." />
-                <marker date="1462551164000" expanded="true" signature="837:937" placeholder="SELECT name,..Gauge_View..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/gauge/php/mean/getData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.375" vertical-offset="270" max-vertical-offset="1275">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="75" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.016163792" vertical-offset="0" max-vertical-offset="928">
+              <caret line="1" column="138" selection-start-line="1" selection-start-column="138" selection-end-line="1" selection-end-column="138" />
               <folding />
             </state>
           </provider>
@@ -141,9 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/html/timer/php/combined/getConnectionTypes.php" />
-        <option value="$PROJECT_DIR$/html/timer/php/devcon/getDevices.php" />
-        <option value="$PROJECT_DIR$/html/timer/php/device/getDevices.php" />
         <option value="$PROJECT_DIR$/html/timer/php/vercon/getConnectionTypes.php" />
         <option value="$PROJECT_DIR$/html/timer/php/vercon/getVersions.php" />
         <option value="$PROJECT_DIR$/html/timer/php/verdev/getDevices.php" />
@@ -192,6 +134,9 @@
         <option value="$PROJECT_DIR$/html/gauge/php/lowest/getCombinedValue.php" />
         <option value="$PROJECT_DIR$/html/gauge/php/highest/getData.php" />
         <option value="$PROJECT_DIR$/html/gauge/php/highest/getCombinedValue.php" />
+        <option value="$PROJECT_DIR$/html/gauge/php/median/getData.php" />
+        <option value="$PROJECT_DIR$/html/gauge/php/median/getCombinedValue.php" />
+        <option value="$PROJECT_DIR$/html/gauge/extensions/median.html" />
       </list>
     </option>
   </component>
@@ -529,6 +474,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="gauge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Backend + Dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="counter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -653,7 +620,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -700,13 +667,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/timer/php/verdev/getData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34460196" vertical-offset="119" max-vertical-offset="1200">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/timer/php/devcon/getData.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5070883" vertical-offset="0" max-vertical-offset="1230">
@@ -1060,55 +1020,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/gauge/php/median/getData.php">
+    <entry file="file://$PROJECT_DIR$/html/gauge/php/highest/getCombinedValue.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.51508623" vertical-offset="422" max-vertical-offset="1365">
+          <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
           <folding>
-            <marker date="1455806812000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Gauge_View..." />
+            <marker date="1462551164000" expanded="true" signature="-1:-1" placeholder="SELECT name,..GaugeAgg_View..." />
+            <marker date="1462551164000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Gauge_View..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/gauge/php/median/getCombinedValue.php">
+    <entry file="file://$PROJECT_DIR$/html/gauge/php/lowest/getCombinedValue.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7435345" vertical-offset="0" max-vertical-offset="928">
-          <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.17780173" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="16" column="69" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="2" />
           <folding>
-            <marker date="1455806818000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Gauge_View..." />
+            <marker date="1462551002000" expanded="true" signature="-1:-1" placeholder="SELECT name,..GaugeAgg_View..." />
+            <marker date="1462551002000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Gauge_View..." />
+            <marker date="1462551002000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Gauge_View..." />
+            <marker date="1462551002000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Gauge_View..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/getGaugeData.php">
+    <entry file="file://$PROJECT_DIR$/html/gauge/php/lowest/getData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1245">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.7252155" vertical-offset="332" max-vertical-offset="1365">
+          <caret line="72" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="2" />
           <folding>
-            <marker date="1462547461000" expanded="true" signature="229:374" placeholder="SELECT name,..GaugeAgg_View..." />
-            <marker date="1462547461000" expanded="true" signature="795:947" placeholder="SELECT name,..." />
+            <marker date="1462550666000" expanded="true" signature="-1:-1" placeholder="SELECT name,..GaugeAgg_View..." />
+            <marker date="1462550666000" expanded="true" signature="-1:-1" placeholder="SELECT name,..GaugeAgg_View..." />
+            <marker date="1462550666000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Gauge_View..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/gauge/php/mean/getCombinedValue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="1140">
-          <caret line="13" column="104" selection-start-line="13" selection-start-column="104" selection-end-line="13" selection-end-column="104" />
-          <folding>
-            <marker date="1462550077000" expanded="true" signature="-1:-1" placeholder="SELECT name,..GaugeAgg_View..." />
-            <marker date="1462550077000" expanded="true" signature="-1:-1" placeholder="SELECT name,..GaugeAgg_View..." />
-            <marker date="1462550077000" expanded="true" signature="-1:-1" placeholder="SELECT name,..GaugeAgg_View..." />
-            <marker date="1462550077000" expanded="true" signature="-1:-1" placeholder="SELECT name,..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/gauge/php/mean/getData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.375" vertical-offset="270" max-vertical-offset="1275">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="75" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,56 +1061,80 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/gauge/php/lowest/getData.php">
+    <entry file="file://$PROJECT_DIR$/php/getGaugeData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.041666" vertical-offset="332" max-vertical-offset="1365">
-          <caret line="72" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.2101293" vertical-offset="0" max-vertical-offset="1245">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
           <folding>
-            <marker date="1462550666000" expanded="true" signature="273:371" placeholder="SELECT name,..GaugeAgg_View..." />
-            <marker date="1462550666000" expanded="true" signature="273:371" placeholder="SELECT name,..GaugeAgg_View..." />
-            <marker date="1462550666000" expanded="true" signature="853:976" placeholder="SELECT name,..Gauge_View..." />
+            <marker date="1462547461000" expanded="true" signature="-1:-1" placeholder="SELECT name,..GaugeAgg_View..." />
+            <marker date="1462547461000" expanded="true" signature="-1:-1" placeholder="SELECT name,..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/gauge/php/mean/getData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8032787" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/gauge/php/mean/getCombinedValue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.016393442" vertical-offset="105" max-vertical-offset="1140">
+          <caret line="13" column="104" selection-start-line="13" selection-start-column="104" selection-end-line="13" selection-end-column="104" />
+          <folding>
+            <marker date="1462550077000" expanded="true" signature="-1:-1" placeholder="SELECT name,..GaugeAgg_View..." />
+            <marker date="1462550077000" expanded="true" signature="-1:-1" placeholder="SELECT name,..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/gauge/php/highest/getData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.291666" vertical-offset="512" max-vertical-offset="1440">
+        <state vertical-scroll-proportion="0.5247845" vertical-offset="488" max-vertical-offset="1440">
           <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
           <folding>
             <element signature="e#6#91#0#PHP" expanded="true" />
-            <marker date="1462551084000" expanded="true" signature="273:372" placeholder="SELECT name,..GaugeAgg_View..." />
-            <marker date="1462551084000" expanded="true" signature="860:983" placeholder="SELECT name,..Gauge_View..." />
+            <marker date="1462551084000" expanded="true" signature="-1:-1" placeholder="SELECT name,..GaugeAgg_View..." />
+            <marker date="1462551084000" expanded="true" signature="-1:-1" placeholder="SELECT name,..Gauge_View..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/gauge/php/lowest/getCombinedValue.php">
+    <entry file="file://$PROJECT_DIR$/html/gauge/php/median/getData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1365">
-          <caret line="16" column="69" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="2" />
+        <state vertical-scroll-proportion="-8.041667" vertical-offset="287" max-vertical-offset="1215">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="59" selection-end-column="1" />
           <folding>
-            <marker date="1462551002000" expanded="true" signature="273:348" placeholder="SELECT name,..GaugeAgg_View..." />
-            <marker date="1462551002000" expanded="true" signature="830:930" placeholder="SELECT name,..Gauge_View..." />
-            <marker date="1462551002000" expanded="true" signature="1056:1142" placeholder="SELECT name,..Gauge_View..." />
-            <marker date="1462551002000" expanded="true" signature="1125:1205" placeholder="SELECT name,..Gauge_View..." />
+            <marker date="1462610494000" expanded="true" signature="273:396" placeholder="SELECT name,..Gauge_View..." />
+            <marker date="1462610494000" expanded="true" signature="953:1073" placeholder="SELECT name,..GaugeAgg_View..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/gauge/php/highest/getCombinedValue.php">
+    <entry file="file://$PROJECT_DIR$/html/gauge/php/median/getCombinedValue.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4989224" vertical-offset="437" max-vertical-offset="1365">
-          <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+        <state vertical-scroll-proportion="-9.916667" vertical-offset="227" max-vertical-offset="1155">
+          <caret line="36" column="107" selection-start-line="36" selection-start-column="107" selection-end-line="36" selection-end-column="107" />
           <folding>
-            <marker date="1462551164000" expanded="true" signature="273:349" placeholder="SELECT name,..GaugeAgg_View..." />
-            <marker date="1462551164000" expanded="true" signature="837:937" placeholder="SELECT name,..Gauge_View..." />
+            <marker date="1462610572000" expanded="true" signature="216:316" placeholder="SELECT name,..Gauge_View..." />
+            <marker date="1462610572000" expanded="true" signature="821:918" placeholder="SELECT name,..GaugeAgg_View..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/gauge/extensions/median.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.016163792" vertical-offset="0" max-vertical-offset="928">
+          <caret line="1" column="138" selection-start-line="1" selection-start-column="138" selection-end-line="1" selection-end-column="138" />
+          <folding />
         </state>
       </provider>
     </entry>
