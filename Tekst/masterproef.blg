@@ -5,46 +5,47 @@ A level-1 auxiliary file: context.aux
 A level-1 auxiliary file: doelstelling.aux
 A level-1 auxiliary file: architectuur.aux
 A level-1 auxiliary file: implementatie.aux
+A level-1 auxiliary file: evaluatie.aux
 The style file: abbrv.bst
 Database file #1: referenties.bib
-You've used 4 entries,
+You've used 7 entries,
             2118 wiz_defined-function locations,
-            523 strings with 4624 characters,
-and the built_in function-call counts, 1259 in all, are:
-= -- 122
-> -- 54
+            536 strings with 4831 characters,
+and the built_in function-call counts, 1851 in all, are:
+= -- 175
+> -- 75
 < -- 1
-+ -- 22
-- -- 18
-* -- 61
-:= -- 202
-add.period$ -- 13
-call.type$ -- 4
-change.case$ -- 21
++ -- 31
+- -- 24
+* -- 76
+:= -- 300
+add.period$ -- 20
+call.type$ -- 7
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 46
-empty$ -- 111
-format.name$ -- 18
-if$ -- 277
+cite$ -- 7
+duplicate$ -- 67
+empty$ -- 177
+format.name$ -- 24
+if$ -- 408
 int.to.chr$ -- 0
-int.to.str$ -- 4
+int.to.str$ -- 7
 missing$ -- 1
-newline$ -- 23
-num.names$ -- 8
-pop$ -- 36
+newline$ -- 36
+num.names$ -- 14
+pop$ -- 62
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 26
 quote$ -- 0
-skip$ -- 45
+skip$ -- 69
 stack$ -- 0
-substring$ -- 60
-swap$ -- 16
+substring$ -- 75
+swap$ -- 19
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 28
 warning$ -- 0
-while$ -- 11
-width$ -- 5
-write$ -- 41
+while$ -- 17
+width$ -- 8
+write$ -- 64

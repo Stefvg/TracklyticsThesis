@@ -4,7 +4,7 @@
  * Created by stefvangils on 14/11/15.
  */
 (function(){
-    var app = angular.module('MeterDetail', ['devices', 'versions', 'combined', 'combinedReverse', 'data']);
+    var app = angular.module('MeterDetail', ['devices', 'versions', 'combined', 'combinedReverse']);
 
     app.controller("AppController", [function(){
         var type = location.search.split('type=')[1];
@@ -44,13 +44,6 @@
         return {
             restrict: 'E',
             templateUrl: "./extensions/combinedReverse.html"
-        };
-    });
-
-    app.directive("data", function() {
-        return {
-            restrict: 'E',
-            templateUrl: "./extensions/data.html"
         };
     });
 

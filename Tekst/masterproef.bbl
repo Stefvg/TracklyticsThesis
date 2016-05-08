@@ -1,11 +1,24 @@
 \begin{thebibliography}{1}
 
+\bibitem{AngryBirds}
+BoloYoung.
+\newblock Angry birds.
+\newblock https://github.com/BoloYoung/AngryBirds.
+
+\bibitem{CocoaPods}
+CocoaPods.
+\newblock https://www.cocoapods.org.
+
 \bibitem{fu2013people}
 B.~Fu, J.~Lin, L.~Li, C.~Faloutsos, J.~Hong, and N.~Sadeh.
 \newblock Why people hate your app: Making sense of user feedback in a mobile
   app store.
 \newblock In {\em Proceedings of the 19th ACM SIGKDD international conference
   on Knowledge discovery and data mining}, pages 1276--1284. ACM, 2013.
+
+\bibitem{Tracklytics}
+S.~V. Gils.
+\newblock https://github.com/Stefvg/Tracklytics.
 
 \bibitem{AppSucks}
 K.~MacLaine.

@@ -23,7 +23,18 @@ $array = array();
 while ($row = mysql_fetch_assoc($result)) {
     array_push($array, $row['version']);
 }
-echo(json_encode($array));
+$query = "SELECT version FROM MeterAgg_View WHERE type='$type' AND appName='$app' ORDER BY version ASC";
+$result = mysql_query($query);
+if (!$result) {
+    die('Invalid query: ' . mysql_error());
+}
+
+while ($row = mysql_fetch_assoc($result)) {
+    array_push($array, $row['version']);
+}
+rsort($array);
+
+echo(json_encode(array_unique($array)));
 
 
 ?>

@@ -20,12 +20,12 @@ $maxValue = $value + $offset;
 
 
 if(strlen($date) <= 10){
-    $query = "SELECT AVG(value) AS avg FROM Meter_View WHERE type='$type' AND DATE(date)='$date' AND appName='$app'";
+    $query = "SELECT value FROM Meter_View WHERE type='$type' AND DATE(date)='$date' AND appName='$app'";
 }else {
    // $tmpDate = date("Y-m-d H:i:s", $date);
     $nextDate = strtotime($date) + 3*3600;
     $nextDate = date("Y-m-d H:i:s", $nextDate);
-    $query = "SELECT AVG(value) AS avg FROM Meter_View WHERE type='$type' AND date >= '$date' AND date <= '$nextDate' AND appName='$app'";
+    $query = "SELECT value FROM Meter_View WHERE type='$type' AND date >= '$date' AND date <= '$nextDate' AND appName='$app'";
 }
 
 
@@ -34,11 +34,37 @@ if (!$result) {
     die('Invalid query: ' . mysql_error());
 }
 
+$tempAverage = 0;
+$count = 0;
+while ($row = mysql_fetch_assoc($result)) {
+    $mean = $row['value'];
+    $tempAverage = ($count*$tempAverage + $mean) / ($count + 1);
+    $count = $count + 1;
+}
 
 
+if(strlen($date) <= 10){
+    $query = "SELECT mean, numberOfMeasurements FROM MeterAgg_View WHERE type='$type' AND DATE(date)='$date' AND appName='$app'";
+}else {
+    // $tmpDate = date("Y-m-d H:i:s", $date);
+    $nextDate = strtotime($date) + 3*3600;
+    $nextDate = date("Y-m-d H:i:s", $nextDate);
+    $query = "SELECT mean, numberOfMeasurements FROM MeterAgg_View WHERE type='$type' AND date >= '$date' AND date <= '$nextDate' AND appName='$app'";
+}
 
-$row = mysql_fetch_assoc($result);
-$object['avg'] = doubleval($row['avg']);
+
+$result = mysql_query($query);
+while ($row = mysql_fetch_assoc($result)) {
+    $mean = $row['mean'];
+    $numberOfMeasurements = doubleval($row['numberOfMeasurements']);
+    if($numberOfMeasurements && $numberOfMeasurements>0){
+        $tempAverage = ($count*$tempAverage + $mean*$numberOfMeasurements) / ($count + $numberOfMeasurements);
+        $count = $count + $numberOfMeasurements;
+    }
+}
+
+
+$object['avg'] = $tempAverage;
 $object['number2'] = $number2;
 $output[$number] =  $object;
 

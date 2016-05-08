@@ -51,37 +51,42 @@
 \contentsline {subsection}{\numberline {4.1.3}Dashboard}{23}{subsection.4.1.3}
 \contentsline {subsection}{\numberline {4.1.4}Connectie tussen Front end en Back end}{25}{subsection.4.1.4}
 \contentsline {section}{\numberline {4.2}Klassediagram}{25}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}TrackLytics}{26}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Core}{26}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.1}TrackLytics}{25}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Core}{25}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Counter}{26}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Gauge}{26}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}Histogram}{26}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Timer}{26}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.6}Timer}{27}{subsection.4.2.6}
 \contentsline {subsection}{\numberline {4.2.7}Meter}{27}{subsection.4.2.7}
 \contentsline {subsubsection}{Meter}{27}{section*.19}
 \contentsline {subsubsection}{MeterController}{27}{section*.20}
 \contentsline {subsubsection}{MeterInterface}{27}{section*.21}
-\contentsline {section}{\numberline {4.3}Documentatie}{27}{section.4.3}
+\contentsline {section}{\numberline {4.3}Documentatie}{28}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Installatie}{28}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Initialisatie}{28}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Counter}{28}{subsection.4.3.3}
-\contentsline {paragraph}{Parameters}{28}{section*.22}
+\contentsline {paragraph}{Parameters}{29}{section*.22}
 \contentsline {subsubsection}{CounterObject}{29}{section*.23}
 \contentsline {subsection}{\numberline {4.3.4}Gauge}{29}{subsection.4.3.4}
 \contentsline {paragraph}{Parameters}{29}{section*.24}
-\contentsline {subsection}{\numberline {4.3.5}Histogram}{29}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.5}Histogram}{30}{subsection.4.3.5}
 \contentsline {paragraph}{Parameters}{30}{section*.25}
 \contentsline {subsection}{\numberline {4.3.6}Timer}{30}{subsection.4.3.6}
 \contentsline {paragraph}{Parameters}{30}{section*.26}
 \contentsline {subsection}{\numberline {4.3.7}Meter}{30}{subsection.4.3.7}
-\contentsline {paragraph}{Parameters}{30}{section*.27}
+\contentsline {paragraph}{Parameters}{31}{section*.27}
 \contentsline {subsubsection}{MeterController}{31}{section*.28}
 \contentsline {section}{\numberline {4.4}Openstaande uitdagingen}{31}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}AB Testing}{31}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Operating systems}{31}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Operating systems}{32}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Aggregatie}{32}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Alarmen}{33}{subsection.4.4.4}
-\contentsline {chapter}{Bibliografie}{35}{section*.30}
+\contentsline {chapter}{\chapternumberline {5}Evaluatie}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Performance}{35}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Call duration}{36}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Schaalbaarheid}{38}{section.5.2}
+\contentsline {section}{\numberline {5.3}Developer effort}{38}{section.5.3}
+\contentsline {chapter}{Bibliografie}{39}{section*.30}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

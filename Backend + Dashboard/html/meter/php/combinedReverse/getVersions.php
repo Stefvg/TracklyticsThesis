@@ -28,7 +28,17 @@ while ($row = mysql_fetch_assoc($result)) {
     array_push($array, $row['version']);
 }
 
-$output[$number] = $array;
+$query = "SELECT DISTINCT version FROM MeterAgg_View WHERE type='$type' AND device='$device' AND appName='$app' ORDER BY version DESC";
+$result = mysql_query($query);
+if (!$result) {
+    die('Invalid query: ' . mysql_error());
+}
+
+while ($row = mysql_fetch_assoc($result)) {
+    array_push($array, $row['version']);
+}
+rsort($array);
+$output[$number] = array_unique($array);
 echo(json_encode($output));
 
 ?>

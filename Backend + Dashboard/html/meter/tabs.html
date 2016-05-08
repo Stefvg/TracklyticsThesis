@@ -22,9 +22,6 @@
                             <li ng-class="{ current:tab.isSet(4) }">
                             <a href ng-click="tab.setTab(4); app.refreshSlider()">Dev-Ver</a>
                             </li>
-                            <li ng-class="{ current:tab.isSet(5) }">
-                                <a href ng-click="tab.setTab(5); app.refreshSlider()">Data</a>
-                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -40,7 +37,6 @@
     <versions ng-show="tab.isSet(2)" ng-controller="VersionController as version"></versions>
     <combined ng-show="tab.isSet(3)" ng-controller="CombinedController as combined"></combined>
     <combined-reverse ng-show="tab.isSet(4)" ng-controller="CombinedReverseController as combinedReverse"></combined-reverse>
-    <data ng-show="tab.isSet(5)" ng-controller="DataController as data"></data>
     <!--
 
 

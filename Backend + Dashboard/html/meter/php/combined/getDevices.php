@@ -26,7 +26,18 @@ $array = array();
 while ($row = mysql_fetch_assoc($result)) {
     array_push($array, $row['device']);
 }
-$output[$number] = $array;
+$query = "SELECT device FROM MeterAgg_View WHERE type='$type' AND appName='$app' AND version='$version'";
+$result = mysql_query($query);
+if (!$result) {
+    die('Invalid query: ' . mysql_error());
+}
+
+while ($row = mysql_fetch_assoc($result)) {
+    array_push($array, $row['device']);
+}
+
+sort($array);
+$output[$number] = array_unique($array);
 echo(json_encode($output));
 
 

@@ -23,7 +23,19 @@ $array = array();
 while ($row = mysql_fetch_assoc($result)) {
     array_push($array, $row['type']);
 }
-echo(json_encode($array));
+
+$query = "SELECT type FROM MeterAgg_View WHERE appName='$app' ORDER BY type ASC";
+$result = mysql_query($query);
+if (!$result) {
+    die('Invalid query: ' . mysql_error());
+}
+
+
+while ($row = mysql_fetch_assoc($result)) {
+    array_push($array, $row['type']);
+}
+
+echo(json_encode(array_unique($array)));
 
 
 ?>

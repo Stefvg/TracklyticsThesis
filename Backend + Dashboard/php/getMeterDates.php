@@ -39,6 +39,21 @@ while ($row = mysql_fetch_assoc($result)) {
     array_push($array, ($date));
 }
 
+if($min && $max){
+    $query = "SELECT DISTINCT date FROM MeterAgg_View WHERE type='$type' AND DATE(date) <='$max' AND DATE(date) >= '$min' AND appName='$app' ORDER BY date ASC";
+}else {
+    $query = "SELECT DISTINCT date FROM MeterAgg_View WHERE type='$type' AND appName='$app' ORDER BY date ASC";
+}
+
+
+$result = mysql_query($query);
+while ($row = mysql_fetch_assoc($result)) {
+    $date = $row['date'];
+    $date = date("Y-m-d", strtotime($date));
+    array_push($array, ($date));
+}
+
+
 $array = array_values(array_unique($array));
 $outputArray = $array;
 if(sizeof($array) < 3){

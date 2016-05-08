@@ -16,7 +16,7 @@ $databaseID = $_POST['databaseID'];
 $metadataID = getMetadataID();
 
 if($databaseID=="") {
-    $query = "INSERT INTO Meter(type, name, value, date, UUID, metadataID) VALUES('$type','$name','$value', '$date', '$UUID', '$metadataID')";
+    $query = "INSERT INTO Meter(type, value, date, UUID, metadataID) VALUES('$type','$value', '$date', '$UUID', '$metadataID')";
     $result = mysql_query($query);
     $id = mysql_insert_id();
     echo($id . "#SUCCESS");
