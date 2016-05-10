@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{iOSMS}
+Apple.
+\newblock App store.
+\newblock https://developer.apple.com/support/app-store/.
+
 \bibitem{AngryBirds}
 BoloYoung.
 \newblock Angry birds.
@@ -19,6 +24,13 @@ B.~Fu, J.~Lin, L.~Li, C.~Faloutsos, J.~Hong, and N.~Sadeh.
 \bibitem{Tracklytics}
 S.~V. Gils.
 \newblock https://github.com/Stefvg/Tracklytics.
+
+\bibitem{AndroidMS}
+Y.~Heisler.
+\newblock As ios 9 adoption reaches 79%, most android users are still running a
+  painfully old os.
+\newblock
+  http://bgr.com/2016/03/15/as-ios-9-adoption-reaches-79-most-android-users-are-still-running-a-painfully-old-os/.
 
 \bibitem{AppSucks}
 K.~MacLaine.

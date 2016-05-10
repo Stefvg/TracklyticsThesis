@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.11.14)  8 MAY 2016 22:59
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.11.14)  10 MAY 2016 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1713,42 +1713,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 55.
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 70.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 70.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 70.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 70.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 70.
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+
+ []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 76.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 76.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 76.
 File: Afbeeldingen/Implementatie/ClassDiagram.png Graphic file (type QTm)
 <use  "Afbeeldingen/Implementatie/ClassDiagram.png" >
-Overfull \hbox (73.29375pt too wide) in paragraph at lines 67--68
+Overfull \hbox (73.29375pt too wide) in paragraph at lines 79--80
  [][] 
  []
 
@@ -1756,198 +1797,162 @@ Overfull \hbox (73.29375pt too wide) in paragraph at lines 67--68
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 79.
-[25]
+(babel)             in language  on input line 94.
+[26]
+Underfull \vbox (badness 1735) has occurred while \output is active []
+
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 88.
- [26]
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 106.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 106.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 106.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 106.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 109.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 109.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 109.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 109.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 109.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 109.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 109.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 103.
  [27]
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 117.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 117.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 117.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 117.
+
+Underfull \vbox (badness 1348) has occurred while \output is active []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 120.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 120.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 120.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 120.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 120.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 120.
+ [28]
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 125.
-[28]
+(babel)             in language  on input line 136.
+[29]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 149.
- [29]
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 174.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 174.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 174.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 174.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 174.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 174.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 174.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 160.
  [30]
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 186.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 186.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 186.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 186.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 186.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 186.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 186.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 186.
+ [31]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
 
-Overfull \hbox (9.00995pt too wide) in paragraph at lines 182--185
+Overfull \hbox (9.00995pt too wide) in paragraph at lines 193--196
 \T1/lmtt/m/n/10.95 ble:(id<MeterInterface>) in-ter-face wit-h-Ti-meIn-ter-val:(
 NSTimeInterval) in-
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 187.
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
-
- []
-
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 191.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 191.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 191.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 191.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 191.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 191.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 191.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 191.
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
+(babel)             in language  on input line 198.
 
 Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
@@ -1984,63 +1989,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 209.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 209.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 209.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 209.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 214.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 214.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 214.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 214.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 214.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 214.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 214.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 214.
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 213.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 213.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 213.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 213.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 213.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 213.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 213.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 213.
+ [33]
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 220.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 220.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 220.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 220.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 225.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 225.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 225.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 225.
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
+
+ []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 243.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 243.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 243.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 243.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 243.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 243.
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
@@ -2061,31 +2110,10 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 81.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 81.
- [35]
+ [36]
 \openout2 = `evaluatie.aux'.
 
  (./evaluatie.tex
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 1.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 1.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 1.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 1.
- [36
-
-
-
-]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining dutch shorthand "~
@@ -2136,7 +2164,11 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 15.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 15.
- [37]
+ [37
+
+
+
+]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining dutch shorthand "~
@@ -2183,13 +2215,25 @@ Package babel Info: Redefining dutch shorthand "Y
 
 bibitemlist
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--34
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
+[]\T1/lmr/m/n/10.95 Y. Heis-ler.  As ios 9 adop-tion re-a-ches 79pain-fully old
+ os.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
+\T1/lmr/m/n/10.95 http://bgr.com/2016/03/15/as-ios-9-adoption-reaches-79-most-a
+ndroid-users-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--46
 []\T1/lmr/m/n/10.95 NetMarketShare.  Mo-bile/tablet ope-ra-ting sy-s-tem mar-ke
 t
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--34
+Underfull \hbox (badness 10000) in paragraph at lines 42--46
 \T1/lmr/m/n/10.95 share.  https://www.netmarketshare.com/operating-system-marke
 t-
  []
@@ -2253,12 +2297,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 102.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 102.
  ) 
 Here is how much of TeX's memory you used:
- 12819 strings out of 493706
- 180693 string characters out of 6145768
- 396439 words of memory out of 5000000
- 15993 multiletter control sequences out of 15000+600000
+ 12821 strings out of 493706
+ 180711 string characters out of 6145768
+ 396497 words of memory out of 5000000
+ 15995 multiletter control sequences out of 15000+600000
  62245 words of font info for 46 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 35i,12n,48p,1959b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,11n,48p,1959b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on masterproef.pdf (46 pages).
