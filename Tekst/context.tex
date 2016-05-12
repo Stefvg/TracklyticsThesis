@@ -1,4 +1,47 @@
 \chapter{Context}
+Zoals de titel al aangeeft is deze thesis gebaseerd op het concept DevOps. DevOps staat voor Developer Operations en probeert de communicatie, samenwerking en integratie tussen developers (Dev) en IT operation professionals (Ops) te verbeteren \cite{waller2015including}. Wat DevOps is kan uitgelegd worden aan de hand van volgend citaat: \\
+
+\textit{DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.\\
+Donovan Brown, DevOps Senior Program Manager at Microsoft} \cite{de2016devops}\\
+
+Met DevOps willen developers en managers het ontwikkelingsproces van software versnellen. Het DevOps proces bestaat uit een set van verschillende tools om dit doel te bereiken, namelijk \cite{DevOpsWiki}:
+\begin{itemize}
+\item Code: code ontwikkeling en continuous integration tools
+\item Build: version control, samenvoegen van code
+\item Test: het testen van de applicatie om bugs en performance issues eruit te halen
+\item Package: het samenvoegen van de code om een software pakket van te maken
+\item Release: het uitgeven van de software, automatisatie hiervan
+\item Configure: het configureren van de infrastructuur
+\item Monitor: Applications performance monitoring, End user ervaring
+\end{itemize}
+
+In deze thesis wordt er gefocust op het monitoren van de software om developers te helpen bij het verbeteren van de software. Het monitoren van software baseert zich op twee eigenschappen van software systemen, namelijk het meten van performance en het meten van de end user ervaring met de software. Door de software te monitoren kan men aan Feedback-Driven Development doen \cite{cito2015runtime}. Feedback-Driven development is het integreren van de runtime monitoring data in de tools die developers gebruiken om de software te ontwikkelen (bv. IDE). \\
+
+Runtime monitoring is het monitoren van een software systeem dat in productie genomen is om zo problemen te ontdekken die in de testfase niet uit het systeem gehaald konden worden. Met een systeem om de software at runtime te monitoren kunnen de developers en managers ontdekken hoe gebruikers de software werkelijk gebruiken. Runtime monitoring systemen bestaan al langer, enkele voorbeelden zijn New Relic \cite{NewRelic}, Google Analytics \cite{GooAna} en Metrics \cite{Metrics}. Dit soort systemen collecteren data uit een software systeem en geven deze weer in een dashboard. \\
+
+Continuous delivery van software is het onmiddelijk aanleveren van nieuwe features of oplossingen voor problemen zonder een echt release plan en is een onderdeel van agile software development \cite{beck2001manifesto} \cite{fowler2001agile}. Agile software development methodes moeten ervoor zorgen dat de kost om tijdens het project zaken te veranderen zo laag mogelijk blijft \cite{highsmith2001agile}. Het baseert zich op twee concepten: de meedogenloze eerlijkheid van werkende code en de effectiviteit van mensen die met goodwill samenwerken. DevOps is ontstaan uit de toenemende populariteit van agile software development. Hoewel DevOps en agile development soortgelijkend zijn, verschillen ze op een aantal belangrijke aspecten. Agile development is een verandering van denkwijze, terwijl DevOps een verandering in de cultuur van de organisatie is. \\
+
+Deze thesis situeert zich in de wereld van mobiele applicaties. Het ontwikkelen van mobiele applicaties is in vele opzichten gelijkend aan het ontwikkelen van software voor andere embedded systemen. Ze delen de volgende gemeenschappelijke problemen: security, performance, betrouwbaarheid en gelimiteerde opslagruimte \cite{wasserman2010software}. Het ontwikkelen van mobiele applicaties verschilt van het ontwikkelen van applicaties voor embedded systemen in de volgende aspecten:
+\begin{itemize}
+\item Potenti\"ele samenwerking tussen verschillende applicaties
+\item Het aanroepen en gebruiken van verschillende sensoren
+\item Native en hybrid (mobile web) applicaties. Hybrid applicaties kunnen in een mobiele webbrowser uitgevoerd worden, dit is onmogelijk bij embedded systemen.
+\item Ondersteuning van verschillende hardware en besturingssystemen
+\item Security tegen malware
+\item User Interface. Een embedded applicatie kan eender welke UI hebben, terwijl de een mobiele applicatie een deel van het design uit het systeem zelf moet halen (denk maar aan een statusbar met de tijd in, de standaard terug knoppen, ...)
+\item Test complexiteit. Een hybrid mobiele applicatie testen is complex, omdat deze de uitdagingen van web applicaties delen, maar ook rekening moeten houden met de eigenschappen van mobiele telefoonnetwerken.
+\item Batterijverbruik. Embedded applicaties kunnen geoptimaliseerd worden om zo weinig mogelijk batterij te verbruiken, terwijl mobiele applicaties deels afhankelijk zijn van het resource management van het besturingssysteem.
+\end{itemize}
+
+
+Het doel is om de DevOps concepten te gebruiken in mobiele applicaties. In dit geval dus het monitoren van mobiele applicaties. Er zijn al enkele bestaande oplossingen, namelijk New Relic \cite{NewRelic} en Google Analytics \cite{GooAna}. \\ 
+
+New Relic is een closed source mobiele library en kiest ervoor om zich puur te focussen op prestaties. De library genereert crash rapporten en gedetailleerde performance rapporten en geeft deze weer in een online dashboard. \\
+
+Google Analytics is een closed source library ontworpen door Google, inc die ingebouwd kan worden in een mobiele applicatie. Google Analytics focust zich vooral op het monitoren van het gebruik van de applicaties, zoals welke schermen men het vaakst bezocht, welke acties de gebruiker onderneemt in de applicatie, etc.\\
+
+In deze thesis wordt er gefocust op het monitoring aspect van DevOps in mobiele applicaties. In de rest van dit hoofdstuk wordt er gekeken naar de relevantie van het monitoren van mobiele applicaties. Er wordt afgesloten door te kijken naar een aantal development scenario's om de relevantie van het monitoren van mobiele applicaties te ondersteunen.
+
 
 \section{Relevantie monitoren mobiele applicaties}
 Op het moment van schrijven is het 2016; het jaar waarin ongeveer \'e\'en op de vijf mensen een smartphone gebruikt in het dagelijkse leven \cite{SmartphoneUsers}. Een smartphone bevat meerdere mobiele applicaties, ontwikkeld door developers wereldwijd. In de App Store van Apple staan ongeveer 1.5 miljoen verschillende applicaties. Een karakteristiek van de mobiele app wereld is dat er voor een bepaalde app vaak een of meerdere alternatieven bestaan. Dit wil zeggen dat de eigenaars van de app zich moeten proberen onderscheiden van de andere apps. Dat kan op meerdere manieren: door een praktisch design, door een snellere app te hebben, etc. Door tijd en/of geld te investeren in het verbeteren van de applicatie kan de applicatie de meest gebruikte applicatie worden en blijven in zijn categorie. \\

@@ -1,18 +1,50 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Metrics}
+Metrics.
+\newblock https://dropwizard.github.io/metrics/3.1.0/.
+
+\bibitem{NewRelic}
+New relic.
+\newblock http://newrelic.com.
 
 \bibitem{iOSMS}
 Apple.
 \newblock App store.
 \newblock https://developer.apple.com/support/app-store/.
 
+\bibitem{beck2001manifesto}
+K.~Beck, M.~Beedle, A.~Van~Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
+  J.~Grenning, J.~Highsmith, A.~Hunt, R.~Jeffries, et~al.
+\newblock Manifesto for agile software development.
+\newblock 2001.
+
 \bibitem{AngryBirds}
 BoloYoung.
 \newblock Angry birds.
 \newblock https://github.com/BoloYoung/AngryBirds.
 
+\bibitem{cito2015runtime}
+J.~Cito, P.~Leitner, H.~C. Gall, A.~Dadashi, A.~Keller, and A.~Roth.
+\newblock Runtime metric meets developer: building better cloud applications
+  using feedback.
+\newblock In {\em 2015 ACM International Symposium on New Ideas, New Paradigms,
+  and Reflections on Programming and Software (Onward!)}, pages 14--27. ACM,
+  2015.
+
 \bibitem{CocoaPods}
 CocoaPods.
 \newblock https://www.cocoapods.org.
+
+\bibitem{de2016devops}
+W.~de~Kort.
+\newblock What is devops?
+\newblock In {\em DevOps on the Microsoft Stack}, pages 3--8. Springer, 2016.
+
+\bibitem{fowler2001agile}
+M.~Fowler and J.~Highsmith.
+\newblock The agile manifesto.
+\newblock {\em Software Development}, 9(8):28--35, 2001.
 
 \bibitem{fu2013people}
 B.~Fu, J.~Lin, L.~Li, C.~Faloutsos, J.~Hong, and N.~Sadeh.
@@ -25,12 +57,22 @@ B.~Fu, J.~Lin, L.~Li, C.~Faloutsos, J.~Hong, and N.~Sadeh.
 S.~V. Gils.
 \newblock https://github.com/Stefvg/Tracklytics.
 
+\bibitem{GooAna}
+Google.
+\newblock Google analytics.
+\newblock http://www.google.com/analytics/.
+
 \bibitem{AndroidMS}
 Y.~Heisler.
 \newblock As ios 9 adoption reaches 79%, most android users are still running a
   painfully old os.
 \newblock
   http://bgr.com/2016/03/15/as-ios-9-adoption-reaches-79-most-android-users-are-still-running-a-painfully-old-os/.
+
+\bibitem{highsmith2001agile}
+J.~Highsmith and A.~Cockburn.
+\newblock Agile software development: The business of innovation.
+\newblock {\em Computer}, 34(9):120--127, 2001.
 
 \bibitem{AppSucks}
 K.~MacLaine.
@@ -49,5 +91,22 @@ Statistica.
 \newblock Number of smartphone users worldwide from 2014 to 2019 (in millions).
 \newblock
   http://www.statista.com/statistics/330695/number-of-smartphone-users-worldwide/.
+
+\bibitem{waller2015including}
+J.~Waller, N.~C. Ehmke, and W.~Hasselbring.
+\newblock Including performance benchmarks into continuous integration to
+  enable devops.
+\newblock {\em ACM SIGSOFT Software Engineering Notes}, 40(2):1--4, 2015.
+
+\bibitem{wasserman2010software}
+A.~I. Wasserman.
+\newblock Software engineering issues for mobile application development.
+\newblock In {\em Proceedings of the FSE/SDP workshop on Future of software
+  engineering research}, pages 397--400. ACM, 2010.
+
+\bibitem{DevOpsWiki}
+Wikipedia.
+\newblock Devops.
+\newblock https://en.wikipedia.org/wiki/DevOps.
 
 \end{thebibliography}
