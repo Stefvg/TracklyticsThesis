@@ -1,0 +1,79 @@
+\chapter{Tutorial}\label{documentatie}
+In deze sectie wordt er uit de doeken gedaan hoe je als developer de Tracklytics library in je applicatie kunt inbouwen. 
+
+\section{Installatie}
+In deze sectie wordt besproken hoe de installatie van de library in de applicatie in zijn werk gaat. \\
+
+Om de library snel en gemakkelijk in een applicatie in te bouwen is ervoor gekozen om CocoaPods te gebruiken \cite{CocoaPods}. Dit is de standaard methode om externe libraries te gebruiken in iOS. De volgende stappen moeten gebeuren om de Tracklytics library in te bouwen in de applicatie. \\
+
+\noindent Allereerst moet er in de root folder van het project (via een terminal) van de applicatie \textit{pod init} uitgevoerd worden. Dit maakt een PodFile bestand aan. Dit bestand moet aangepast worden, het platform moet aangegeven worden als \textit{ios, 7.0} en tussen \textit{target 'AppName' do} en \textit{end} moet de volgende tekst komen: \textit{pod "Tracklytics"}. Cocoapods selecteert automatisch de laatste versie van de library. \\
+
+\noindent Om de library dan te installeren moet in de root folder het volgende commando (via een terminal) uitgevoerd worden: \textit{pod install}. Cocoapods installeert nu de library in de applicatie en zorgt dat alle dependencies geïnstalleerd worden. Dit commando genereert een nieuw project dat voortaan gebruikt moet worden in plaats van het andere project.
+
+
+
+\section{Initialisatie}
+De Tracklytics library moet bij het opstarten van de applicatie gestart worden om het synchronisatieproces te starten. De aanbevolen manier is om dit in de \texttt{\justify AppDelegate} klasse te doen in de \texttt{\justify (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions} methode. Deze methode wordt automatisch uitgevoerd nadat de applicatie opgestart is, in welke applicatie dan ook. In deze methode is het dus belangrijk om volgende code uit te voeren: \texttt{\justify [TrackLytics startTrackerWithAppCode:appCode withSyncInterval:interval];}. Deze code start het synchronisatieproces van de Tracklytics library. De parameter appCode stelt de unieke code voor die Tracklytics gebruikt voor het identificeren van de applicatie. De interval parameter geeft de tijd (in seconden) tussen twee synchronisatiecycli weer. 
+
+\section{Counter}
+Een counter kan aangemaakt worden met behulp van volgende call naar de Tracklytics library: \texttt{\justify [Tracklytics createNewCounterWithType:type withName:name withValue:value]}, de withValue:value is optioneel indien er een initi\"ele waarde in de counter moet staan. Deze methode geeft een CounterObject terug, wat besproken wordt in volgende sectie. \\
+
+\paragraph{Parameters}
+\begin{itemize}
+\item type: Het type evenement (bv. Button als er op een button geklikt wordt, vrij te kiezen door de developer). Deze parameter zorgt ervoor dat de data verdeeld wordt over de verschillende grafieken in het dashboard.
+\item name: De naam van het evenement (bv. de naam die de button heeft). Deze parameter zorgt ervoor dat de data in de grafieken verder opgedeeld worden per naam.
+\item value: De initi\"ele waarde die de counter moet hebben wanneer die gecre\"eerd wordt. Deze waarde is optioneel en is standaard 0 bij creatie.
+\end{itemize}
+
+\subsection{CounterObject}
+Bij de creatie van een Counter wordt er een CounterObject terug gegeven. Dit object kan gebruikt worden om evenementen te tellen. Een counter biedt een methode aan om de counter te verhogen: \texttt{inc} met een optionele waarde. Het object biedt ook een methode aan om de counter te verlangen: \texttt{dec}, ook met een optionele waarde. De Tracklytics library zorgt ervoor dat het CounterObject in sync blijft met de back end. 
+
+
+\section{Gauge}
+Aangezien een gauge waarde niet verandert in de tijd, is het niet nodig om hier, zoals bij de counter, een object terug te geven. De waarde moet maar een keer eventueel opgeslagen en doorgezonden worden naar de server. Om de waarde te verzamelen moet men de volgende methode uitvoeren: \texttt{\justify [Tracklytics createNewGaugeWithType:type withName:name withValue:value]}. 
+
+\paragraph{Parameters}
+\begin{itemize}
+\item type: Het type evenement (bv. Search Result bij een zoekopdracht). Deze parameter zorgt ervoor dat de data verdeeld wordt in verschillende secties in het dashboard.
+\item name: De naam van het evenement (bv. het ingevulde woord/zin in de zoekopdracht). Deze parameter zorgt ervoor dat de data in de verschillende secties verder opgedeeld worden per naam.
+\item value: De waarde die gesynchroniseerd moet worden naar de server (bv. het aantal resultaten van de zoekopdracht).
+\end{itemize}
+
+\section{Histogram}
+Een histogram heeft dezelfde eigenschappen als een gauge in termen van collectie van data in de Tracklytics library. Een histogram waarde verandert niet in de tijd en het is dus niet nodig om een object hiervan terug te geven. De methode die aangeroepen wordt verschilt enkel in de naam van de methode: \texttt{\justify  createNewHistogramWithType:type withName:name withValue:value}. 
+
+\paragraph{Parameters}
+\begin{itemize}
+\item type: Het type evenement. Deze parameter zorgt ervoor dat de data verdeeld wordt over de verschillende grafieken in het dashboard.
+\item name: De naam van het evenement. Deze parameter zorgt ervoor dat de data in de grafieken verder opgedeeld worden per naam.
+\item value: De waarde die gesynchroniseerd moet worden naar de server.
+\end{itemize}
+
+\section{Timer}
+Een timer meet de tijd dat een evenement nodig heeft. Om een timer aan te maken moet de volgende call gemaakt worden naar de Tracklytics library: \texttt{\justify [Tracklytics createNewTimerWithType:type withName:name]}.
+
+\paragraph{Parameters}
+\begin{itemize}
+\item type: Het type evenement. Deze parameter zorgt ervoor dat de data verdeeld wordt in verschillende secties in het dashboard.
+\item name: De naam van het evenement. Deze parameter zorgt ervoor dat de data in de secties verder opgedeeld worden per naam.
+\end{itemize} 
+
+Deze methode geeft een Timer object terug. Vanaf dat deze methode uitgevoerd is begint de timer te lopen. Deze blijft lopen tot de \texttt{\justify stop} methode aangeroepen wordt op het Timer object. De timer heeft dan een exacte waarde hoeveel tijd het evenement in beslag nam. Tracklytics houdt deze waarde bij en synchroniseert deze naar de server. 
+
+
+\section{Meter}
+Een meter is complexer dan alle andere meetobjecten in de Tracklytics library. Dit is omdat ervoor gekozen is om de mogelijkheid aan te bieden om data automatisch op een bepaald interval te collecteren. Zo moet de developer hier niet meer naar omkijken. Om dit te kunnen verwezenlijken is er een controller gemaakt, de MeterController, die de mogelijkheid biedt voor de automatische collectie van data en van de manuele invoer van data. Een MeterController can gecre\"eerd worden door de volgende call naar de Tracklytics library: \texttt{\justify [Tracklytics createNewMeter:type]}. 
+
+\paragraph{Parameters}
+\begin{itemize}
+\item type: Het type evenement. Deze parameter zorgt ervoor dat de data verdeeld wordt over de verschillende grafieken in het dashboard.
+\end{itemize}
+
+\subsection{MeterController}
+De metercontroller zorgt voor het managen van de meter values. Het is mogelijk om manueel data toe te voegen of automatisch de data te laten controlleren. \\
+
+Om data manueel toe te voegen moet de volgende methode uitgevoerd worden: \texttt{\justify addEntry: (float) value}. De value parameter is de waarde die moet toegevoegd worden aan de meter. \\
+
+Om de data automatisch te laten collecteren moet de methode \texttt{\justify addRepeatable:(id<MeterInterface>) interface withTimeInterval:(NSTimeInterval) interval} uitgevoerd worden. Deze neemt een object dat de MeterInterface implementeerd als parameter en een interval.\\
+Het MeterInterface object implementeerd de \texttt{\justify (float) getValue} methode die een float waarde terug geeft die de MeterController kan collecteren door die methode.\\
+Het interval geeft aan (in seconden) hoeveel tijd er tussen twee cyclussen zit waarin de waarde opgehaald wordt.

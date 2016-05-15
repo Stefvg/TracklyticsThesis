@@ -66,40 +66,40 @@
 \contentsline {subsubsection}{Meter}{30}{section*.24}
 \contentsline {subsubsection}{MeterController}{30}{section*.25}
 \contentsline {subsubsection}{MeterInterface}{30}{section*.26}
-\contentsline {section}{\numberline {4.3}Documentatie}{31}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Installatie}{31}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Initialisatie}{31}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Counter}{31}{subsection.4.3.3}
-\contentsline {paragraph}{Parameters}{32}{section*.27}
-\contentsline {subsubsection}{CounterObject}{32}{section*.28}
-\contentsline {subsection}{\numberline {4.3.4}Gauge}{32}{subsection.4.3.4}
-\contentsline {paragraph}{Parameters}{32}{section*.29}
-\contentsline {subsection}{\numberline {4.3.5}Histogram}{33}{subsection.4.3.5}
-\contentsline {paragraph}{Parameters}{33}{section*.30}
-\contentsline {subsection}{\numberline {4.3.6}Timer}{33}{subsection.4.3.6}
-\contentsline {paragraph}{Parameters}{33}{section*.31}
-\contentsline {subsection}{\numberline {4.3.7}Meter}{33}{subsection.4.3.7}
-\contentsline {paragraph}{Parameters}{34}{section*.32}
-\contentsline {subsubsection}{MeterController}{34}{section*.33}
-\contentsline {section}{\numberline {4.4}Aggregatie}{34}{section.4.4}
-\contentsline {paragraph}{Het Gauge meetobject}{36}{section*.34}
-\contentsline {paragraph}{Het Meter meetobject}{36}{section*.35}
-\contentsline {paragraph}{Het Timer meetobject}{36}{section*.36}
-\contentsline {section}{\numberline {4.5}Openstaande uitdagingen}{36}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}AB Testing}{36}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Operating systems}{37}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Alarmen}{37}{subsection.4.5.3}
-\contentsline {chapter}{\chapternumberline {5}Evaluatie}{39}{chapter.5}
-\contentsline {section}{\numberline {5.1}Performance}{39}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Call duration}{40}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Invloed op FPS}{40}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Schaalbaarheid}{41}{section.5.2}
-\contentsline {section}{\numberline {5.3}Developer effort}{42}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Resultaten}{43}{subsection.5.3.1}
-\contentsline {subsubsection}{StopWatch applicatie}{43}{section*.37}
-\contentsline {subsubsection}{Andere applicatie}{43}{section*.38}
-\contentsline {section}{\numberline {5.4}Conclusie}{43}{section.5.4}
-\contentsline {chapter}{Bibliografie}{49}{section*.40}
+\contentsline {section}{\numberline {4.3}Aggregatie}{31}{section.4.3}
+\contentsline {paragraph}{Het Gauge meetobject}{32}{section*.27}
+\contentsline {paragraph}{Het Meter meetobject}{32}{section*.28}
+\contentsline {paragraph}{Het Timer meetobject}{32}{section*.29}
+\contentsline {section}{\numberline {4.4}Openstaande uitdagingen}{33}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}AB Testing}{33}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Operating systems}{33}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Alarmen}{34}{subsection.4.4.3}
+\contentsline {chapter}{\chapternumberline {5}Tutorial}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Installatie}{37}{section.5.1}
+\contentsline {section}{\numberline {5.2}Initialisatie}{37}{section.5.2}
+\contentsline {section}{\numberline {5.3}Counter}{38}{section.5.3}
+\contentsline {paragraph}{Parameters}{38}{section*.30}
+\contentsline {subsection}{\numberline {5.3.1}CounterObject}{38}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Gauge}{38}{section.5.4}
+\contentsline {paragraph}{Parameters}{39}{section*.31}
+\contentsline {section}{\numberline {5.5}Histogram}{39}{section.5.5}
+\contentsline {paragraph}{Parameters}{39}{section*.32}
+\contentsline {section}{\numberline {5.6}Timer}{39}{section.5.6}
+\contentsline {paragraph}{Parameters}{39}{section*.33}
+\contentsline {section}{\numberline {5.7}Meter}{40}{section.5.7}
+\contentsline {paragraph}{Parameters}{40}{section*.34}
+\contentsline {subsection}{\numberline {5.7.1}MeterController}{40}{subsection.5.7.1}
+\contentsline {chapter}{\chapternumberline {6}Evaluatie}{41}{chapter.6}
+\contentsline {section}{\numberline {6.1}Performance}{41}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Call duration}{42}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Invloed op FPS}{42}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Schaalbaarheid}{43}{section.6.2}
+\contentsline {section}{\numberline {6.3}Developer effort}{44}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Resultaten}{45}{subsection.6.3.1}
+\contentsline {subsubsection}{StopWatch applicatie}{45}{section*.35}
+\contentsline {subsubsection}{Andere applicatie}{45}{section*.36}
+\contentsline {section}{\numberline {6.4}Conclusie}{45}{section.6.4}
+\contentsline {chapter}{Bibliografie}{51}{section*.38}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
