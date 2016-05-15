@@ -1,5 +1,5 @@
 //
-//  Timer.h
+//  Gauge.h
 //  SportsTimer
 //
 //  Created by Stef Van Gils on 14/11/15.
@@ -11,20 +11,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Timer : Core
+@interface GaugeAggregateHelper : Core
 
 // Insert code here to declare functionality of your managed object subclass
 
-
--(void) start;
-/**
- * This method has to be called when the event is over and the timer has to be stopped.
- * If it doesn't get called, the timer doesn't get synced to the server.
- */
--(void) stop;
+-(void) addValue:(NSInteger) value;
 
 @end
 
 NS_ASSUME_NONNULL_END
 
-#import "Timer+CoreDataProperties.h"
+#import "GaugeAggregateHelper+CoreDataProperties.h"

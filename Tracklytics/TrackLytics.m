@@ -13,10 +13,14 @@
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import "TimerAggregateHelper.h"
 #import "Reachability.h"
+#import "GaugeAggregateHelper.h"
+#import "MeterAggregateHelper.h"
 @implementation TrackLytics
 
 static NSMutableArray *array;
 static NSMutableDictionary *timerAggregates;
+static NSMutableDictionary *gaugeAggregates;
+static NSMutableDictionary *meterAggregates;
 
 static NSInteger appCode;
 static NSString *device;
@@ -27,15 +31,23 @@ static BOOL shouldMonitor;
 static NSTimer *timer;
 static BOOL isSending;
 static BOOL aggregateOnDevice;
+static BOOL shouldSaveOnDisk;
 
 +(void) startTrackerWithAppCode:(NSInteger)code withSyncInterval:(double) interval {
+    appCode = code;
+    timerAggregates = [NSMutableDictionary new];
+    gaugeAggregates = [NSMutableDictionary new];
+    meterAggregates = [NSMutableDictionary new];
+    
     timer = [NSTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(sendRequests) userInfo:nil repeats:YES];
-    aggregateOnDevice = YES;
+    [self checkShouldSaveOnDisk];
+    shouldMonitor = YES;
+    [self checkShouldMonitor];
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
-        appCode = code;
+        
         array = [NSMutableArray new];
-        timerAggregates = [NSMutableDictionary new];
-        [self checkShouldMonitor];
+        
+        [self checkShouldAggregateOnDevice];
         
         uuid = [[NSUUID UUID] UUIDString];
         UIDeviceHardware *h=[[UIDeviceHardware alloc] init];
@@ -58,7 +70,6 @@ static BOOL aggregateOnDevice;
     if(![array containsObject:request]){
         [array addObject:request];
     }
-    [self save];
     //});
 }
 
@@ -136,14 +147,23 @@ static BOOL aggregateOnDevice;
         CounterObject *counter;
         
         
-        counter = [NSEntityDescription
-                   insertNewObjectForEntityForName:@"CounterObject"
-                   inManagedObjectContext:context];
+        if(shouldSaveOnDisk){
+            counter = [NSEntityDescription
+                       insertNewObjectForEntityForName:@"CounterObject"
+                       inManagedObjectContext:context];
+        }else {
+            NSEntityDescription *entity = [NSEntityDescription entityForName:@"CounterObject" inManagedObjectContext:context];
+            NSManagedObject *unassociatedObject = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:nil];
+            counter = (CounterObject *)unassociatedObject;
+            [counter initialize];
+        }
         counter.name = name;
         counter.type = type;
         counter.date = date;
         [array addObject:counter];
-        [self save];
+        if(shouldSaveOnDisk){
+            [self save];
+        }
         return counter;
     }else return nil;
 }
@@ -154,15 +174,26 @@ static BOOL aggregateOnDevice;
         NSManagedObjectContext *context =
         [[StorageManager sharedInstance] getContext];
         CounterObject *counter;
-        counter = [NSEntityDescription
-                   insertNewObjectForEntityForName:@"CounterObject"
-                   inManagedObjectContext:context];
+        
+        
+        if(shouldSaveOnDisk){
+            counter = [NSEntityDescription
+                       insertNewObjectForEntityForName:@"CounterObject"
+                       inManagedObjectContext:context];
+        }else {
+            NSEntityDescription *entity = [NSEntityDescription entityForName:@"CounterObject" inManagedObjectContext:context];
+            NSManagedObject *unassociatedObject = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:nil];
+            counter = (CounterObject *)unassociatedObject;
+            [counter initialize];
+        }
         counter.name = name;
         counter.type = type;
         counter.date = date;
         [counter inc:value];
         [array addObject:counter];
-        [self save];
+        if(shouldSaveOnDisk){
+            [self save];
+        }
         return counter;
     }else return nil;
 }
@@ -181,9 +212,16 @@ static BOOL aggregateOnDevice;
                 [helper start];
                 
             }else {
-                helper = [NSEntityDescription
-                         insertNewObjectForEntityForName:@"TimerAggregateHelper"
-                         inManagedObjectContext:context];
+                if(shouldSaveOnDisk){
+                    helper = [NSEntityDescription
+                              insertNewObjectForEntityForName:@"TimerAggregateHelper"
+                              inManagedObjectContext:context];
+                }else {
+                    NSEntityDescription *entity = [NSEntityDescription entityForName:@"TimerAggregateHelper" inManagedObjectContext:context];
+                    NSManagedObject *unassociatedObject = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:nil];
+                    helper = (TimerAggregateHelper *)unassociatedObject;
+                    [helper initialize];
+                }
                 helper.name = name;
                 helper.type = type;
                 helper.date = date;
@@ -193,9 +231,17 @@ static BOOL aggregateOnDevice;
             timer = helper;
             
         }else {
-            timer = [NSEntityDescription
-                     insertNewObjectForEntityForName:@"Timer"
-                     inManagedObjectContext:context];
+            if(shouldSaveOnDisk){
+                timer = [NSEntityDescription
+                         insertNewObjectForEntityForName:@"Timer"
+                         inManagedObjectContext:context];
+            }else {
+                NSEntityDescription *entity = [NSEntityDescription entityForName:@"Timer" inManagedObjectContext:context];
+                NSManagedObject *unassociatedObject = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:nil];
+                timer = (Timer *)unassociatedObject;
+                [timer initialize];
+                [timer start];
+            }
             timer.name = name;
             timer.type = type;
             timer.date = date;
@@ -213,17 +259,60 @@ static BOOL aggregateOnDevice;
         //dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
         NSManagedObjectContext *context =
         [[StorageManager sharedInstance] getContext];
-        Gauge *gauge;
-        gauge = [NSEntityDescription
-                 insertNewObjectForEntityForName:@"Gauge"
-                 inManagedObjectContext:context];
-        gauge.name = name;
-        gauge.type = type;
-        gauge.value = [NSNumber numberWithInteger:value];
-        gauge.date = date;
-        [self save];
-        [array addObject:gauge];
+        
+        if(aggregateOnDevice){
+            GaugeAggregateHelper *helper = [gaugeAggregates objectForKey:type];
+            if(helper != NULL && [helper.name isEqualToString:name]){
+                [helper addValue:value];
+                
+            }else {
+                if(shouldSaveOnDisk){
+                    helper = [NSEntityDescription
+                              insertNewObjectForEntityForName:@"GaugeAggregateHelper"
+                              inManagedObjectContext:context];
+                    [helper initialize];
+                }else {
+                    NSEntityDescription *entity = [NSEntityDescription entityForName:@"GaugeAggregateHelper" inManagedObjectContext:context];
+                    NSManagedObject *unassociatedObject = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:nil];
+                    helper = (GaugeAggregateHelper *)unassociatedObject;
+                    [helper initialize];
+                }
+                helper.name = name;
+                helper.type = type;
+                helper.date = date;
+                [helper addValue:value];
+                [gaugeAggregates setObject:helper forKey:type];
+                if(shouldSaveOnDisk){
+                    [self save];
+                }
+                [array addObject:helper];
+            }
+            
+            
+        }else {
+            Gauge *gauge;
+            if(shouldSaveOnDisk){
+                gauge = [NSEntityDescription
+                         insertNewObjectForEntityForName:@"Gauge"
+                         inManagedObjectContext:context];
+            }else {
+                NSEntityDescription *entity = [NSEntityDescription entityForName:@"Gauge" inManagedObjectContext:context];
+                NSManagedObject *unassociatedObject = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:nil];
+                gauge = (Gauge *)unassociatedObject;
+                [gauge initialize];
+            }
+            gauge.value = [NSNumber numberWithInteger:value];
+            
+            gauge.name = name;
+            gauge.type = type;
+            gauge.date = date;
+            if(shouldSaveOnDisk){
+                [self save];
+            }
+            [array addObject:gauge];
+        }
         //});
+        
     }
 }
 
@@ -234,14 +323,23 @@ static BOOL aggregateOnDevice;
         NSManagedObjectContext *context =
         [[StorageManager sharedInstance] getContext];
         Histogram *histogram;
-        histogram = [NSEntityDescription
-                     insertNewObjectForEntityForName:@"Histogram"
-                     inManagedObjectContext:context];
+        if(shouldSaveOnDisk){
+            histogram = [NSEntityDescription
+                         insertNewObjectForEntityForName:@"Histogram"
+                         inManagedObjectContext:context];
+        }else {
+            NSEntityDescription *entity = [NSEntityDescription entityForName:@"Histogram" inManagedObjectContext:context];
+            NSManagedObject *unassociatedObject = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:nil];
+            histogram = (Histogram *)unassociatedObject;
+            [histogram initialize];
+        }
         histogram.name = name;
         histogram.type = type;
         histogram.date = date;
         histogram.value = [NSNumber numberWithInteger:value];
-        [self save];
+        if(shouldSaveOnDisk){
+            [self save];
+        }
         [array addObject:histogram];
         
         //});
@@ -256,23 +354,66 @@ static BOOL aggregateOnDevice;
 }
 
 +(void) addMeterEntryWithType:(NSString *)type withValue:(NSNumber *)value{
+    NSDate *date = [NSDate date];
+    //  dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+    NSManagedObjectContext *context =
+    [[StorageManager sharedInstance] getContext];
     if(shouldMonitor){
-        NSDate *date = [NSDate date];
-        //  dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
-        NSManagedObjectContext *context =
-        [[StorageManager sharedInstance] getContext];
-        Meter *meter;
-        meter = [NSEntityDescription
-                 insertNewObjectForEntityForName:@"Meter"
-                 inManagedObjectContext:context];
-        meter.name = @"";
-        meter.type = type;
-        meter.value = value;
-        meter.date = date;
-        [self save];
-        [array addObject:meter];
+        if(aggregateOnDevice){
+            MeterAggregateHelper *meter = [meterAggregates objectForKey: type];
+            if(meter != NULL){
+                [meter addValue:[value floatValue]];
+                
+            }else{
+                if(shouldSaveOnDisk){
+                    meter = [NSEntityDescription
+                             insertNewObjectForEntityForName:@"MeterAggregateHelper"
+                             inManagedObjectContext:context];
+                }else {
+                    NSEntityDescription *entity = [NSEntityDescription entityForName:@"MeterAggregateHelper" inManagedObjectContext:context];
+                    NSManagedObject *unassociatedObject = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:nil];
+                    meter = (MeterAggregateHelper *)unassociatedObject;
+                }
+                [meter initialize];
+                meter.name = @"";
+                meter.type = type;
+                meter.date = date;
+                [meter addValue:[value floatValue]];
+                [meterAggregates setObject:meter forKey:type];
+                
+            }
+            if(shouldSaveOnDisk){
+                [self save];
+            }
+            [array addObject:meter];
+        }else {
+            Meter *meter;
+            if(shouldSaveOnDisk){
+                meter = [NSEntityDescription
+                         insertNewObjectForEntityForName:@"Meter"
+                         inManagedObjectContext:context];
+            }else {
+                NSEntityDescription *entity = [NSEntityDescription entityForName:@"Meter" inManagedObjectContext:context];
+                NSManagedObject *unassociatedObject = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:nil];
+                meter = (Meter *)unassociatedObject;
+                [meter initialize];
+            }
+            meter.name = @"";
+            meter.type = type;
+            meter.value = value;
+            meter.date = date;
+            if(shouldSaveOnDisk){
+                [self save];
+            }
+            [array addObject:meter];
+        }
+        
+        
+        
+        
         
         // });
+        
     }
 }
 
@@ -310,7 +451,8 @@ static BOOL aggregateOnDevice;
 
 +(void) save {
     @try {
-        [[[StorageManager sharedInstance] getContext] save:nil];
+        if(shouldSaveOnDisk)
+            [[[StorageManager sharedInstance] getContext] save:nil];
     }
     @catch (NSException *exception) {
     }
@@ -353,6 +495,44 @@ static BOOL aggregateOnDevice;
         NSLog(@"Monitoring is turned on");
     }else {
         NSLog(@"Monitoring is turned off");
+    }
+    
+}
+
++(void) checkShouldAggregateOnDevice {
+    HTTPPost *post = [HTTPPost new];
+    NSDictionary *dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInteger:appCode] forKey:@"appCode"];
+    NSData *data = [post postSynchronous:@"https://svg-apache.iminds-security.be/backend/ShouldAggregateOnDevice.php" data:dict];
+    NSString* newStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    f.numberStyle = NSNumberFormatterDecimalStyle;
+    NSNumber *shouldMonitorNumber = [f numberFromString:newStr];
+    
+    aggregateOnDevice = [shouldMonitorNumber boolValue];
+    
+    if(aggregateOnDevice){
+        NSLog(@"Aggregation On Device");
+    }else {
+        NSLog(@"Aggregation In Back end");
+    }
+    
+}
+
++(void) checkShouldSaveOnDisk {
+    HTTPPost *post = [HTTPPost new];
+    NSDictionary *dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInteger:appCode] forKey:@"appCode"];
+    NSData *data = [post postSynchronous:@"https://svg-apache.iminds-security.be/backend/ShouldSaveOnDisk.php" data:dict];
+    NSString* newStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    f.numberStyle = NSNumberFormatterDecimalStyle;
+    NSNumber *shouldMonitorNumber = [f numberFromString:newStr];
+    
+    shouldSaveOnDisk = [shouldMonitorNumber boolValue];
+    
+    if(shouldSaveOnDisk){
+        NSLog(@"Save On Disk");
+    }else {
+        NSLog(@"Don't Save On Disk");
     }
     
 }
