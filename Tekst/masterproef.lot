@@ -13,6 +13,15 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Resultaten call tijd Counter (in seconden)}}{44}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Resultaten call tijd Timer (in seconden)}}{45}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Resultaten call tijd Timer met Aggregatie (in seconden)}}{45}{table.5.3}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Resultaten call tijd Histogram (in seconden)}}{45}{table.5.4}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Resultaten call tijd Meter (in seconden)}}{46}{table.5.5}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Resultaten call tijd Meter met Aggregatie (in seconden)}}{46}{table.5.6}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Resultaten call tijd Gauge (in seconden)}}{46}{table.5.7}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Resultaten call tijd Gauge met Aggregatie (in seconden)}}{47}{table.5.8}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Resultaten metingen van het aanmaken van een Counter (in FPS)}}{47}{table.5.9}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

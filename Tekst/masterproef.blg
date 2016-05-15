@@ -11,45 +11,45 @@ Database file #1: referenties.bib
 Warning--to sort, need author or key in NewRelic
 Warning--to sort, need author or key in Metrics
 Warning--empty journal in beck2001manifesto
-You've used 20 entries,
+You've used 23 entries,
             2118 wiz_defined-function locations,
-            607 strings with 6703 characters,
-and the built_in function-call counts, 5814 in all, are:
-= -- 565
-> -- 254
+            619 strings with 6929 characters,
+and the built_in function-call counts, 6426 in all, are:
+= -- 622
+> -- 275
 < -- 4
-+ -- 105
-- -- 84
-* -- 309
-:= -- 931
-add.period$ -- 60
-call.type$ -- 20
-change.case$ -- 99
++ -- 114
+- -- 90
+* -- 324
+:= -- 1033
+add.period$ -- 69
+call.type$ -- 23
+change.case$ -- 111
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 216
-empty$ -- 517
-format.name$ -- 84
-if$ -- 1266
+cite$ -- 26
+duplicate$ -- 237
+empty$ -- 583
+format.name$ -- 90
+if$ -- 1401
 int.to.chr$ -- 0
-int.to.str$ -- 20
+int.to.str$ -- 23
 missing$ -- 8
-newline$ -- 99
-num.names$ -- 36
-pop$ -- 161
+newline$ -- 114
+num.names$ -- 42
+pop$ -- 185
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 90
 quote$ -- 0
-skip$ -- 192
+skip$ -- 216
 stack$ -- 0
-substring$ -- 270
-swap$ -- 54
+substring$ -- 285
+swap$ -- 57
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 92
 warning$ -- 3
-while$ -- 54
-width$ -- 22
-write$ -- 192
+while$ -- 60
+width$ -- 25
+write$ -- 219
 (There were 3 warnings)

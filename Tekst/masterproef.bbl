@@ -13,6 +13,16 @@ Apple.
 \newblock App store.
 \newblock https://developer.apple.com/support/app-store/.
 
+\bibitem{iPhone}
+Apple.
+\newblock iphone 6.
+\newblock http://www.apple.com/benl/iphone-6/specs/.
+
+\bibitem{Xcode}
+Apple.
+\newblock Xcode.
+\newblock https://developer.apple.com/xcode/.
+
 \bibitem{beck2001manifesto}
 K.~Beck, M.~Beedle, A.~Van~Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
   J.~Grenning, J.~Highsmith, A.~Hunt, R.~Jeffries, et~al.
@@ -73,6 +83,11 @@ Y.~Heisler.
 J.~Highsmith and A.~Cockburn.
 \newblock Agile software development: The business of innovation.
 \newblock {\em Computer}, 34(9):120--127, 2001.
+
+\bibitem{diskIO}
+N.~Jones.
+\newblock Performance killer: Disk i/o.
+\newblock http://www.nathanaeljones.com/blog/2009/performance-killer-disk-io.
 
 \bibitem{AppSucks}
 K.~MacLaine.
