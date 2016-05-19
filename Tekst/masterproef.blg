@@ -5,51 +5,59 @@ A level-1 auxiliary file: context.aux
 A level-1 auxiliary file: doelstelling.aux
 A level-1 auxiliary file: architectuur.aux
 A level-1 auxiliary file: implementatie.aux
+A level-1 auxiliary file: tutorial.aux
 A level-1 auxiliary file: evaluatie.aux
+A level-1 auxiliary file: app-a.aux
+A level-1 auxiliary file: app-b.aux
 The style file: abbrv.bst
 Database file #1: referenties.bib
 Warning--to sort, need author or key in NewRelic
 Warning--to sort, need author or key in Metrics
+Warning--to sort, need author or key in OpenStack
+Warning--to sort, need author or key in Ubuntu
+Warning--to sort, need author or key in PHP
+Warning--to sort, need author or key in ChartJS
+Warning--to sort, need author or key in AngularSlider
 Warning--empty journal in beck2001manifesto
-You've used 23 entries,
+You've used 34 entries,
             2118 wiz_defined-function locations,
-            619 strings with 6929 characters,
-and the built_in function-call counts, 6426 in all, are:
-= -- 622
-> -- 275
+            663 strings with 7742 characters,
+and the built_in function-call counts, 8445 in all, are:
+= -- 811
+> -- 322
 < -- 4
-+ -- 114
-- -- 90
-* -- 324
-:= -- 1033
-add.period$ -- 69
-call.type$ -- 23
-change.case$ -- 111
++ -- 137
+- -- 102
+* -- 379
+:= -- 1322
+add.period$ -- 97
+call.type$ -- 34
+change.case$ -- 150
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 237
-empty$ -- 583
-format.name$ -- 90
-if$ -- 1401
+cite$ -- 42
+duplicate$ -- 314
+empty$ -- 830
+format.name$ -- 102
+if$ -- 1871
 int.to.chr$ -- 0
-int.to.str$ -- 23
+int.to.str$ -- 34
 missing$ -- 8
-newline$ -- 114
-num.names$ -- 42
-pop$ -- 185
+newline$ -- 164
+num.names$ -- 54
+pop$ -- 273
 preamble$ -- 1
-purify$ -- 90
+purify$ -- 118
 quote$ -- 0
-skip$ -- 216
+skip$ -- 304
 stack$ -- 0
-substring$ -- 285
-swap$ -- 57
+substring$ -- 340
+swap$ -- 68
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 92
-warning$ -- 3
-while$ -- 60
-width$ -- 25
-write$ -- 219
-(There were 3 warnings)
+type$ -- 136
+warning$ -- 8
+while$ -- 72
+width$ -- 36
+write$ -- 308
+(There were 8 warnings)

@@ -18,90 +18,95 @@
 \contentsline {subsection}{\numberline {2.1.1}Performance impact}{10}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Schaalbaarheid}{11}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Bruikbaarheid}{11}{subsection.2.1.3}
-\contentsline {paragraph}{Installatie}{11}{section*.6}
-\contentsline {paragraph}{Configuratie}{12}{section*.7}
-\contentsline {paragraph}{Documentatie}{12}{section*.8}
-\contentsline {subsection}{\numberline {2.1.4}Beschikbaarheid}{12}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.4}Beschikbaarheid}{11}{subsection.2.1.4}
 \contentsline {section}{\numberline {2.2}Data Visualisatie}{12}{section.2.2}
 \contentsline {chapter}{\chapternumberline {3}Architectuur}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Component Diagram}{13}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}UserApplication}{14}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}TracklyticsCore}{15}{subsection.3.1.2}
-\contentsline {paragraph}{Interface}{15}{section*.9}
-\contentsline {subsection}{\numberline {3.1.3}TracklyticsBackend}{16}{subsection.3.1.3}
-\contentsline {subsubsection}{Interfaces}{16}{section*.10}
-\contentsline {paragraph}{ApplicationInfo}{16}{section*.11}
-\contentsline {paragraph}{Backend}{16}{section*.12}
-\contentsline {paragraph}{Dashboard}{16}{section*.13}
-\contentsline {subsection}{\numberline {3.1.4}Dashboard}{17}{subsection.3.1.4}
+\contentsline {paragraph}{Interface}{15}{section*.6}
+\contentsline {subsection}{\numberline {3.1.3}Dashboard}{16}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}TracklyticsBackend}{16}{subsection.3.1.4}
+\contentsline {subsubsection}{Interfaces}{16}{section*.7}
+\contentsline {paragraph}{ApplicationInfo}{16}{section*.8}
+\contentsline {paragraph}{Backend}{16}{section*.9}
+\contentsline {paragraph}{Dashboard}{17}{section*.10}
 \contentsline {section}{\numberline {3.2}Deployment Diagram}{17}{section.3.2}
-\contentsline {section}{\numberline {3.3}Uitbreidingen}{17}{section.3.3}
-\contentsline {paragraph}{Data availability}{17}{section*.14}
-\contentsline {paragraph}{On Demand}{18}{section*.15}
-\contentsline {paragraph}{Aggregatie}{18}{section*.16}
-\contentsline {paragraph}{AB Testing}{18}{section*.17}
-\contentsline {paragraph}{Security \& Privacy}{19}{section*.18}
-\contentsline {section}{\numberline {3.4}Belangrijkste flows}{20}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Tracking en monitoring van gegevens}{20}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Verzenden en opslaan van de gegevens}{21}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.3}Belangrijkste flows}{17}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Tracking en monitoring van gegevens}{17}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Verzenden en opslaan van de gegevens}{18}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Uitbreidingen}{19}{section.3.4}
+\contentsline {paragraph}{Data availability}{19}{section*.11}
+\contentsline {paragraph}{On Demand}{20}{section*.12}
+\contentsline {paragraph}{Aggregatie}{20}{section*.13}
+\contentsline {paragraph}{AB Testing}{21}{section*.14}
+\contentsline {paragraph}{Security \& Privacy}{22}{section*.15}
 \contentsline {chapter}{\chapternumberline {4}Implementatie}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Details Implementatie}{23}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}iOS Library}{23}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Back end}{24}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Dashboard}{25}{subsection.4.1.3}
-\contentsline {paragraph}{De counters}{26}{section*.19}
-\contentsline {paragraph}{De timers}{26}{section*.20}
-\contentsline {paragraph}{De gauges}{27}{section*.21}
-\contentsline {paragraph}{De histogrammen}{27}{section*.22}
-\contentsline {paragraph}{De meters}{27}{section*.23}
-\contentsline {subsection}{\numberline {4.1.4}Connectie tussen Front end en Back end}{28}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}Klassediagram}{28}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}TrackLytics}{28}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Core}{28}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Counter}{29}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Gauge}{29}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Histogram}{29}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Timer}{30}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}Meter}{30}{subsection.4.2.7}
-\contentsline {subsubsection}{Meter}{30}{section*.24}
-\contentsline {subsubsection}{MeterController}{30}{section*.25}
-\contentsline {subsubsection}{MeterInterface}{30}{section*.26}
-\contentsline {section}{\numberline {4.3}Aggregatie}{31}{section.4.3}
-\contentsline {paragraph}{Het Gauge meetobject}{32}{section*.27}
-\contentsline {paragraph}{Het Meter meetobject}{32}{section*.28}
-\contentsline {paragraph}{Het Timer meetobject}{32}{section*.29}
-\contentsline {section}{\numberline {4.4}Openstaande uitdagingen}{33}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}AB Testing}{33}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Operating systems}{33}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Alarmen}{34}{subsection.4.4.3}
-\contentsline {chapter}{\chapternumberline {5}Tutorial}{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}Installatie}{37}{section.5.1}
-\contentsline {section}{\numberline {5.2}Initialisatie}{37}{section.5.2}
-\contentsline {section}{\numberline {5.3}Counter}{38}{section.5.3}
-\contentsline {paragraph}{Parameters}{38}{section*.30}
-\contentsline {subsection}{\numberline {5.3.1}CounterObject}{38}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Gauge}{38}{section.5.4}
-\contentsline {paragraph}{Parameters}{39}{section*.31}
-\contentsline {section}{\numberline {5.5}Histogram}{39}{section.5.5}
-\contentsline {paragraph}{Parameters}{39}{section*.32}
-\contentsline {section}{\numberline {5.6}Timer}{39}{section.5.6}
-\contentsline {paragraph}{Parameters}{39}{section*.33}
-\contentsline {section}{\numberline {5.7}Meter}{40}{section.5.7}
-\contentsline {paragraph}{Parameters}{40}{section*.34}
-\contentsline {subsection}{\numberline {5.7.1}MeterController}{40}{subsection.5.7.1}
-\contentsline {chapter}{\chapternumberline {6}Evaluatie}{41}{chapter.6}
-\contentsline {section}{\numberline {6.1}Performance}{41}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Call duration}{42}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Invloed op FPS}{42}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Schaalbaarheid}{43}{section.6.2}
-\contentsline {section}{\numberline {6.3}Developer effort}{44}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Resultaten}{45}{subsection.6.3.1}
-\contentsline {subsubsection}{StopWatch applicatie}{45}{section*.35}
-\contentsline {subsubsection}{Andere applicatie}{45}{section*.36}
-\contentsline {section}{\numberline {6.4}Conclusie}{45}{section.6.4}
-\contentsline {appendix}{\chapternumberline {A}IEEE Artikel}{53}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Poster Tracklytics}{59}{appendix.B}
-\contentsline {chapter}{Bibliografie}{61}{section*.38}
+\contentsline {subsection}{\numberline {4.1.2}Klassediagram}{24}{subsection.4.1.2}
+\contentsline {subsubsection}{TrackLytics}{24}{section*.16}
+\contentsline {subsubsection}{Core}{25}{section*.17}
+\contentsline {subsubsection}{Counter}{25}{section*.18}
+\contentsline {subsubsection}{Gauge}{25}{section*.19}
+\contentsline {subsubsection}{Histogram}{25}{section*.20}
+\contentsline {subsubsection}{Timer}{25}{section*.21}
+\contentsline {subsubsection}{Meter}{26}{section*.22}
+\contentsline {paragraph}{Meter}{26}{section*.23}
+\contentsline {paragraph}{MeterController}{26}{section*.24}
+\contentsline {paragraph}{MeterInterface}{26}{section*.25}
+\contentsline {subsubsection}{Aggregatie}{26}{section*.26}
+\contentsline {paragraph}{De GaugeAggregateHelper}{26}{section*.27}
+\contentsline {paragraph}{De MeterAggregateHelper}{27}{section*.28}
+\contentsline {paragraph}{De TimerAggregateHelper}{27}{section*.29}
+\contentsline {subsection}{\numberline {4.1.3}Back end}{27}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Structuur database}{28}{subsection.4.1.4}
+\contentsline {paragraph}{De Metadata}{28}{section*.30}
+\contentsline {paragraph}{De tabellen van de meetobjecten}{28}{section*.31}
+\contentsline {subsection}{\numberline {4.1.5}Structuur back end}{29}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Dashboard}{30}{subsection.4.1.6}
+\contentsline {paragraph}{De counters \ref {fig:DasbhoardCounter}}{31}{section*.32}
+\contentsline {paragraph}{De timers \ref {fig:DasbhoardTimer}}{31}{section*.33}
+\contentsline {paragraph}{De gauges \ref {fig:DasbhoardGauge}}{31}{section*.34}
+\contentsline {paragraph}{De histogrammen \ref {fig:DasbhoardHistogram}}{31}{section*.35}
+\contentsline {paragraph}{De meters \ref {fig:DasbhoardMeter}}{31}{section*.36}
+\contentsline {subsection}{\numberline {4.1.7}Connectie tussen Front end en Back end}{32}{subsection.4.1.7}
+\contentsline {section}{\numberline {4.2}Aggregatie}{34}{section.4.2}
+\contentsline {paragraph}{Het Gauge meetobject}{36}{section*.37}
+\contentsline {paragraph}{Het Meter meetobject}{37}{section*.38}
+\contentsline {paragraph}{Het Timer meetobject}{37}{section*.39}
+\contentsline {section}{\numberline {4.3}Openstaande uitdagingen}{37}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}AB Testing}{37}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Operating systems}{37}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Alarmen}{38}{subsection.4.3.3}
+\contentsline {chapter}{\chapternumberline {5}Tutorial}{41}{chapter.5}
+\contentsline {section}{\numberline {5.1}Installatie}{41}{section.5.1}
+\contentsline {section}{\numberline {5.2}Initialisatie}{41}{section.5.2}
+\contentsline {section}{\numberline {5.3}Counter}{42}{section.5.3}
+\contentsline {paragraph}{Parameters}{42}{section*.40}
+\contentsline {subsection}{\numberline {5.3.1}CounterObject}{42}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Gauge}{42}{section.5.4}
+\contentsline {paragraph}{Parameters}{43}{section*.41}
+\contentsline {section}{\numberline {5.5}Histogram}{43}{section.5.5}
+\contentsline {paragraph}{Parameters}{43}{section*.42}
+\contentsline {section}{\numberline {5.6}Timer}{43}{section.5.6}
+\contentsline {paragraph}{Parameters}{43}{section*.43}
+\contentsline {section}{\numberline {5.7}Meter}{44}{section.5.7}
+\contentsline {paragraph}{Parameters}{44}{section*.44}
+\contentsline {subsection}{\numberline {5.7.1}MeterController}{44}{subsection.5.7.1}
+\contentsline {chapter}{\chapternumberline {6}Evaluatie}{45}{chapter.6}
+\contentsline {section}{\numberline {6.1}Performance}{45}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Call duration}{46}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Invloed op FPS}{46}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Schaalbaarheid}{47}{section.6.2}
+\contentsline {section}{\numberline {6.3}Developer effort}{48}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Resultaten}{49}{subsection.6.3.1}
+\contentsline {subsubsection}{StopWatch applicatie}{49}{section*.45}
+\contentsline {subsubsection}{Andere applicatie}{49}{section*.46}
+\contentsline {section}{\numberline {6.4}Conclusie}{49}{section.6.4}
+\contentsline {appendix}{\chapternumberline {A}IEEE Artikel}{57}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Poster Tracklytics}{63}{appendix.B}
+\contentsline {chapter}{Bibliografie}{65}{section*.48}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

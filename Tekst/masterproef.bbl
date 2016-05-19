@@ -1,5 +1,13 @@
 \begin{thebibliography}{10}
 
+\bibitem{AngularSlider}
+Angularjs-slider.
+\newblock https://github.com/angular-slider/angularjs-slider.
+
+\bibitem{ChartJS}
+Chart.js.
+\newblock http://www.chartjs.org.
+
 \bibitem{Metrics}
 Metrics.
 \newblock https://dropwizard.github.io/metrics/3.1.0/.
@@ -7,6 +15,23 @@ Metrics.
 \bibitem{NewRelic}
 New relic.
 \newblock http://newrelic.com.
+
+\bibitem{OpenStack}
+Openstack.
+\newblock http://www.openstack.org.
+
+\bibitem{PHP}
+Php.
+\newblock http://php.net.
+
+\bibitem{Ubuntu}
+Ubuntu.
+\newblock http://www.ubuntu.com.
+
+\bibitem{RDBMS}
+M.~Allen.
+\newblock Relational databases are not designed for scale.
+\newblock http://www.marklogic.com/blog/relational-databases-scale/.
 
 \bibitem{iOSMS}
 Apple.
@@ -17,6 +42,11 @@ Apple.
 Apple.
 \newblock iphone 6.
 \newblock http://www.apple.com/benl/iphone-6/specs/.
+
+\bibitem{Swift}
+Apple.
+\newblock Swift.
+\newblock https://swift.org.
 
 \bibitem{Xcode}
 Apple.
@@ -67,6 +97,11 @@ B.~Fu, J.~Lin, L.~Li, C.~Faloutsos, J.~Hong, and N.~Sadeh.
 S.~V. Gils.
 \newblock https://github.com/Stefvg/Tracklytics.
 
+\bibitem{AngularJS}
+Google.
+\newblock Angularjs.
+\newblock https://angularjs.org.
+
 \bibitem{GooAna}
 Google.
 \newblock Google analytics.
@@ -95,11 +130,23 @@ K.~MacLaine.
 \newblock
   http://appealingstudio.com/why-your-app-sucks-the-20-most-common-complaints-about-mobile-apps-2/.
 
+\bibitem{SwiftVSObjectiveC}
+P.~Malik.
+\newblock How many ios application developers are planning to "rewrite" their
+  objective-c apps in swift?
+\newblock
+  https://www.quora.com/How-many-iOS-application-developers-are-planning-to-rewrite-their-Objective-C-apps-in-Swift.
+
 \bibitem{MarketShare}
 NetMarketShare.
 \newblock Mobile/tablet operating system market share.
 \newblock
   https://www.netmarketshare.com/operating-system-market-share.aspx?qprid=8\&qpcustomd=1.
+
+\bibitem{MySQL}
+Oracle.
+\newblock Mysql.
+\newblock http://www.mysql.com.
 
 \bibitem{SmartphoneUsers}
 Statistica.
@@ -123,5 +170,10 @@ A.~I. Wasserman.
 Wikipedia.
 \newblock Devops.
 \newblock https://en.wikipedia.org/wiki/DevOps.
+
+\bibitem{ObjectiveC}
+Wikipedia.
+\newblock Objective-c.
+\newblock https://en.wikipedia.org/wiki/Objective-C.
 
 \end{thebibliography}

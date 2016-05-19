@@ -64,8 +64,6 @@ De interface bestaat uit methodes om de applicatie te monitoren. Tracklytics bie
 \item Gauge: Kan gebruikt worden om een bepaalde waarde te meten. 
 \end{itemize}
 
-Deze elementen vormen de kern van de Tracklytics library en worden verder besproken in het volgende hoofdstuk om duplicatie van tekst te vermijden \ref{sec:Klassediagram}. \\
-
 \subsection{Dashboard}
 De Dashboard component representeert een applicatie om de gemonitorde data van de Tracklytics library weer te kunnen geven aan de developers en de eigenaars. Met behulp van grafieken en verwerkte data kunnen de developers en de eigenaars beslissingen nemen omtrent de applicatie. In dit dashboard kunnen instellingen aangegeven worden door de developer voor de applicatie. \\
 
@@ -152,7 +150,7 @@ Het is de bedoeling de developer zoveel mogelijk vrijheid te geven in het monito
 Indien een developer ontdekt dat er geen bottleneck of problemen zijn met de app en deze niet verder gemonitord moet worden, dan is het handig om de monitoring uit te kunnen zetten. Het uitzetten van het monitoren zorgt ervoor dat de prestatiekost van de library ge\"elemineerd wordt in de applicatie.
 
 
-\paragraph{Aggregatie}
+\paragraph{Aggregatie}\label{Arch:Aggregatie}
 De data die doorgestuurd wordt naar de server heeft enkel betrekking op de specifieke gebruiker van de applicatie op zijn telefoon. Om een overzicht te geven van wat de algemene trend is van deze metingen, is het nodig deze data samen te voegen met de data van alle andere gebruikers en deze te aggregeren om een goede analyse hiervan te maken. Er zijn twee plaatsen waar deze aggregatie uitgevoerd kan worden, namelijk op de smartphone zelf in de Tracklytics library of in de backend. \\
 
 Om bandbreedte te besparen en om verwerkingstijd in de back end te besparen is er de mogelijkheid om de data op het toestel van de gebruiker te aggregeren. Enkel de geaggregeerde data wordt doorgestuurd naar de back end die deze dan in geaggregeerde vorm in de database opslaat. Indien het dashboard deze data dan opvraagt moet de back end deze data nog samen voegen, wat minder tijd en bandbreedte vraagt van de database, omdat de data kleiner is. De back end kan deze data sneller verwerken, omdat hij enkel de geaggregeerde data moet verwerken en niet alle data die de library heeft vergaard. Het nadeel hieraan is dat sommige statistieken (zoals bijvoorbeeld de mediaan) een benadering van de werkelijke mediaan wordt. \\

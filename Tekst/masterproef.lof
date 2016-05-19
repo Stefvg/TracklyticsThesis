@@ -13,11 +13,19 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Component diagram Tracklytics library.}}{14}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Deployment diagram Tracklytics library.}}{17}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Flow diagram 1.}}{20}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Flow diagram 2.}}{20}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Flow diagram 3.}}{21}{figure.3.5}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Aanmaken van een core object van de Tracklytics library.}}{18}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Aanmaken en aanpassen van een core object van de Tracklytis library via de update call.}}{18}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Gegevens verzenden vanuit de library naar de back end}}{19}{figure.3.5}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Klassediagram Tracklytics library.}}{29}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Klassediagram Tracklytics library.}}{24}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Structuur van de Tracklytics database.}}{29}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Dashboard: Counter overzicht.}}{32}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Dashboard: Gauge overzicht.}}{33}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Dashboard: Histogram overzicht.}}{33}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Dashboard: Meter overzicht.}}{34}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Dashboard: Timer overzicht.}}{34}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Dashboard: Timer overzicht per versie.}}{35}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Dashboard: Instellingen overzicht.}}{35}{figure.4.9}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

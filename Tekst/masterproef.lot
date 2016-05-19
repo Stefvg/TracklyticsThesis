@@ -14,15 +14,15 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {6.1}{\ignorespaces Resultaten call tijd Counter (in seconden)}}{46}{table.6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Resultaten call tijd Timer (in seconden)}}{47}{table.6.2}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Resultaten call tijd Timer met Aggregatie (in seconden)}}{47}{table.6.3}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Resultaten call tijd Histogram (in seconden)}}{47}{table.6.4}
-\contentsline {table}{\numberline {6.5}{\ignorespaces Resultaten call tijd Meter (in seconden)}}{48}{table.6.5}
-\contentsline {table}{\numberline {6.6}{\ignorespaces Resultaten call tijd Meter met Aggregatie (in seconden)}}{48}{table.6.6}
-\contentsline {table}{\numberline {6.7}{\ignorespaces Resultaten call tijd Gauge (in seconden)}}{48}{table.6.7}
-\contentsline {table}{\numberline {6.8}{\ignorespaces Resultaten call tijd Gauge met Aggregatie (in seconden)}}{49}{table.6.8}
-\contentsline {table}{\numberline {6.9}{\ignorespaces Resultaten metingen van het aanmaken van een Counter (in FPS)}}{49}{table.6.9}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Resultaten call tijd Counter (in seconden)}}{50}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Resultaten call tijd Timer (in seconden)}}{51}{table.6.2}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Resultaten call tijd Timer met Aggregatie (in seconden)}}{51}{table.6.3}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Resultaten call tijd Histogram (in seconden)}}{51}{table.6.4}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Resultaten call tijd Meter (in seconden)}}{52}{table.6.5}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Resultaten call tijd Meter met Aggregatie (in seconden)}}{52}{table.6.6}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Resultaten call tijd Gauge (in seconden)}}{52}{table.6.7}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Resultaten call tijd Gauge met Aggregatie (in seconden)}}{53}{table.6.8}
+\contentsline {table}{\numberline {6.9}{\ignorespaces Resultaten metingen van het aanmaken van een Counter (in FPS)}}{53}{table.6.9}
 \addvspace {10pt}
 \addvspace {10pt}
 \select@language {dutch}
