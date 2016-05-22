@@ -28,6 +28,26 @@
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Dashboard: Instellingen overzicht.}}{35}{figure.4.9}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Grafiek vergelijking tijden aanmaken van een Counter.}}{52}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Grafiek vergelijking tijden verhogen van een Counter.}}{56}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Grafiek vergelijking tijden verlagen van een Counter.}}{56}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Grafiek vergelijking tijden aanmaken van een Timer.}}{57}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Grafiek vergelijking tijden stoppen van een Timer.}}{57}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Grafiek vergelijking tijden aanmaken van een TimerAggregate object.}}{58}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Grafiek vergelijking tijden stoppen van een TimerAggregate object.}}{58}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Grafiek vergelijking tijden aanmaken van een Histogram.}}{59}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Grafiek vergelijking tijden addEntry van een Meter.}}{59}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Grafiek vergelijking tijden addEntry van een MeterAggregate object.}}{60}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Grafiek vergelijking tijden aanmaken van een Gauge.}}{60}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Grafiek vergelijking tijden aanmaken van een GaugeAggregate.}}{61}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Grafiek vergelijking tussen het aanmaken van een Gauge en een GaugeAggregate object.}}{62}{figure.6.13}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Grafiek vergelijking tussen het aanmaken van een Gauge en een GaugeAggregate object zonder opslaan op de harde schijf.}}{63}{figure.6.14}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Grafiek vergelijking tussen het aanmaken van een Meter en een MeterAggregate object.}}{63}{figure.6.15}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Grafiek vergelijking tussen het aanmaken van een Meter en een MeterAggregate object zonder opslaan op de harde schijf.}}{64}{figure.6.16}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Grafiek vergelijking tussen het aanmaken van een Timer en een TimerAggregate object.}}{64}{figure.6.17}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Grafiek vergelijking tussen het aanmaken van een Timer en een TimerAggregate object zonder opslaan op de harde schijf.}}{65}{figure.6.18}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Grafiek vergelijking tussen het aanroepen van de stop methode op een Timer en het aanroepen van de stop methode op een TimerAggregate object.}}{65}{figure.6.19}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Grafiek vergelijking tussen het aanroepen van de stop methode op een Timer en het aanroepen van de stop methode op een TimerAggregate object zonder opslaan op de harde schijf..}}{66}{figure.6.20}
 \addvspace {10pt}
 \addvspace {10pt}
 \select@language {dutch}

@@ -103,10 +103,10 @@
 \contentsline {subsection}{\numberline {6.3.1}Resultaten}{49}{subsection.6.3.1}
 \contentsline {subsubsection}{StopWatch applicatie}{49}{section*.45}
 \contentsline {subsubsection}{Andere applicatie}{49}{section*.46}
-\contentsline {section}{\numberline {6.4}Conclusie}{49}{section.6.4}
-\contentsline {appendix}{\chapternumberline {A}IEEE Artikel}{57}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Poster Tracklytics}{63}{appendix.B}
-\contentsline {chapter}{Bibliografie}{65}{section*.48}
+\contentsline {section}{\numberline {6.4}Conclusie en bespreking resultaten}{50}{section.6.4}
+\contentsline {appendix}{\chapternumberline {A}IEEE Artikel}{69}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Poster Tracklytics}{75}{appendix.B}
+\contentsline {chapter}{Bibliografie}{77}{section*.48}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

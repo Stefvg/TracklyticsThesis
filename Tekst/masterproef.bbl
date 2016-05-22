@@ -143,6 +143,11 @@ NetMarketShare.
 \newblock
   https://www.netmarketshare.com/operating-system-market-share.aspx?qprid=8\&qpcustomd=1.
 
+\bibitem{nielsen1994usability}
+J.~Nielsen.
+\newblock {\em Usability engineering}.
+\newblock Elsevier, 1994.
+
 \bibitem{MySQL}
 Oracle.
 \newblock Mysql.
@@ -153,6 +158,12 @@ Statistica.
 \newblock Number of smartphone users worldwide from 2014 to 2019 (in millions).
 \newblock
   http://www.statista.com/statistics/330695/number-of-smartphone-users-worldwide/.
+
+\bibitem{MasterSlave}
+E.~Sverdlov.
+\newblock How to set up master slave replication in mysql.
+\newblock
+  https://www.digitalocean.com/community/tutorials/how-to-set-up-master-slave-replication-in-mysql.
 
 \bibitem{waller2015including}
 J.~Waller, N.~C. Ehmke, and W.~Hasselbring.

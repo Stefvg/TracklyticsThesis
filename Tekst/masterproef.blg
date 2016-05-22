@@ -19,45 +19,45 @@ Warning--to sort, need author or key in PHP
 Warning--to sort, need author or key in ChartJS
 Warning--to sort, need author or key in AngularSlider
 Warning--empty journal in beck2001manifesto
-You've used 34 entries,
+You've used 36 entries,
             2118 wiz_defined-function locations,
-            663 strings with 7742 characters,
-and the built_in function-call counts, 8445 in all, are:
-= -- 811
-> -- 322
+            673 strings with 7987 characters,
+and the built_in function-call counts, 8864 in all, are:
+= -- 849
+> -- 336
 < -- 4
-+ -- 137
-- -- 102
-* -- 379
-:= -- 1322
-add.period$ -- 97
-call.type$ -- 34
-change.case$ -- 150
++ -- 143
+- -- 106
+* -- 392
+:= -- 1394
+add.period$ -- 103
+call.type$ -- 36
+change.case$ -- 157
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 314
-empty$ -- 830
-format.name$ -- 102
-if$ -- 1871
+cite$ -- 44
+duplicate$ -- 333
+empty$ -- 874
+format.name$ -- 106
+if$ -- 1962
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 8
-newline$ -- 164
-num.names$ -- 54
-pop$ -- 273
+int.to.str$ -- 36
+missing$ -- 10
+newline$ -- 174
+num.names$ -- 58
+pop$ -- 289
 preamble$ -- 1
-purify$ -- 118
+purify$ -- 124
 quote$ -- 0
-skip$ -- 304
+skip$ -- 318
 stack$ -- 0
-substring$ -- 340
-swap$ -- 68
+substring$ -- 350
+swap$ -- 70
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 136
+type$ -- 142
 warning$ -- 8
-while$ -- 72
-width$ -- 36
-write$ -- 308
+while$ -- 76
+width$ -- 38
+write$ -- 327
 (There were 8 warnings)
