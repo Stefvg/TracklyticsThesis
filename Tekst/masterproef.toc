@@ -107,7 +107,7 @@
 \contentsline {section}{\numberline {7.4}Conclusie en bespreking resultaten}{52}{section.7.4}
 \contentsline {chapter}{\chapternumberline {8}Besluit}{69}{chapter.8}
 \contentsline {paragraph}{De performance impact}{69}{section*.47}
-\contentsline {paragraph}{De schaalbaarheid}{69}{section*.48}
+\contentsline {paragraph}{De schaalbaarheid}{70}{section*.48}
 \contentsline {paragraph}{De bruikbaarheid}{70}{section*.49}
 \contentsline {paragraph}{Om de beschikbaarheid}{70}{section*.50}
 \contentsline {appendix}{\chapternumberline {A}IEEE Artikel}{75}{appendix.A}
