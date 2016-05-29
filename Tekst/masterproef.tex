@@ -3,14 +3,15 @@
 applicaties},
   author={Stef Van Gils},
   promotor={Prof. dr. ir. W. Joosen},
-  assessor={Prof. dr. ir. G. Janssens,\\ Alexander Van Den Berghe},
+  assessor={Prof. dr. ir. G. Janssens\\ Alexander Van Den Berghe},
   assistant={Dr. D. Van Landuyt}}
 % De volgende \setup mag verwijderd worden als geen fiche gewenst is.
 \setup{filingcard,
-  translatedtitle={Tracklytics: een DevOps library voor het monitoren van operationele mobiele 
+  translatedtitle={Tracklytics: a DevOps library for monitoring operational mobile applications
 applicaties},
   udc=621.3,
-  shortabstract={}}
+  shortabstract={Bij het ontwikkelen van software wordt meer en meer gebruik gemaakt van DevOps concepten. In 2016 maakt het ontwikkelen van mobiele applicaties een groot deel uit van de ontwikkelde software, namelijk ongeveer 43\% van de developers geeft aan mobiele applicaties te ontwikkelen \cite{MobApp}. \\
+In deze thesis is er onderzoek gedaan naar hoe de DevOps concepten gecombineerd kunnen worden met het ontwikkelen van mobiele applicaties. Er zijn een aantal oplossingen opgesomd voor dit probleem. Uiteindelijk is ervoor gekozen om een mobiele monitoring library te bouwen die ingebouwd kan worden in mobiele applicaties. De architectuur en implementatie van deze library worden besproken en ge\"evalueerd. Ten slotte wordt er uitgelegd hoe developers de library kunnen inbouwen in de gewenste mobiele applicatie. }}
 % Verwijder de "%" op de volgende lijn als je de kaft wil afdrukken
 %\setup{coverpageonly}
 % Verwijder de "%" op de volgende lijn als je enkel de eerste pagina's wil
@@ -51,19 +52,27 @@ applicaties},
 \begin{document}
 
 \begin{preface}
-  Dit is mijn dankwoord om iedereen te danken die mij bezig gehouden heeft.
-  Hierbij dank ik mijn promotor, mijn begeleider en de voltallige jury.
-  Ook mijn familie heeft mij erg gesteund natuurlijk.
+Dit voorwoord heb ik als laatste geschreven om iedereen te kunnen bedanken die me heeft geholpen bij het ontwikkelen van deze thesis. Het afgelopen jaar is zwaar geweest en er waren vele moeilijkheden die overwonnen moesten worden, maar uiteindelijk is deze thesis toch afgeraakt. \\
+
+Allereerst wil ik professor Joosen en de DistriNet onderzoeksgroep bedanken, omdat ze mij de kans hebben gegeven deze thesis te maken. De thesis heeft me kritischer doen denken en dieper doen ingaan op zaken. \\
+
+Daarnaast wil ik mijn begeleider, Dimitri van Landuyt, bedanken om me telkens weer de weg te wijzen als ik tussen het bos de bomen niet meer kon zien. Zonder hem zou ik de thesis niet hebben kunnen afgeven op dit moment en al zeker niet met deze kwaliteit. Hij heeft me mijn gezichtsveld doen uitbreiden en dieper doen ingaan op de zaken die op het eerste zicht niet belangrijk lijken, maar dat toch zijn. Bedankt! \\
+
+Ik wil naast Dimitri ook Wouter de Borger bedanken. Hij was mijn begeleider in het eerste semester en heeft samen met mij het concept van deze thesis uitgedacht. Hij heeft me op weg gestuurd in de DevOps concepten en heeft me geleerd om alles wat je tegen komt in vraag te stellen. Bedankt om me hierbij te helpen! \\
+
+Daarbuiten wil ik al mijn vrienden bedanken om mij even van de thesis af te kunnen zonderen en me met hen te kunnen ontspannen. \\
+
+Last, but not least wil ik mijn ouders bedanken, omdat ze mij de kans hebben gegeven om aan de KU Leuven te studeren, me te steunen tijdens de voorbije vijf jaar en te helpen met het nalezen van deze thesis. Bedankt!
+
+  
+  
 \end{preface}
 
 \tableofcontents*
 
 \begin{abstract}
-  In dit \texttt{abstract} environment wordt een al dan niet uitgebreide
-  samenvatting van het werk gegeven. De bedoeling is wel dat dit tot
-  1~bladzijde beperkt blijft.
-
-  \lipsum[1]
+Bij het ontwikkelen van software wordt meer en meer gebruik gemaakt van DevOps concepten. In 2016 maakt het ontwikkelen van mobiele applicaties een groot deel uit van de ontwikkelde software, namelijk ongeveer 43\% van de developers geeft aan mobiele applicaties te ontwikkelen \cite{MobApp}. \\
+In deze thesis is er onderzoek gedaan naar hoe de DevOps concepten gecombineerd kunnen worden met het ontwikkelen van mobiele applicaties. Er zijn een aantal oplossingen opgesomd voor dit probleem. Uiteindelijk is ervoor gekozen om een mobiele monitoring library te bouwen die ingebouwd kan worden in mobiele applicaties. De architectuur en implementatie van deze library worden besproken en ge\"evalueerd. Ten slotte wordt er uitgelegd hoe developers de library kunnen inbouwen in de gewenste mobiele applicatie. 
 \end{abstract}
 
 % Een lijst van figuren en tabellen is optioneel

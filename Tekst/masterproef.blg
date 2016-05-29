@@ -1,12 +1,14 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: masterproef.aux
+A level-1 auxiliary file: inleiding.aux
 A level-1 auxiliary file: context.aux
 A level-1 auxiliary file: doelstelling.aux
 A level-1 auxiliary file: architectuur.aux
 A level-1 auxiliary file: implementatie.aux
 A level-1 auxiliary file: tutorial.aux
 A level-1 auxiliary file: evaluatie.aux
+A level-1 auxiliary file: besluit.aux
 A level-1 auxiliary file: app-a.aux
 A level-1 auxiliary file: app-b.aux
 The style file: abbrv.bst
@@ -19,45 +21,45 @@ Warning--to sort, need author or key in PHP
 Warning--to sort, need author or key in ChartJS
 Warning--to sort, need author or key in AngularSlider
 Warning--empty journal in beck2001manifesto
-You've used 36 entries,
+You've used 37 entries,
             2118 wiz_defined-function locations,
-            673 strings with 7987 characters,
-and the built_in function-call counts, 8864 in all, are:
-= -- 849
-> -- 336
+            680 strings with 8139 characters,
+and the built_in function-call counts, 9068 in all, are:
+= -- 868
+> -- 343
 < -- 4
-+ -- 143
-- -- 106
-* -- 392
-:= -- 1394
-add.period$ -- 103
-call.type$ -- 36
-change.case$ -- 157
++ -- 146
+- -- 108
+* -- 397
+:= -- 1428
+add.period$ -- 106
+call.type$ -- 37
+change.case$ -- 161
 chr.to.int$ -- 0
-cite$ -- 44
-duplicate$ -- 333
-empty$ -- 874
-format.name$ -- 106
-if$ -- 1962
+cite$ -- 45
+duplicate$ -- 340
+empty$ -- 896
+format.name$ -- 108
+if$ -- 2007
 int.to.chr$ -- 0
-int.to.str$ -- 36
+int.to.str$ -- 37
 missing$ -- 10
-newline$ -- 174
-num.names$ -- 58
-pop$ -- 289
+newline$ -- 179
+num.names$ -- 60
+pop$ -- 297
 preamble$ -- 1
-purify$ -- 124
+purify$ -- 127
 quote$ -- 0
-skip$ -- 318
+skip$ -- 326
 stack$ -- 0
-substring$ -- 350
-swap$ -- 70
+substring$ -- 355
+swap$ -- 71
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 142
+type$ -- 146
 warning$ -- 8
-while$ -- 76
-width$ -- 38
-write$ -- 327
+while$ -- 78
+width$ -- 39
+write$ -- 336
 (There were 8 warnings)

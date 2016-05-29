@@ -4,7 +4,7 @@ Het onderzoek van deze thesis baseert zich op twee invalshoeken, enerzijds hoe d
 De eerste invalshoek gaat over hoe we developers kunnen helpen bij het ontwikkelen van een mobiele applicatie door de developers problemen te laten identificeren (zoals trage code sequenties) en de eigenaars te laten ontdekken welke componenten van de applicatie het meest gebruikt worden en welke het minste. Met deze informatie weten de developers waar ze verbeteringen kunnen aanbrengen en weten eigenaren in welke functies ze wel of niet moeten investeren. Langs de andere kant is het belangrijk om te weten wat de impact is van het verkrijgen van de informatie op de prestaties van de applicatie en hoeveel moeite en tijd er nodig is van de developer om deze informatie te kunnen vergaren.\\
 
 
-Om dit onderzoek te doen slagen wordt er een library gebouwd die developers in hun applicaties kunnen inbouwen om hun applicatie te monitoren. In de volgende sectie wordt uitgelegd wat het doel is van deze library. In het verdere verloop van deze thesis wordt uitgelegd hoe de architectuur achter de gebouwde library in elkaar zit en waarom de keuzes zijn gemaakt voor die structuur. Nadat deze architectuur beschreven is wordt er een uitleg gegeven over de specifieke implementatie van de library. Ten slotte wordt de library ge\"evalueerd om te kijken of de kwaliteit van de library voldoende is om gebruikt te worden in de applicaties. 
+Om dit onderzoek te doen slagen wordt er een library gebouwd die developers in hun applicaties kunnen inbouwen om hun applicatie te monitoren. In de volgende sectie wordt uitgelegd wat het doel is van deze library. In het verdere verloop van deze thesis wordt uitgelegd hoe de architectuur achter de gebouwde library in elkaar zit en waarom de keuzes zijn gemaakt voor die structuur. Nadat deze architectuur beschreven is, wordt er een uitleg gegeven over de specifieke implementatie van de library. Ten slotte wordt de library ge\"evalueerd om te kijken of de kwaliteit van de library voldoende is om gebruikt te worden in de applicaties. 
 
 \section{Library}
 Het doel van de library is om developers deze library te laten inbouwen in hun applicatie en met behulp van de methodes aangeboden door deze library de applicatie te kunnen monitoren. Deze methodes moeten voldoende zijn om alle aspecten van de applicatie te kunnen monitoren. \\
@@ -29,7 +29,7 @@ Niet enkel de effici\"entie van het gebruik van de netwerkinterface is van belan
 De impact op de performance van de applicatie is het belangrijkste aspect in het bouwen van een monitoring library voor mobiele applicaties. Indien deze impact relatief groot is, dan is het voor developers onmogelijk om deze library in de applicatie in te bouwen en nog steeds een degelijke responsiviteit en snelheid van deze applicatie te behalen. 
 
 \subsection{Schaalbaarheid}
-Zoals hierboven vermeld is de snelheid van de back end een belangrijk aspect inzake performance van de netwerkinterface. \'E\'en aspect van deze snelheid is de implementatie van deze back end. De implementatie moet geoptimaliseerd worden zodat deze zo snel mogelijk een resultaat kan teruggeven aan de library. Het andere aspect in de snelheid van de back end is de load die de servers aankunnen om al de requests te verwerken. De mate van schaalbaarheid is hier een belangrijke factor in. \\
+Zoals hierboven vermeldt, is de snelheid van de back end een belangrijk aspect inzake performance van de netwerkinterface. \'E\'en aspect van deze snelheid is de implementatie van deze back end. De implementatie moet geoptimaliseerd worden zodat deze zo snel mogelijk een resultaat kan teruggeven aan de library. Het andere aspect in de snelheid van de back end is de load die de servers aankunnen om al de requests te verwerken. De mate van schaalbaarheid is hier een belangrijke factor in. \\
 
 Een applicatie wordt simultaan gebruikt door gemiddeld \textit{N} gebruikers waarin de library aanwezig is. Deze applicatie verstuurt per keer gemiddeld \textit{X} metingen. De library wordt gebruikt door \textit{M} verschillende applicaties. De applicaties zijn geconfigureerd met een gemiddeld synchronisatie-interval \textit{T}. Dit geeft dat het gemiddeld aantal requests per tijdseenheid neerkomt op: $RpT=\frac{M*N*X}{T}$. Hoe hoger dit getal, hoe hoger het aantal requests de servers moeten beantwoorden en hoe meer load er per server komt. Elke server \textit{S} heeft een limiet kwa aantal requests die simultaan kunnen beantwoord worden \textit{R}. De volgende vergelijking geeft de relatie aan tussen het gemiddeld aantal requests en het aantal requests dat beantwoord kan worden: $S*R > RpT$. Dit wil zeggen dat er (altijd) meer requests moeten kunnen beantwoord worden dan dat er gemiddeld per tijdseenheid aan komen.\\
 
@@ -39,11 +39,11 @@ Een applicatie wordt simultaan gebruikt door gemiddeld \textit{N} gebruikers waa
 Het primaire doel van een library is om de taken uit te voeren die worden gegeven aan de library. Naast dit primaire doel is het ook de bedoeling dat developers de library kunnen gebruiken zonder veel effort. De bruikbaarheid van de library moet zo hoog mogelijk zijn zodat developers zonder veel tijd en moeite deze kunnen integreren in een applicatie. De volgende punten zijn hierin belangrijk: 
 
 \begin{itemize}
-\item Concreet willen we maximaal vermijden dat de library de developer hindert bij het ontwikkelen van de applicatie.
+\item concreet willen we maximaal vermijden dat de library de developer hindert bij het ontwikkelen van de applicatie;
 
-\item Concreet hebben we als doelstelling het vereiste aantal lijnen code en configuratie zo klein mogelijk te houden.
+\item concreet hebben we als doelstelling het vereiste aantal lijnen code en configuratie zo klein mogelijk te houden;
 
-\item Concreet willen we dat de developer een zo minimaal mogelijke tijd moet spenderen bij het implementeren van de library.
+\item concreet willen we dat de developer een zo minimaal mogelijke tijd moet spenderen bij het implementeren van de library.
 \end{itemize}
 
 
