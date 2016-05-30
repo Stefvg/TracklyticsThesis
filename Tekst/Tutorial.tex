@@ -13,7 +13,7 @@ Om de library snel en gemakkelijk in een applicatie in te bouwen werd ervoor gek
 
 
 \section{Initialisatie}
-De Tracklytics library moet bij het opstarten van de applicatie gestart worden om het synchronisatieproces te starten. De aanbevolen manier is om dit in de \texttt{\justify AppDelegate} klasse te doen in de \texttt{\justify (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions} methode. Deze methode wordt automatisch uitgevoerd nadat de applicatie opgestart is, in welke applicatie dan ook. In deze methode is het dus belangrijk om volgende code uit te voeren: \texttt{\justify [TrackLytics startTrackerWithAppCode:appCode withSyncInterval:interval];}. Deze code start het synchronisatieproces van de Tracklytics library. De parameter appCode stelt de unieke code voor die Tracklytics gebruikt voor het identificeren van de applicatie. De interval parameter geeft de tijd (in seconden) tussen twee synchronisatiecycli weer. 
+De Tracklytics library moet bij het opstarten van de applicatie gestart worden om het synchronisatie proces te starten. De aanbevolen manier is om dit in de \texttt{\justify AppDelegate} klasse te doen in de \texttt{\justify (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions} methode. Deze methode wordt automatisch uitgevoerd nadat de applicatie opgestart is, in welke applicatie dan ook. In deze methode is het dus belangrijk om volgende code uit te voeren: \texttt{\justify [TrackLytics startTrackerWithAppCode:appCode withSyncInterval:interval];}. Deze code start het synchronisatie proces van de Tracklytics library. De parameter appCode stelt de unieke code voor die Tracklytics gebruikt voor het identificeren van de applicatie. De interval parameter geeft de tijd (in seconden) tussen twee synchronisatiecycli weer. 
 
 \section{Counter}
 Een counter kan aangemaakt worden met behulp van volgende call naar de Tracklytics library: \texttt{\justify [Tracklytics createNewCounterWithType:type withName:name withValue:value]}, de withValue:value is optioneel indien er een initi\"ele waarde in de counter moet staan. Deze methode geeft een CounterObject terug, wat besproken wordt in volgende sectie. \\
@@ -70,7 +70,7 @@ Een meter is complexer dan alle andere meetobjecten in de Tracklytics library. D
 \end{itemize}
 
 \subsection{MeterController}
-De metercontroller zorgt voor het managen van de meter values. Het is mogelijk om manueel data toe te voegen of automatisch de data te laten controlleren. \\
+De metercontroller zorgt voor het managen van de meter values. Het is mogelijk om manueel data toe te voegen of automatisch de data te laten collecteren. \\
 
 Om data manueel toe te voegen moet de volgende methode uitgevoerd worden: \texttt{\justify addEntry: (float) value}. De value parameter is de waarde die moet toegevoegd worden aan de meter. \\
 
