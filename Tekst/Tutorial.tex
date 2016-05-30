@@ -4,7 +4,7 @@ In deze sectie wordt er uit de doeken gedaan hoe je als developer de Tracklytics
 \section{Installatie}
 In deze sectie wordt besproken hoe de installatie van de library in de applicatie in zijn werk gaat. \\
 
-Om de library snel en gemakkelijk in een applicatie in te bouwen is ervoor gekozen om CocoaPods te gebruiken \cite{CocoaPods}. Dit is de standaard methode om externe libraries te gebruiken in iOS. De volgende stappen moeten gebeuren om de Tracklytics library in te bouwen in de applicatie. \\
+Om de library snel en gemakkelijk in een applicatie in te bouwen werd ervoor gekozen om CocoaPods te gebruiken \cite{CocoaPods}. Dit is de standaard methode om externe libraries te gebruiken in iOS. De volgende stappen moeten gebeuren om de Tracklytics library in te bouwen in de applicatie. \\
 
 \noindent Allereerst moet er in de root folder van het project (via een terminal) van de applicatie \textit{pod init} uitgevoerd worden. Dit maakt een PodFile bestand aan. Dit bestand moet aangepast worden, het platform moet aangegeven worden als \textit{ios, 7.0} en tussen \textit{target 'AppName' do} en \textit{end} moet de volgende tekst komen: \textit{pod "Tracklytics"}. Cocoapods selecteert automatisch de laatste versie van de library. \\
 
@@ -58,11 +58,11 @@ Een timer meet de tijd dat een evenement nodig heeft. Om een timer aan te maken 
 \item name: De naam van het evenement. Deze parameter zorgt ervoor dat de data in de secties verder opgedeeld worden per naam.
 \end{itemize} 
 
-Deze methode geeft een \texttt{Timer} object terug. Vanaf dat deze methode uitgevoerd is, begint de timer te lopen. Deze blijft lopen tot de \texttt{\justify stop} methode aangeroepen wordt op het \texttt{Timer} object. De timer heeft dan een exacte waarde hoeveel tijd het evenement in beslag nam. Tracklytics houdt deze waarde bij en synchroniseert deze naar de server. 
+Deze methode geeft een \texttt{Timer} object terug. Vanaf dat deze methode uitgevoerd wordt, begint de timer te lopen. Deze blijft lopen tot de \texttt{\justify stop} methode aangeroepen wordt op het \texttt{Timer} object. De timer heeft dan een exacte waarde hoeveel tijd het evenement in beslag nam. Tracklytics houdt deze waarde bij en synchroniseert deze naar de server. 
 
 
 \section{Meter}
-Een meter is complexer dan alle andere meetobjecten in de Tracklytics library. Dit is omdat ervoor gekozen is om de mogelijkheid aan te bieden om data automatisch op een bepaald interval te collecteren. Zo moet de developer hier niet meer naar omkijken. Om dit te kunnen verwezenlijken is er een controller gemaakt, de \texttt{MeterController}, die de mogelijkheid biedt voor de automatische collectie van data en van de manuele invoer van data. Een \texttt{MeterController} kan gecre\"eerd worden door de volgende call naar de Tracklytics library: \texttt{\justify [Tracklytics createNewMeter:type]}. 
+Een meter is complexer dan alle andere meetobjecten in de Tracklytics library. Dit is, omdat ervoor gekozen werd om de mogelijkheid aan te bieden om data automatisch op een bepaald interval te collecteren. Zo moet de developer hier niet meer naar omkijken. Om dit te kunnen verwezenlijken werd er een controller gemaakt, de \texttt{MeterController}, die de mogelijkheid biedt voor de automatische collectie van data en van de manuele invoer van data. Een \texttt{MeterController} kan gecre\"eerd worden door de volgende call naar de Tracklytics library: \texttt{\justify [Tracklytics createNewMeter:type]}. 
 
 \paragraph{Parameters}
 \begin{itemize}
