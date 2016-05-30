@@ -142,28 +142,28 @@ De effort van de developer moet met een korrel zout genomen worden, omdat de ont
 300000    & 0,014826151  & 0,000553307 & 0,000544871 & 1,76572E-06  & 5,45442E-07 & 5,08001E-07 \\ \hline
 Gemiddeld & 0,004758046  & 0,000528017 & 0,000524279 & 2,17369E-06  & 5,41448E-07 & 5,35603E-07 \\ \hline
 \end{tabular}
-\caption{Resultaten call tijd \texttt{Counter} (in seconden)}
+\caption{Resultaten call tijd Counter (in seconden)}
 \label{Table:Counter}
 \end{sidewaystable}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/AanmakenCounter}
-  \caption{Grafiek vergelijking tijden aanmaken van een \texttt{Counter}.}
+  \caption{Grafiek vergelijking tijden aanmaken van een Counter.}
   \label{fig:GraphCounter}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/VerhogenCounter}
-  \caption{Grafiek vergelijking tijden verhogen van een \texttt{Counter}.}
+  \caption{Grafiek vergelijking tijden verhogen van een Counter.}
   \label{fig:GraphCounterInc}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/VerlagenCounter}
-  \caption{Grafiek vergelijking tijden verlagen van een \texttt{Counter}.}
+  \caption{Grafiek vergelijking tijden verlagen van een Counter.}
   \label{fig:GraphCounterDec}
 \end{figure}
 
@@ -187,21 +187,21 @@ Gemiddeld & 0,004758046  & 0,000528017 & 0,000524279 & 2,17369E-06  & 5,41448E-0
 300000    & 0,014302578 & 0,000522853 & 1,75735E-06  & 1,11202E-06 \\ \hline
 Gemiddeld & 0,003764705 & 0,000532956 & 2,1654E-06   & 4,99977E-06 \\ \hline
 \end{tabular}
-\caption{Resultaten call tijd \texttt{Timer} (in seconden)}
+\caption{Resultaten call tijd Timer (in seconden)}
 \label{Table:Timer}
 \end{table}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/AanmakenTimer}
-  \caption{Grafiek vergelijking tijden aanmaken van een \texttt{Timer}.}
+  \caption{Grafiek vergelijking tijden aanmaken van een Timer.}
   \label{fig:GraphTimer}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/StopTimer}
-  \caption{Grafiek vergelijking tijden stoppen van een \texttt{Timer}.}
+  \caption{Grafiek vergelijking tijden stoppen van een Timer.}
   \label{fig:GraphTimerStop}
 \end{figure}
 
@@ -222,21 +222,21 @@ Gemiddeld & 0,003764705 & 0,000532956 & 2,1654E-06   & 4,99977E-06 \\ \hline
 300000      & 1,0063E-06  & 0,000574488 & 1,01804E-06  & 1,4087E-06  \\ \hline
 Gemiddeld   & 0,000264336 & 0,001033374 & 1,2267E-05   & 1,77967E-06 \\ \hline
 \end{tabular}
-\caption{Resultaten call tijd \texttt{Timer} met Aggregatie (in seconden)}
+\caption{Resultaten call tijd Timer met Aggregatie (in seconden)}
 \label{Table:TimerAggregate}
 \end{table}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/AanmakenTimerAggregate}
-  \caption{Grafiek vergelijking tijden aanmaken van een \texttt{TimerAggregate} object.}
+  \caption{Grafiek vergelijking tijden aanmaken van een TimerAggregate object.}
   \label{fig:GraphTimerAggregate}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/StopTimerAggregate}
-  \caption{Grafiek vergelijking tijden stoppen van een \texttt{TimerAggregate} object.}
+  \caption{Grafiek vergelijking tijden stoppen van een TimerAggregate object.}
   \label{fig:GraphTimerAggregateStop}
 \end{figure}
 
@@ -258,14 +258,14 @@ Gemiddeld   & 0,000264336 & 0,001033374 & 1,2267E-05   & 1,77967E-06 \\ \hline
 300000      & 0,014828387 & 1,8752E-06   \\ \hline
 Gemiddeld   & 0,004663466 & 2,29312E-06  \\ \hline
 \end{tabular}
-\caption{Resultaten call tijd \texttt{Histogram} (in seconden)}
+\caption{Resultaten call tijd Histogram (in seconden)}
 \label{Table:Histogram}
 \end{table}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/AanmakenHistogram}
-  \caption{Grafiek vergelijking tijden aanmaken van een \texttt{Histogram}.}
+  \caption{Grafiek vergelijking tijden aanmaken van een Histogram.}
   \label{fig:GraphHistogram}
 \end{figure}
 
@@ -286,14 +286,14 @@ Gemiddeld   & 0,004663466 & 2,29312E-06  \\ \hline
 300000      & 0,015041323 & 1,89719E-06  \\ \hline
 Gemiddeld   & 0,00457222  & 2,33351E-06  \\ \hline
 \end{tabular}
-\caption{Resultaten call tijd \texttt{Meter} (in seconden)}
+\caption{Resultaten call tijd Meter (in seconden)}
 \label{Table:Meter}
 \end{table}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/AddEntryMeter}
-  \caption{Grafiek vergelijking tijden addEntry van een \texttt{Meter}.}
+  \caption{Grafiek vergelijking tijden addEntry van een Meter.}
   \label{fig:GraphMeter}
 \end{figure}
 
@@ -315,14 +315,14 @@ Gemiddeld   & 0,00457222  & 2,33351E-06  \\ \hline
 300000      & 0,000561398 & 1,10977E-06  \\ \hline
 Gemiddeld   & 0,003780842 & 9,72867E-06  \\ \hline
 \end{tabular}
-\caption{Resultaten call tijd \texttt{Meter} met Aggregatie (in seconden)}
+\caption{Resultaten call tijd Meter met Aggregatie (in seconden)}
 \label{Table:MeterAggregate}
 \end{table}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/AddEntryMeterAggregate}
-  \caption{Grafiek vergelijking tijden addEntry van een \texttt{MeterAggregate} object.}
+  \caption{Grafiek vergelijking tijden addEntry van een MeterAggregate object.}
   \label{fig:GraphMeterAggregate}
 \end{figure}
 
@@ -343,14 +343,14 @@ Gemiddeld   & 0,003780842 & 9,72867E-06  \\ \hline
 300000      & 0,015243511 & 1,90657E-06  \\ \hline
 Gemiddeld   & 0,004673515 & 2,23554E-06  \\ \hline
 \end{tabular}
-\caption{Resultaten call tijd \texttt{Gauge} (in seconden)}
+\caption{Resultaten call tijd Gauge (in seconden)}
 \label{Table:Gauge}
 \end{table}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/AanmakenGauge}
-  \caption{Grafiek vergelijking tijden aanmaken van een \texttt{Gauge}.}
+  \caption{Grafiek vergelijking tijden aanmaken van een Gauge.}
   \label{fig:GraphGauge}
 \end{figure}
 
@@ -371,13 +371,13 @@ Gemiddeld   & 0,004673515 & 2,23554E-06  \\ \hline
 300000      & 0,011473117 & 0,01040852   \\ \hline
 Gemiddeld   & 0,005461256 & 0,002834653  \\ \hline
 \end{tabular}
-\caption{Resultaten call tijd \texttt{Gauge} met Aggregatie (in seconden)}
+\caption{Resultaten call tijd Gauge met Aggregatie (in seconden)}
 \label{Table:GaugeAggregate}
 \end{table}
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/AanmakenGaugeAggregate}
-  \caption{Grafiek vergelijking tijden aanmaken van een \texttt{GaugeAggregate}.}
+  \caption{Grafiek vergelijking tijden aanmaken van een GaugeAggregate.}
   \label{fig:GraphGaugeAggregate}
 \end{figure}
 
@@ -396,7 +396,7 @@ Gemiddeld   & 0,005461256 & 0,002834653  \\ \hline
 100            & 20,8572947  &             &             &             &            \\ \hline
 1000           & 9,3930281   &             &             &             &            \\ \hline
 \end{tabular}
-\caption{Resultaten metingen van het aanmaken van een \texttt{Counter} (in FPS)}
+\caption{Resultaten metingen van het aanmaken van een Counter (in FPS)}
 \label{Table:FPS}
 \end{table}
 
@@ -414,7 +414,7 @@ Gemiddeld   & 0,005461256 & 0,002834653  \\ \hline
         1000           & 30,2901981  & 30,2194739  & 30,2063641  & 30,1752    & 30,1750657 \\
         \hline
     \end{tabular}
-\caption{Resultaten metingen van het stoppen van een \texttt{Timer} zonder opslaan op harde schijf (in FPS)}
+\caption{Resultaten metingen van het stoppen van een Timer zonder opslaan op harde schijf (in FPS)}
 \label{Table:FPSZOD}
 \end{table}
 
@@ -423,56 +423,56 @@ Gemiddeld   & 0,005461256 & 0,002834653  \\ \hline
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/GaugeVSAggregate}
-  \caption{Grafiek vergelijking tussen het aanmaken van een \texttt{Gauge} en een \texttt{GaugeAggregate} object.}
+  \caption{Grafiek vergelijking tussen het aanmaken van een Gauge en een GaugeAggregate object.}
   \label{fig:GaugeVSAggregate}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/GaugeVSAggregateZOD}
-  \caption{Grafiek vergelijking tussen het aanmaken van een \texttt{Gauge} en een \texttt{GaugeAggregate} object zonder opslaan op de harde schijf.}
+  \caption{Grafiek vergelijking tussen het aanmaken van een Gauge en een GaugeAggregate object zonder opslaan op de harde schijf.}
   \label{fig:GaugeVSAggregateZOD}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/MeterVSAggregate}
-  \caption{Grafiek vergelijking tussen het aanmaken van een \texttt{Meter} en een \texttt{MeterAggregate} object.}
+  \caption{Grafiek vergelijking tussen het aanmaken van een Meter en een MeterAggregate object.}
   \label{fig:MeterVSAggregate}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/MeterVSAggregateZOD}
-  \caption{Grafiek vergelijking tussen het aanmaken van een \texttt{Meter} en een \texttt{MeterAggregate} object zonder opslaan op de harde schijf.}
+  \caption{Grafiek vergelijking tussen het aanmaken van een Meter en een MeterAggregate object zonder opslaan op de harde schijf.}
   \label{fig:MeterVSAggregateZOD}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/TimerVSAggregate}
-  \caption{Grafiek vergelijking tussen het aanmaken van een \texttt{Timer} en een \texttt{TimerAggregate} object.}
+  \caption{Grafiek vergelijking tussen het aanmaken van een Timer en een TimerAggregate object.}
   \label{fig:TimerVSAggregate}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/TimerVSAggregateZOD}
-  \caption{Grafiek vergelijking tussen het aanmaken van een \texttt{Timer} en een \texttt{TimerAggregate} object zonder opslaan op de harde schijf.}
+  \caption{Grafiek vergelijking tussen het aanmaken van een Timer en een TimerAggregate object zonder opslaan op de harde schijf.}
   \label{fig:TimerVSAggregateZOD}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/StopVSTimerAggregate}
-  \caption{Grafiek vergelijking tussen het aanroepen van de stop methode op een \texttt{Timer} en het aanroepen van de stop methode op een \texttt{TimerAggregate} object.}
+  \caption{Grafiek vergelijking tussen het aanroepen van de stop methode op een Timer en het aanroepen van de stop methode op een TimerAggregate object.}
   \label{fig:StopVSTimerAggregate}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=1.0]{Afbeeldingen/Evaluatie/StopVSTimerAggregateZOD}
-  \caption{Grafiek vergelijking tussen het aanroepen van de stop methode op een \texttt{Timer} en het aanroepen van de stop methode op een \texttt{TimerAggregate} object zonder opslaan op de harde schijf..}
+  \caption{Grafiek vergelijking tussen het aanroepen van de stop methode op een Timer en het aanroepen van de stop methode op een TimerAggregate object zonder opslaan op de harde schijf..}
   \label{fig:StopVSTimerAggregateZOD}
 \end{figure}
 

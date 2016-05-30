@@ -47,25 +47,25 @@ De gauge klasse en het histogram zijn maar op 1 punt verschillend en dat is in d
 De timer klasse kan gebruikt worden om de lengte (in tijd) van een gebeurtenis te meten. Bij het aanmaken van de timer wordt de huidige timestamp bijgehouden. De stop() methode neemt de huidige timestamp en vergelijkt die met degene die werd bijgehouden. Dit resultaat is de duur van het evenement. Indien de programmeur de methode stop() nooit aanroept, wordt de timer niet gesynchroniseerd naar de server zodat er geen foute data tussen de data in de database staat. 
 
 \subsubsection{Meter}
-Een meter is bedoeld om een reeks van waarden te kunnen meten. Om dit voor de developer makkelijk te maken zijn er  3 componenten uitgedacht: de \texttt{Meter}, de \texttt{MeterController} en de \texttt{MeterInterface}. De meter component is een uitzondering als er gekeken wordt naar het flow diagram uit de vorige sectie \ref{fig:flow2}. In plaats van dat een \texttt{Meter} object wordt terug gegeven, wordt er een \texttt{MeterController} object terug gegeven. Een \texttt{MeterController} beheert het collecteren van de data. 
+Een meter is bedoeld om een reeks van waarden te kunnen meten. Om dit voor de developer makkelijk te maken zijn er  3 componenten uitgedacht: de Meter, de MeterController en de MeterInterface. De meter component is een uitzondering als er gekeken wordt naar het flow diagram uit de vorige sectie \ref{fig:flow2}. In plaats van dat een Meter object wordt terug gegeven, wordt er een MeterController object terug gegeven. Een MeterController beheert het collecteren van de data. 
 
 \paragraph{Meter}
-Het meter object is het object dat opgeslagen wordt en dat gesynchroniseerd wordt naar de server. Het object houdt de waarde bij en ook het tijdstip van aanmaken. Per meting dat de meter in de applicatie doet, moet er een \texttt{Meter} object aangemaakt worden. Dit is een van de reden dat de \texttt{MeterController} bestaat. 
+Het meter object is het object dat opgeslagen wordt en dat gesynchroniseerd wordt naar de server. Het object houdt de waarde bij en ook het tijdstip van aanmaken. Per meting dat de meter in de applicatie doet, moet er een Meter object aangemaakt worden. Dit is een van de reden dat de MeterController bestaat. 
 
 \paragraph{MeterController}
 De metercontroller zorgt ervoor dat nieuwe meters aangemaakt kunnen worden. De metercontroller bevat de naam en het type van de meter. De keuze om de meters op deze manier aan te maken berust zich op het feit dat zo niet telkens opnieuw het type van de meter moet meegegeven worden, omdat de metercontroller dit al doet en ook om de data periodiek op te kunnen halen. De metercontroller biedt een mogelijkheid aan om via de MeterInterface\ref{Klassediagram:MeterInferface} periodiek een waarde op te halen. Deze functionaliteit zorgt ervoor dat de developer niet telkens na een bepaald interval zelf de metercontroller aan moet roepen, maar dat dit automatisch gebeurt.
 
 \paragraph{MeterInterface}\label{Klassediagram:MeterInferface}
-De meterinterface wordt gebruikt om automatisch een waarde op te halen. De metercontroller roept de enige methode die deze interface aanbiedt (\texttt{getValue()}) aan elke keer een gegeven tijdsinterval voorbij is. De developer moet deze methode implementeren in de klasse waar deze data gecollecteerd moet worden.  
+De meterinterface wordt gebruikt om automatisch een waarde op te halen. De metercontroller roept de enige methode die deze interface aanbiedt (getValue()) aan elke keer een gegeven tijdsinterval voorbij is. De developer moet deze methode implementeren in de klasse waar deze data gecollecteerd moet worden.  
 
 
 
 \subsubsection{Aggregatie}
-Zoals besproken in de architectuur \ref{Arch:Aggregatie} is \'e\'en van de uitbreidingen van de monitoring library de developer de keuze te geven tussen het aggregeren van de data in de back end of op het toestel van de gebruiker zelf. Om deze uitbreiding te ondersteunen is ervoor gekozen om voor drie types meetobjecten de mogelijkheid tot aggregatie toe te voegen aan de Tracklytics library, namelijk: \texttt{Gauge, Meter en Timer}. De \texttt{Counter en Histogram} worden niet geaggregeerd, omdat er normaal gezien maar per type \'e\'en counter bestaat en omdat een histogram alle waardes nodig heeft om een model op te stellen. Er is geen verschil tussen de code die de developer moet implementeren in de applicatie om van deze functionaliteit gebruik te kunnen maken.\\
+Zoals besproken in de architectuur \ref{Arch:Aggregatie} is \'e\'en van de uitbreidingen van de monitoring library de developer de keuze te geven tussen het aggregeren van de data in de back end of op het toestel van de gebruiker zelf. Om deze uitbreiding te ondersteunen is ervoor gekozen om voor drie types meetobjecten de mogelijkheid tot aggregatie toe te voegen aan de Tracklytics library, namelijk: \textit{Gauge, Meter en Timer}. De \textit{Counter en Histogram} worden niet geaggregeerd, omdat er normaal gezien maar per type \'e\'en counter bestaat en omdat een histogram alle waardes nodig heeft om een model op te stellen. Er is geen verschil tussen de code die de developer moet implementeren in de applicatie om van deze functionaliteit gebruik te kunnen maken.\\
 
-\paragraph{De GaugeAggregateHelper} stelt de klasse voor die de waarden van de \texttt{Gauges} verwerkt op het toestel. In plaats van dat er telkens een nieuwe \texttt{Gauge} aangemaakt wordt, worden de volgende waarden berekend: \textit{hoogste waarde, laagste waarde, gemiddelde en mediaan}. Het totaal aantal metingen wordt telkens met \'e\'en verhoogd. Deze functionaliteit is ge\"implementeerd in de Tracklytics klasse bij de \texttt{createNewGauge} methode. 
+\paragraph{De GaugeAggregateHelper} stelt de klasse voor die de waarden van de Gauges verwerkt op het toestel. In plaats van dat er telkens een nieuwe Gauge aangemaakt wordt, worden de volgende waarden berekend: \textit{hoogste waarde, laagste waarde, gemiddelde en mediaan}. Het totaal aantal metingen wordt telkens met \'e\'en verhoogd. Deze functionaliteit is ge\"implementeerd in de Tracklytics klasse bij de \textit{createNewGauge} methode. 
 
-\paragraph{De MeterAggregateHelper} collecteert de waardes die in een \texttt{Meter} object zouden geplaatst worden. In plaats van het aanmaken van een nieuwe \texttt{Meter} wordt het totaal verhoogd met de gemeten waarde en wordt het totaal aantal metingen met \'e\'en verhoogd. Dit heeft zeker geen invloed op de code die de developer moet schrijven, omdat de \texttt{MeterController} het aanmaken van de \texttt{Meters} verzorgt.
+\paragraph{De MeterAggregateHelper} collecteert de waardes die in een Meter object zouden geplaatst worden. In plaats van het aanmaken van een nieuwe Meter wordt het totaal verhoogd met de gemeten waarde en wordt het totaal aantal metingen met \'e\'en verhoogd. Dit heeft zeker geen invloed op de code die de developer moet schrijven, omdat de MeterController het aanmaken van de Meters verzorgt.
 
 \paragraph{De TimerAggregateHelper} klasse is iets complexer. De developer moet een Timer object terug krijgen om de \textit{stop} methode te kunnen aanroepen. Dit is de reden dat de TimerAggregateHelper als superklasse de Timer heeft. Zo moet de developer zijn code niet aanpassen om deze functionaliteit te gebruiken. De Tracklytics klasse zorgt bij het aanroepen van de \textit{createTimer} methode dat de huidige tijd wordt gezet in de TimerAggregateHelper. Indien de \textit{stop} methode wordt aangeroepen, dan berekent de TimerAggregateHelper de verstreken tijd, telt deze op bij de totale tijd en verhoogt het totaal aantal metingen met \'e\'en.
 
@@ -137,42 +137,42 @@ Er is enorm veel werk gekropen in het ontwikkelen van dit dashboard. Dit omdat h
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=0.2]{Afbeeldingen/Implementatie/Counter}
-  \caption{Dashboard: \texttt{Counter} overzicht.}
+  \caption{Dashboard: Counter overzicht.}
   \label{fig:DasbhoardCounter}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=0.2]{Afbeeldingen/Implementatie/Gauge}
-  \caption{Dashboard: \texttt{Gauge} overzicht.}
+  \caption{Dashboard: Gauge overzicht.}
   \label{fig:DasbhoardGauge}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=0.2]{Afbeeldingen/Implementatie/Histogram}
-  \caption{Dashboard: \texttt{Histogram} overzicht.}
+  \caption{Dashboard: Histogram overzicht.}
   \label{fig:DasbhoardHistogram}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=0.2]{Afbeeldingen/Implementatie/Meter}
-  \caption{Dashboard: \texttt{Meter} overzicht.}
+  \caption{Dashboard: Meter overzicht.}
   \label{fig:DasbhoardMeter}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=0.2]{Afbeeldingen/Implementatie/Timer}
-  \caption{Dashboard: \texttt{Timer} overzicht.}
+  \caption{Dashboard: Timer overzicht.}
   \label{fig:DasbhoardTimer}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=0.2]{Afbeeldingen/Implementatie/Timer-Combined}
-  \caption{Dashboard: \texttt{Timer} overzicht per versie.}
+  \caption{Dashboard: Timer overzicht per versie.}
   \label{fig:DasbhoardTimerCombined}
 \end{figure}
 

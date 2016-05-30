@@ -57,11 +57,11 @@ De TracklyticsCore component biedt een Tracklytics interface aan. De UserApplica
 
 De interface bestaat uit methodes om de applicatie te monitoren. Tracklytics biedt vijf elementen aan om de applicatie te kunnen monitoren, namelijk:
 \begin{itemize}
-\item \texttt{Counter}: kan gebruikt worden om evenementen te tellen
-\item \texttt{Meter}: kan gebruikt worden om periodiek waardes op te halen.
-\item \texttt{Histogram}: kan gebruikt worden om een waarde te verzamelen dat in het dashboard in een histogram gegoten kan worden. 
-\item \texttt{Timer}: kan gebruikt worden om de lengte van een evenement te meten.
-\item \texttt{Gauge}: kan gebruikt worden om een bepaalde waarde te meten. 
+\item Counter: kan gebruikt worden om evenementen te tellen
+\item Meter: kan gebruikt worden om periodiek waardes op te halen.
+\item Histogram: kan gebruikt worden om een waarde te verzamelen dat in het dashboard in een histogram gegoten kan worden. 
+\item Timer: kan gebruikt worden om de lengte van een evenement te meten.
+\item Gauge: kan gebruikt worden om een bepaalde waarde te meten. 
 \end{itemize}
 
 \subsection{Dashboard}
