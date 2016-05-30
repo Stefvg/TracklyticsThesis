@@ -9,6 +9,7 @@ A level-1 auxiliary file: implementatie.aux
 A level-1 auxiliary file: tutorial.aux
 A level-1 auxiliary file: evaluatie.aux
 A level-1 auxiliary file: besluit.aux
+A level-1 auxiliary file: tabellen.aux
 A level-1 auxiliary file: app-a.aux
 A level-1 auxiliary file: app-b.aux
 The style file: abbrv.bst
@@ -21,45 +22,45 @@ Warning--to sort, need author or key in PHP
 Warning--to sort, need author or key in ChartJS
 Warning--to sort, need author or key in AngularSlider
 Warning--empty journal in beck2001manifesto
-You've used 37 entries,
+You've used 36 entries,
             2118 wiz_defined-function locations,
-            680 strings with 8139 characters,
-and the built_in function-call counts, 9068 in all, are:
-= -- 868
-> -- 343
+            675 strings with 7985 characters,
+and the built_in function-call counts, 8942 in all, are:
+= -- 854
+> -- 347
 < -- 4
-+ -- 146
-- -- 108
-* -- 397
-:= -- 1428
-add.period$ -- 106
-call.type$ -- 37
-change.case$ -- 161
++ -- 147
+- -- 110
+* -- 404
+:= -- 1410
+add.period$ -- 103
+call.type$ -- 36
+change.case$ -- 158
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 340
-empty$ -- 896
-format.name$ -- 108
-if$ -- 2007
+cite$ -- 44
+duplicate$ -- 338
+empty$ -- 874
+format.name$ -- 110
+if$ -- 1975
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 10
-newline$ -- 179
-num.names$ -- 60
-pop$ -- 297
+int.to.str$ -- 36
+missing$ -- 12
+newline$ -- 174
+num.names$ -- 58
+pop$ -- 291
 preamble$ -- 1
-purify$ -- 127
+purify$ -- 126
 quote$ -- 0
-skip$ -- 326
+skip$ -- 316
 stack$ -- 0
-substring$ -- 355
-swap$ -- 71
+substring$ -- 350
+swap$ -- 70
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 146
+type$ -- 140
 warning$ -- 8
-while$ -- 78
-width$ -- 39
-write$ -- 336
+while$ -- 76
+width$ -- 38
+write$ -- 328
 (There were 8 warnings)

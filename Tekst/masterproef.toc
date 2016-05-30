@@ -57,7 +57,7 @@
 \contentsline {paragraph}{MeterController}{28}{section*.24}
 \contentsline {paragraph}{MeterInterface}{28}{section*.25}
 \contentsline {subsubsection}{Aggregatie}{28}{section*.26}
-\contentsline {paragraph}{De GaugeAggregateHelper}{28}{section*.27}
+\contentsline {paragraph}{De GaugeAggregateHelper}{29}{section*.27}
 \contentsline {paragraph}{De MeterAggregateHelper}{29}{section*.28}
 \contentsline {paragraph}{De TimerAggregateHelper}{29}{section*.29}
 \contentsline {subsection}{\numberline {5.1.3}Back end}{29}{subsection.5.1.3}
@@ -78,7 +78,7 @@
 \contentsline {paragraph}{Het Timer meetobject}{39}{section*.39}
 \contentsline {section}{\numberline {5.3}Openstaande uitdagingen}{39}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}AB Testing}{39}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Operating systems}{39}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}Operating systems}{40}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}Alarmen}{40}{subsection.5.3.3}
 \contentsline {chapter}{\chapternumberline {6}Tutorial}{43}{chapter.6}
 \contentsline {section}{\numberline {6.1}Installatie}{43}{section.6.1}
@@ -95,24 +95,24 @@
 \contentsline {section}{\numberline {6.7}Meter}{46}{section.6.7}
 \contentsline {paragraph}{Parameters}{46}{section*.44}
 \contentsline {subsection}{\numberline {6.7.1}MeterController}{46}{subsection.6.7.1}
-\contentsline {chapter}{\chapternumberline {7}Evaluatie}{47}{chapter.7}
-\contentsline {section}{\numberline {7.1}Performance}{47}{section.7.1}
+\contentsline {chapter}{\chapternumberline {7}Evaluatie/Discussie}{47}{chapter.7}
+\contentsline {section}{\numberline {7.1}Performance Evaluatie}{47}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Call duration}{48}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Invloed op FPS}{48}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Schaalbaarheid}{49}{section.7.2}
-\contentsline {section}{\numberline {7.3}Developer effort}{50}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Resultaten}{51}{subsection.7.3.1}
-\contentsline {subsubsection}{StopWatch applicatie}{51}{section*.45}
-\contentsline {subsubsection}{Andere applicatie}{51}{section*.46}
-\contentsline {section}{\numberline {7.4}Conclusie en bespreking resultaten}{52}{section.7.4}
-\contentsline {chapter}{\chapternumberline {8}Besluit}{69}{chapter.8}
-\contentsline {paragraph}{De performance impact}{69}{section*.47}
-\contentsline {paragraph}{De schaalbaarheid}{70}{section*.48}
-\contentsline {paragraph}{De bruikbaarheid}{70}{section*.49}
-\contentsline {paragraph}{Om de beschikbaarheid}{70}{section*.50}
-\contentsline {appendix}{\chapternumberline {A}IEEE Artikel}{75}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Poster Tracklytics}{81}{appendix.B}
-\contentsline {chapter}{Bibliografie}{83}{section*.52}
+\contentsline {subsubsection}{Bespreking resultaten}{49}{section*.45}
+\contentsline {subsection}{\numberline {7.1.2}Invloed op FPS}{53}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Discussie Schaalbaarheid}{53}{section.7.2}
+\contentsline {section}{\numberline {7.3}Developer effort Evaluatie}{54}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Resultaten}{55}{subsection.7.3.1}
+\contentsline {section}{\numberline {7.4}Conclusie en bespreking resultaten}{55}{section.7.4}
+\contentsline {chapter}{\chapternumberline {8}Besluit}{63}{chapter.8}
+\contentsline {paragraph}{De performance impact}{63}{section*.46}
+\contentsline {paragraph}{De schaalbaarheid}{64}{section*.47}
+\contentsline {paragraph}{De bruikbaarheid}{64}{section*.48}
+\contentsline {paragraph}{Om de beschikbaarheid}{64}{section*.49}
+\contentsline {appendix}{\chapternumberline {A}Tabellen}{69}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}IEEE Artikel}{75}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Poster Tracklytics}{81}{appendix.C}
+\contentsline {chapter}{Bibliografie}{83}{section*.51}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

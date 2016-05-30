@@ -1,0 +1,197 @@
+\chapter{Tabellen} \label{Appendix}
+
+\begin{sidewaystable}
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\# metingen   & Aanmaken     & Inc         & Dec         & Aanmaken ZOD & Inc ZOD     & Dec ZOD     \\ \hline
+1         & 0,003168987  & 0,000516049 & 0,000513007 & 4,41015E-06  & 5,87324E-07 & 5,41994E-07 \\ \hline
+10        & 0,001451302  & 0,000512397 & 0,000505489 & 1,68934E-06  & 5,30546E-07 & 5,29546E-07 \\ \hline
+100       & 0,001045819  & 0,000505216 & 0,000506907 & 1,18792E-06  & 5,50558E-07 & 5,7864E-07  \\ \hline
+1000      & 0,001175395  & 0,000522625 & 0,000505655 & 2,7231E-06   & 5,35803E-07 & 5,27143E-07 \\ \hline
+10000     & 0,0017926232 & 0,000545799 & 0,000527276 & 2,05297E-06  & 5,54156E-07 & 5,10363E-07 \\ \hline
+50000     & 0,003394888  & 0,00053188  & 0,000539547 & 1,7636E-06   & 5,45784E-07 & 5,8755E-07  \\ \hline
+100000    & 0,005672893  & 0,000534656 & 0,0005382   & 2,30629E-06  & 5,26104E-07 & 4,93241E-07 \\ \hline
+200000    & 0,010294359  & 0,000530225 & 0,000537563 & 1,66409E-06  & 4,97316E-07 & 5,43947E-07 \\ \hline
+300000    & 0,014826151  & 0,000553307 & 0,000544871 & 1,76572E-06  & 5,45442E-07 & 5,08001E-07 \\ \hline
+Gemiddeld & 0,004758046  & 0,000528017 & 0,000524279 & 2,17369E-06  & 5,41448E-07 & 5,35603E-07 \\ \hline
+\end{tabular}
+\caption{Resultaten call tijd \texttt{Counter} (in seconden)}
+\label{Table:Counter}
+\end{sidewaystable}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\# metingen   & Aanmaken    & Stop        & Aanmaken ZOD & Stop ZOD    \\ \hline
+1         & 0,000342011 & 0,000580966 & 4,09013E-06  & 2,89679E-05 \\ \hline
+10        & 0,000284296 & 0,000492996 & 1,91528E-06  & 5,6982E-06  \\ \hline
+100       & 0,000298141 & 0,00049423  & 2,07685E-06  & 2,2608E-06  \\ \hline
+1000      & 0,000297281 & 0,000522041 & 2,03055E-06  & 2,18725E-06 \\ \hline
+10000     & 0,000740984 & 0,000527625 & 1,88986E-06  & 1,26034E-06 \\ \hline
+50000     & 0,002660037 & 0,000536449 & 2,03353E-06  & 1,17797E-06 \\ \hline
+100000    & 0,00515636  & 0,000544189 & 1,83201E-06  & 1,17261E-06 \\ \hline
+200000    & 0,009800656 & 0,000575258 & 1,86301E-06  & 1,16086E-06 \\ \hline
+300000    & 0,014302578 & 0,000522853 & 1,75735E-06  & 1,11202E-06 \\ \hline
+Gemiddeld & 0,003764705 & 0,000532956 & 2,1654E-06   & 4,99977E-06 \\ \hline
+\end{tabular}
+\caption{Resultaten call tijd \texttt{Timer} (in seconden)}
+\label{Table:Timer}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\# metingen & Aanmaken    & Stop        & Aanmaken ZOD & Stop        \\ \hline
+1           & 0,002120972 & 0,002666599 & 4,36699E-05  & 4,00181E-06 \\ \hline
+10          & 0,000227898 & 0,002475894 & 3,0541E-05   & 1,69697E-06 \\ \hline
+100         & 2,12032E-05 & 0,000657661 & 2,74795E-05  & 1,77817E-06 \\ \hline
+1000        & 3,52955E-06 & 0,000614075 & 3,24672E-06  & 1,51634E-06 \\ \hline
+10000       & 1,26566E-06 & 0,000587031 & 1,25878E-06  & 1,43751E-06 \\ \hline
+50000       & 1,0892E-06  & 0,000584363 & 1,12291E-06  & 1,36487E-06 \\ \hline
+100000      & 1,02262E-06 & 0,000574846 & 1,04058E-06  & 1,45262E-06 \\ \hline
+200000      & 1,03471E-06 & 0,000565405 & 1,02583E-06  & 1,36E-06    \\ \hline
+300000      & 1,0063E-06  & 0,000574488 & 1,01804E-06  & 1,4087E-06  \\ \hline
+Gemiddeld   & 0,000264336 & 0,001033374 & 1,2267E-05   & 1,77967E-06 \\ \hline
+\end{tabular}
+\caption{Resultaten call tijd \texttt{Timer} met Aggregatie (in seconden)}
+\label{Table:TimerAggregate}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\# metingen & Aanmaken    & Aanmaken ZOD \\ \hline
+1           & 0,002752006 & 4,21825E-06  \\ \hline
+10          & 0,001020319 & 1,94199E-06  \\ \hline
+100         & 0,001067632 & 2,11683E-06  \\ \hline
+1000        & 0,001118987 & 2,89034E-06  \\ \hline
+10000       & 0,001677553 & 2,00928E-06  \\ \hline
+50000       & 0,003420756 & 1,86953E-06  \\ \hline
+100000      & 0,005801659 & 1,86129E-06  \\ \hline
+200000      & 0,010283894 & 1,85536E-06  \\ \hline
+300000      & 0,014828387 & 1,8752E-06   \\ \hline
+Gemiddeld   & 0,004663466 & 2,29312E-06  \\ \hline
+\end{tabular}
+\caption{Resultaten call tijd \texttt{Histogram} (in seconden)}
+\label{Table:Histogram}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\# metingen & addEntry    & addEntry ZOD \\ \hline
+1           & 0,002198004 & 3,99419E-06  \\ \hline
+10          & 0,001131004 & 2,17136E-06  \\ \hline
+100         & 0,001070941 & 2,1365E-06   \\ \hline
+1000        & 0,001186648 & 2,36198E-06  \\ \hline
+10000       & 0,001511716 & 2,28242E-06  \\ \hline
+50000       & 0,003305941 & 2,04427E-06  \\ \hline
+100000      & 0,005528791 & 2,23297E-06  \\ \hline
+200000      & 0,010175614 & 1,88071E-06  \\ \hline
+300000      & 0,015041323 & 1,89719E-06  \\ \hline
+Gemiddeld   & 0,00457222  & 2,33351E-06  \\ \hline
+\end{tabular}
+\caption{Resultaten call tijd \texttt{Meter} (in seconden)}
+\label{Table:Meter}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\# metingen & addEntry    & addEntry ZOD \\ \hline
+1           & 0,025438964 & 4,48893E-05  \\ \hline
+10          & 0,003257507 & 2,90151E-05  \\ \hline
+100         & 0,000962322 & 6,39166E-06  \\ \hline
+1000        & 0,000811738 & 1,56662E-06  \\ \hline
+10000       & 0,000793704 & 1,18229E-06  \\ \hline
+50000       & 0,000813867 & 1,15234E-06  \\ \hline
+100000      & 0,000769992 & 1,0986E-06   \\ \hline
+200000      & 0,000618082 & 1,15231E-06  \\ \hline
+300000      & 0,000561398 & 1,10977E-06  \\ \hline
+Gemiddeld   & 0,003780842 & 9,72867E-06  \\ \hline
+\end{tabular}
+\caption{Resultaten call tijd \texttt{Meter} met Aggregatie (in seconden)}
+\label{Table:MeterAggregate}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\# metingen & Aanmaken    & Aanmaken ZOD \\ \hline
+1           & 0,002469957 & 4,12756E-06  \\ \hline
+10          & 0,001076302 & 1,95558E-06  \\ \hline
+100         & 0,001117599 & 2,09727E-06  \\ \hline
+1000        & 0,001157752 & 2,47002E-06  \\ \hline
+10000       & 0,001552656 & 2,00483E-06  \\ \hline
+50000       & 0,003327206 & 1,81246E-06  \\ \hline
+100000      & 0,005833407 & 1,91939E-06  \\ \hline
+200000      & 0,010283247 & 1,82617E-06  \\ \hline
+300000      & 0,015243511 & 1,90657E-06  \\ \hline
+Gemiddeld   & 0,004673515 & 2,23554E-06  \\ \hline
+\end{tabular}
+\caption{Resultaten call tijd \texttt{Gauge} (in seconden)}
+\label{Table:Gauge}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\# metingen & Aanmaken    & Aanmaken ZOD \\ \hline
+1           & 0,018877983 & 0,002133965  \\ \hline
+10          & 0,002148187 & 0,0004381    \\ \hline
+100         & 0,00066519  & 0,000245582  \\ \hline
+1000        & 0,000668403 & 0,000252874  \\ \hline
+10000       & 0,001156017 & 0,000333561  \\ \hline
+50000       & 0,002451678 & 0,001636235  \\ \hline
+100000      & 0,004218748 & 0,003317311  \\ \hline
+200000      & 0,007491983 & 0,006745731  \\ \hline
+300000      & 0,011473117 & 0,01040852   \\ \hline
+Gemiddeld   & 0,005461256 & 0,002834653  \\ \hline
+\end{tabular}
+\caption{Resultaten call tijd \texttt{Gauge} met Aggregatie (in seconden)}
+\label{Table:GaugeAggregate}
+\end{table}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\#metingen/sec & 60 sec sync & 30 sec sync & 15 sec sync & 10 sec syn  & 5 sec sync \\ \hline
+0              & 31,5632141  & 31,6737281  & 31,5281931  & 31,5672819  & 31,0382918 \\ \hline
+1              & 31,5482895  & 31,5798341  & 31,5577123  & 31,5036609  & 31,2145193 \\ \hline
+10             & 31,4920183  & 31,5852394  & 31,1482867  & 31,2389401  & 31,2015632 \\ \hline
+20             & 30,9340218  & 30,9576821  & 30,8974831  & 30,91473821 & 30,7183928 \\ \hline
+50             & 29,8320184  & 29,3209473  & 29,3382103  & 29,1371842  & 27,0873822 \\ \hline
+100            & 20,8572947  &             &             &             &            \\ \hline
+1000           & 9,3930281   &             &             &             &            \\ \hline
+\end{tabular}
+\caption{Resultaten metingen van het aanmaken van een \texttt{Counter} (in FPS)}
+\label{Table:FPS}
+\end{table}
+
+
+\begin{table}
+    \begin{tabular}{|l|l|l|l|l|l|}
+        \hline
+        \#metingen/sec & 60 sec sync & 30 sec sync & 15 sec sync & 10 sec syn & 5 sec sync \\ \hline
+        0              & 31,1820647  & 31,8803964  & 31,3142858  & 31,6800421 & 31,22479   \\ \hline
+        1              & 31,0432074  & 31,0152085  & 31,2826062  & 31,6564528 & 31,6203637 \\ \hline
+        10             & 31,0542531  & 31,1544302  & 31,6991781  & 31,5175955 & 31,7503975 \\ \hline
+        20             & 31,3124629  & 31,3124629  & 31,3124629  & 31,3124629 & 31,3124629 \\ \hline
+        50             & 31,3699147  & 31,0174307  & 31,1349254  & 31,1842869 & 31,41264   \\ \hline
+        100            & 31,2135833  & 31,222065   & 31,1640447  & 31,1833848 & 31,1436048 \\ \hline
+        1000           & 30,2901981  & 30,2194739  & 30,2063641  & 30,1752    & 30,1750657 \\
+        \hline
+    \end{tabular}
+\caption{Resultaten metingen van het stoppen van een \texttt{Timer} zonder opslaan op harde schijf (in FPS)}
+\label{Table:FPSZOD}
+\end{table}
+

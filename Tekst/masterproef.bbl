@@ -28,11 +28,6 @@ Php.
 Ubuntu.
 \newblock http://www.ubuntu.com.
 
-\bibitem{RDBMS}
-M.~Allen.
-\newblock Relational databases are not designed for scale.
-\newblock http://www.marklogic.com/blog/relational-databases-scale/.
-
 \bibitem{iOSMS}
 Apple.
 \newblock App store.
@@ -80,6 +75,11 @@ CocoaPods.
 W.~de~Kort.
 \newblock What is devops?
 \newblock In {\em DevOps on the Microsoft Stack}, pages 3--8. Springer, 2016.
+
+\bibitem{fischer2003analyzing}
+M.~Fischer, M.~Pinzger, and H.~Gall.
+\newblock {\em Analyzing and relating bug report data for feature tracking}.
+\newblock IEEE, 2003.
 
 \bibitem{fowler2001agile}
 M.~Fowler and J.~Highsmith.
@@ -163,12 +163,6 @@ Statistica.
 \newblock Number of smartphone users worldwide from 2014 to 2019 (in millions).
 \newblock
   http://www.statista.com/statistics/330695/number-of-smartphone-users-worldwide/.
-
-\bibitem{MasterSlave}
-E.~Sverdlov.
-\newblock How to set up master slave replication in mysql.
-\newblock
-  https://www.digitalocean.com/community/tutorials/how-to-set-up-master-slave-replication-in-mysql.
 
 \bibitem{waller2015including}
 J.~Waller, N.~C. Ehmke, and W.~Hasselbring.
