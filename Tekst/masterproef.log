@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.11.14)  31 MAY 2016 12:17
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.11.14)  31 MAY 2016 14:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1661,7 +1661,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
 File: Afbeeldingen/Architectuur/Deployment.png Graphic file (type QTm)
 <use  "Afbeeldingen/Architectuur/Deployment.png" >
-Overfull \hbox (90.66858pt too wide) in paragraph at lines 94--95
+Overfull \hbox (85.85115pt too wide) in paragraph at lines 94--95
  [][] 
  []
 
@@ -1889,6 +1889,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
 File: Afbeeldingen/Implementatie/ClassDiagram.png Graphic file (type QTm)
 <use  "Afbeeldingen/Implementatie/ClassDiagram.png" >
+Overfull \hbox (15.08453pt too wide) in paragraph at lines 10--11
+ [][] 
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
