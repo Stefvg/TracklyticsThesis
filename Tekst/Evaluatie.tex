@@ -1,9 +1,9 @@
 \chapter{Evaluatie/Discussie} \label{evaluatie}
-In deze sectie wordt de ontwikkelde library ge\"evalueerd. Allereerst wordt er gekeken naar wat de impact van de library op de performance van de applicatie is \ref{performance}. Verder in dit hoofdstuk wordt de schaalbaarheid van de library bekeken \ref{schaalbaarheid}. Tot slot wordt er nog gekeken hoeveel effort er van de developer nodig is om de library te integreren in een applicatie \ref{Section:Effort}. Uit deze evaluaties wordt een conclusie getrokken over de Tracklytics library \ref{Section:Conclusie}.
+In deze sectie wordt de ontwikkelde library ge\"evalueerd. Allereerst wordt er gekeken naar wat de impact van de library op de performance van de applicatie is in Sectie \ref{performance}. Verder in dit hoofdstuk wordt de schaalbaarheid van de library bekeken in Sectie \ref{schaalbaarheid}. Tot slot wordt er in Sectie \ref{Section:Effort} nog gekeken hoeveel effort er van de developer nodig is om de library te integreren in een applicatie. Uit deze evaluaties wordt een conclusie getrokken over de Tracklytics library in Sectie \ref{Section:Conclusie}.
 
 
 \section{Performance Evaluatie} \label{performance}
-In Hoofdstuk \ref{doelstelling} werd aangehaald dat impact van de Tracklytics library op de performance aanvaardbaar moet zijn om de applicatie niet significant te doen vertragen. In deze sectie wordt deze impact onderzocht en ge\"evalueerd. \\
+In Hoofdstuk \ref{doelstelling} werd aangehaald dat de impact van de Tracklytics library op de performance aanvaardbaar moet zijn om de applicatie niet significant te doen vertragen. In deze sectie wordt deze impact onderzocht en ge\"evalueerd. \\
 
 Performance werd gemeten in twee verschillende applicaties, namelijk een stopwatch applicatie en een angry birds kloon \cite{AngryBirds}. De stopwatch wordt gebruikt omdat dit een niet-CPU-intensieve applicatie is en zo de resultaten niet vertekend zijn. De angry birds applicatie is CPU-intensiever en vereist een bepaalde framerate, aangezien dit een spel is. Deze applicatie wordt gebruikt  om de impact van de Tracklytics library op de framerate te onderzoeken. \\
 
@@ -16,7 +16,7 @@ De evaluaties zijn uitgevoerd op een iPhone 6 \cite{iPhone} met als besturingssy
 In de volgende secties worden de metingen uitgelegd en uitgevoerd. Er gaat gemeten worden hoe lang de gemiddelde uitvoeringstijd bedraagt per methode die gebruikt kan worden van de library. Nadien wordt er gekeken naar de impact van de library op de framerate van de angry birds kloon.\\
 
 \subsection{Call duration}
-In deze sectie wordt uitgezocht hoelang het gemiddeld duurt voor elke methode van de Tracklytics library om volledig uitgevoerd te worden. Zo kan er ondervonden worden hoe groot de extra vertraging is die de library invoert in de applicatie. Deze test opstelling kan gezien worden als een benchmark. Om te testen hoe lang een methode gemiddeld duurt om uitgevoerd te worden, werd de volgende testopstelling uitgedacht. De geteste methode wordt X aantal keer uitgevoerd om hieruit een gemiddelde tijd te kunnen berekenen. Deze X wordt stelselmatig verhoogd om te kijken of de grootte van deze X een invloed heeft op de gemiddelde vertraging van de geteste methode. Deze testopstelling wordt gebruikt om alle beschikbare methodes in de Tracklytics library te evalueren. Het synchronisatieinterval is 60 seconden. \\
+In deze sectie wordt uitgezocht hoe lang het gemiddeld duurt voor elke methode van de Tracklytics library om volledig uitgevoerd te worden. Zo kan er ondervonden worden hoe groot de extra vertraging is die de library invoert in de applicatie. Deze test opstelling kan gezien worden als een benchmark. Om te testen hoe lang een methode gemiddeld duurt om uitgevoerd te worden, werd de volgende testopstelling uitgedacht. De geteste methode wordt X aantal keer uitgevoerd om hieruit een gemiddelde tijd te kunnen berekenen. Deze X wordt stelselmatig verhoogd om te kijken of de grootte van deze X een invloed heeft op de gemiddelde vertraging van de geteste methode. Deze testopstelling werd gebruikt om alle beschikbare methodes in de Tracklytics library te evalueren. Het synchronisatieinterval bedraagt 60 seconden. \\
 
 In de vorige secties werd beschreven dat de developer de keuze heeft tussen het tijdelijk opslaan van de metingen op de harde schijf van het toestel en het niet opslaan van de metingen op de harde schijf van het toestel. Dit heeft een invloed op de prestaties van de library, omdat er een significant prestatieverschil zit in disk I/O en verwerkingskracht \cite{diskIO}. Om dit prestatieverschil in kaart te brengen werd deze evaluatie uitgevoerd, eenmaal met het opslaan op disk en eenmaal zonder het opslaan op disk (aangegeven in de resultaten als ZOD).\\
 
@@ -84,7 +84,7 @@ De figuur \ref{fig:GraphTimerAggregateStop} geeft de tijd dat het kost om een \t
   \label{fig:GraphGaugeAggregate}
 \end{figure}
 
-De figuur \ref{fig:GraphGaugeAggregate} geeft de grafiek weer die het aanmaken van een \texttt{GaugeAggregate} weergeeft. In deze grafiek kan gezien worden dat verschil tussen het opslaan van de gegevens op de harde schijf en het niet opslaan van de gegevens op de harde schijf minimaal wordt indien een treshold bereikt wordt. \\
+De figuur \ref{fig:GraphGaugeAggregate} laat de grafiek die het aanmaken van een \texttt{GaugeAggregate} weergeeft zien. In deze grafiek kan gezien worden dat verschil tussen het opslaan van de gegevens op de harde schijf en het niet opslaan van de gegevens op de harde schijf minimaal wordt indien een treshold (ongeveer 100 simultane metingen) bereikt wordt. \\
 
 
 \subsection{Invloed op FPS}
@@ -92,7 +92,7 @@ De gemiddelde tijd om een methode uit te voeren zegt iets over de vertraging die
 
 Om deze test uit te voeren werd de volgende testopstelling gebruikt. Het gemiddeld aantal frames per second (FPS) wordt berekend uit 3000 gemeten waarden. Een FPS waarde wordt elke 0.2 seconde gemeten. Om de impact van de library op deze FPS te testen werd ervoor gekozen om elke seconde X aantal keer een library call uit te voeren en deze X gradueel te verhogen. Er werd gekozen om de worst case test uit te voeren gebaseerd op de test van de call duration. Het aanmaken van een \texttt{Counter} gecombineerd met het tijdelijk opslaan van de gegevens op de harde schijf heeft gemiddeld de grootste impact van de niet-geaggregeerde objecten. Om de invloed van de library op de FPS van de applicatie te onderzoeken zonder dat de metingen op de harde schijf opgeslagen worden, wordt het stoppen van een Timer gebruikt, omdat deze de grootste call duratie heeft van de niet-geaggregeerde objecten. \\
 
-Een andere factor die invloed kan hebben op de impact die de library heeft op de applicatie, is het synchronisatieinterval. Dit interval vormt een indicatie van hoeveel tijd er zich tussen twee synchronisatiecycli bevindt. Door dit synchronisatieinterval systematisch te verlagen kan de invloed van de Tracklytics library op de FPS van de applicatie gemeten worden. \\
+Een andere factor die invloed kan hebben op de impact die de library heeft op de applicatie, is het synchronisatie interval. Dit interval vormt een indicatie van hoeveel tijd er zich tussen twee synchronisatiecycli bevindt. Door dit synchronisatie interval systematisch te verlagen kan de invloed van de Tracklytics library op de FPS van de applicatie gemeten worden. \\
 
 
 De resultaten van deze metingen zijn te vinden in de appendix \ref{Appendix}. Uit deze resultaten kan afgelezen worden dat de Tracklytics library een significante impact heeft op de applicatie indien het aantal simultane metingen groter wordt dan 20 en de gegevens tijdelijk op de harde schijf opgeslagen worden. Indien de gegevens niet op de harde schijf opgeslagen worden, dan heeft de Tracklytics library een significante impact op de applicatie als het aantal simultane metingen ongeveer 1000 betreft. \\
@@ -109,7 +109,7 @@ De database gebruikt in de Tracklytics library is een MySQL database. Dit is een
 
 
 \section{Developer effort Evaluatie}\label{Section:Effort}
-Met DevOps willen developers en managers het ontwikkelingsproces van software versnellen. Het is ongewenst dat het veel effort om de library in de applicatie in te bouwen, omdat dit enerzijds meer tijd inneemt om de code te schrijven en anderzijds de code minder overzichtelijk maakt voor de developers. \\
+Met DevOps willen developers en managers het ontwikkelingsproces van software versnellen. Het is ongewenst dat het veel effort kost om de library in de applicatie in te bouwen, omdat dit enerzijds meer tijd inneemt om de code te schrijven en anderzijds de code minder overzichtelijk maakt voor de developers. \\
 
 Om deze eigenschappen na te gaan werd ervoor gekozen om volgende zaken na te gaan: hoeveel tijd neemt het in om de library in te bouwen, het aantal lijnen code nodig om deze in de applicatie in te bouwen, wat er gemonitord wordt en hoeveel metingen er maximaal simultaan voorkomen. Met ''hoeveel tijd neemt het in om de library in te bouwen''  wordt de gehele flow bedoeld: het registreren van de applicatie in de back end, het installeren van de library via CocoaPods en het implementeren van de code in de applicatie. \\
 
@@ -117,37 +117,40 @@ Om deze zaken na te gaan, zijn er twee applicaties gebruikt, namelijk de stopwat
 
 \begin{table}[h]
 \centering
-\caption{Eigenschappen van twee gebruikte test applicaties.}
 \label{table:apps}
 \begin{tabular}{lll}
                      & \#lijnen code & ontwikkelingstijd \\
 stopwatch applicatie & 250           & 10 minuten        \\
 tweede applicatie    & 10000         & 4 maanden        
 \end{tabular}
+\caption{Eigenschappen van twee gebruikte test applicaties.}
 \end{table}
 
 \subsection{Resultaten}
 In deze sectie worden de resultaten besproken van de evaluatie van de developer effort.\\
 In de stopwatch applicatie worden volgende zaken gemonitord: alle buttons, tijd wanneer op stop gedrukt, aantal rondes alvorens reset, tijd om data van een server te halen. In de andere applicatie worden volgende zaken gemonitord: alle buttons waarop geklikt wordt, alle screen visits, \#zoekresultaten, duratie van complexe code, duratie content van het netwerk halen.\\
 
+Het is nuttig om dit soort informatie te meten, omdat met behulp van dit soort metingen kan ondervonden worden hoe de gebruiker de applicatie gebruikt. Er kan zo een overzicht gevormd worden welke knoppen hoe vaak gebruikt worden en welke schermen dat de gebruiker het vaakst bezoekt. Anderzijds vormt het monitoren van de duratie van complexe code en van het ophalen van informatie van het netwerk een manier om bottlenecks te kunnen ontdekken in de applicatie. \\
+
 \begin{table}[h]
 \centering
-\caption{Resultaten developer effort.}
 \label{table:effort}
-\begin{tabular}{llllll}
-                     & \begin{tabular}[c]{@{}l@{}}duratie \\ implementatie\end{tabular} & \#meetobjecten & \begin{tabular}[c]{@{}l@{}}Gemiddeld aantal\\ lijnen per meetobject\end{tabular} & \begin{tabular}[c]{@{}l@{}}totaal aantal\\ lijnen code\end{tabular} & \begin{tabular}[c]{@{}l@{}}Maximaal aantal\\ simultane metingen\end{tabular} \\
-stopwatch applicatie & \textless10 minuten                                              & 9              & 1.0                                                                              & 9                                                                   & 2                                                                            \\
-tweede applicatie    & + 90 minuten                                                     & 68             & 1.4                                                                              & 100                                                                 & 10                                                                          
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+                                                                & \begin{tabular}[c]{@{}l@{}}duratie \\ implementatie\end{tabular} & \begin{tabular}[c]{@{}l@{}}\#meet-\\ objecten\end{tabular} & \begin{tabular}[c]{@{}l@{}}Gemiddeld \\ aantal\\ lijnen per \\ meetobject\end{tabular} & \begin{tabular}[c]{@{}l@{}}totaal aantal\\ lijnen code\end{tabular} & \begin{tabular}[c]{@{}l@{}}Maximaal \\ aantal\\ simultane \\ metingen\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}stopwatch \\ applicatie\end{tabular} & \textless10 minuten                                              & 9                                                          & 1.0                                                                                    & 9                                                                   & 2                                                                                  \\ \hline
+\begin{tabular}[c]{@{}l@{}}tweede \\ applicatie\end{tabular}    & + 90 minuten                                                     & 68                                                         & 1.4                                                                                    & 100                                                                 & 10                                                                                 \\ \hline
 \end{tabular}
+\caption{Resultaten developer effort.}
 \end{table}
 
-Uit deze resultaten kan afgeleid worden dat de developer effort om de Tracklytics library in de applicatie in te bouwen minimaal is. Voor de stopwatch applicatie neemt het inbouwen van de library maar \underline{+} 1\% van de tijd in beslag. Voor de andere applicatie is er geen percentage berekenbaar, maar anderhalf uur op vier maanden is zeker laag genoeg om geen significante impact te hebben op het ontwikkelen van een applicatie. Het aantal lijnen code dat extra moet geschreven worden is 3.6\% in het geval van een kleine applicatie (de sportstimer) en ongeveer 1\% bij het ontwikkelen van een grotere applicatie (de andere applicatie). \\
+Uit deze resultaten kan afgeleid worden dat de developer effort om de Tracklytics library in de applicatie in te bouwen minimaal is. Voor de stopwatch applicatie neemt het inbouwen van de library maar \underline{+} 1\% van de tijd in beslag. Voor de andere applicatie is er geen percentage berekenbaar, maar anderhalf uur op vier maanden is zeker laag genoeg om geen significante impact te hebben op het ontwikkelen van een applicatie. Het aantal lijnen code dat extra moet geschreven worden is 3.6\% in het geval van een kleine applicatie (de sportstimer) en ongeveer 1\% bij het ontwikkelen van een grotere applicatie (de andere applicatie). De impact van de library op een applicatie in termen van developer effort is niet van significante grootte.\\
 
 
-Het is nuttig om dit soort informatie te meten, omdat met behulp van dit soort metingen kan ondervonden worden hoe de gebruiker de applicatie gebruikt. Er kan zo een overzicht gevormd worden welke knoppen hoe vaak gebruikt worden en welke schermen dat de gebruiker het vaakst bezoekt. Anderzijds vormt het monitoren van de duratie van complexe code en van het ophalen van informatie van het netwerk een manier om bottlenecks te kunnen ontdekken in de applicatie. 
+
 
 \section{Conclusie en bespreking resultaten}\label{Section:Conclusie}
-Zoals eerder besproken in deze thesis geeft de Tracklytics library de keuze aan de developer om de data op het toestel of in de back end te aggregeren. We hebben de metingen vergeleken van de geaggregeerde en de niet-geaggregeerde objecten. Indien we deze grafieken bekijken, dan kunnen we deze opdelen in twee verschillende secties, namelijk langs de ene kant de grafieken die te maken hebben met de \texttt{Gauge} en langs de andere kant de grafieken die te maken hebben met de \texttt{Meter} en de \texttt{Timer}. \\
+Zoals eerder besproken in deze thesis, geeft de Tracklytics library de keuze aan de developer om de data op het toestel of in de back end te aggregeren. We hebben de metingen vergeleken van de geaggregeerde en de niet-geaggregeerde objecten. Indien we deze grafieken bekijken, dan kunnen we deze opdelen in twee verschillende secties, namelijk langs de ene kant de grafieken die te maken hebben met de \texttt{Gauge} en langs de andere kant de grafieken die te maken hebben met de \texttt{Meter} en de \texttt{Timer}. \\
 
 
 \begin{figure}[h]
@@ -166,7 +169,7 @@ Zoals eerder besproken in deze thesis geeft de Tracklytics library de keuze aan 
 
 
 
-Bekijken we de grafieken in verband met de \texttt{Gauge}: \ref{fig:GaugeVSAggregate}, \ref{fig:GaugeVSAggregate}, dan kunnen we daar het volgende uit afleiden: de tijd om een \texttt{GaugeAggregate} aan te maken daalt eerst tot en met er ongeveer 100 metingen simultaan gebeuren en stijgt dan later vanaf ongeveer 10000 simultane metingen opnieuw. De reden hiervoor is dat de Tracklytics library een lijst van alle waarden bij houdt in de \texttt{GaugeAggregate} klasse om de exacte mediaan te kunnen berekenen. \\
+Bekijken we de grafieken in verband met de \texttt{Gauge}: \ref{fig:GaugeVSAggregate}, \ref{fig:GaugeVSAggregateZOD}, dan kunnen we daar het volgende uit afleiden: de tijd om een \texttt{GaugeAggregate} aan te maken daalt eerst tot en met er ongeveer 100 metingen simultaan gebeuren en stijgt dan later vanaf ongeveer 10000 simultane metingen opnieuw. De reden hiervoor is dat de Tracklytics library een lijst van alle waarden bij houdt in de \texttt{GaugeAggregate} klasse om de exacte mediaan te kunnen berekenen. \\
 
 \begin{figure}[h]
   \centering
@@ -182,7 +185,7 @@ Bekijken we de grafieken in verband met de \texttt{Gauge}: \ref{fig:GaugeVSAggre
   \label{fig:MeterVSAggregateZOD}
 \end{figure}
 
-De grafieken \ref{fig:MeterVSAggregate} en \ref{fig:MeterVSAggregateZOD} geven de vergelijking tussen het aanroepen van de \texttt{addEntry} methode op een \texttt{Meter} en het aanroepen van de \texttt{addEntry} methode op een \texttt{MeterAggregate} weer. Hieruit kan afgeleid worden dat indien het aantal simultane metingen lager dan 100 blijft, het effici\"enter is om de niet-geaggregeerde objecten te gebruiken. \\
+De grafieken \ref{fig:MeterVSAggregate} en \ref{fig:MeterVSAggregateZOD} geven de vergelijking tussen het aanroepen van de \texttt{addEntry} methode op een \texttt{Meter} en het aanroepen van de \texttt{addEntry} methode op een \texttt{MeterAggregate} weer. Hieruit kan afgeleid worden dat, indien het aantal simultane metingen lager dan 100 blijft, het effici\"enter is om de niet-geaggregeerde objecten te gebruiken. \\
 
 \begin{figure}[h]
   \centering
@@ -220,7 +223,7 @@ Uit deze observaties kan afgeleid worden dat, indien het aantal simultane meting
 
 Bekijken we de resultaten van hoeveel effort een developer in een applicatie moet stoppen (\ref{Section:Effort}), concluderen we dat bij een grote applicatie er ongeveer 10 metingen tegelijk kunnen gebeuren. Indien we dit resultaat combineren met de resultaten van de grafieken en cijfers van de metingen van de geaggregeerde objecten, zien we dat, met uitzondering tot het stoppen van een Timer, het steeds het geval is dat het niet aggregeren van de metingen op het toestel sneller of ongeveer even snel is als het aggregeren van de metingen op het toestel tot en met 100 simultane metingen. Uit deze observatie kunnen we afleiden dat het aggregeren van de metingen op het toestel van de gebruiker een grotere performance impact heeft dan het aggregeren van de metingen in de back end. \\
 
-Naast het evalueren van de call duratie van de Tracklytics library hebben we de impact op de FPS van de Tracklytics library ge\"evalueerd. Indien we deze resultaten bekijken, bekomen we dat tot en met 20 simultane metingen, de impact op de applicatie van de library minimaal is indien de gegevens op de harde schijf opgeslagen worden. Het aantal FPS daalt pas significant indien het aantal simultane metingen richting 50 gaat. Indien de gegevens niet op de harde schijf opgeslagen worden, heeft de library een minimale invloed op de applicatie. Deze observatie zorgt ervoor dat, in het geval dat FPS de limiterende factor is, de library in elke applicatie ingebouwd kan worden indien het maximum aantal simultane metingen in de buurt van 20 ligt, indien de developer wil dat alle gegevens tijdelijk op de harde schijf van de applicatie opgeslagen worden. \\ 
+Naast het evalueren van de call duratie van de Tracklytics library hebben we de impact op de FPS van de Tracklytics library ge\"evalueerd. Indien we deze resultaten bekijken, bekomen we dat, tot en met 20 simultane metingen, de impact op de applicatie van de library minimaal is indien de gegevens op de harde schijf opgeslagen worden. Het aantal FPS daalt pas significant indien het aantal simultane metingen richting 50 gaat. Indien de gegevens niet op de harde schijf opgeslagen worden, heeft de library een minimale invloed op de applicatie. Deze observatie zorgt ervoor dat, in het geval dat FPS de limiterende factor is, de library in elke applicatie ingebouwd kan worden indien het maximum aantal simultane metingen in de buurt van 20 ligt, indien de developer wil dat alle gegevens tijdelijk op de harde schijf van de applicatie opgeslagen worden. \\ 
 
 Een gebruiker merkt een vertraging pas indien de vertraging groter wordt dan 0.1 seconde \cite{nielsen1994usability}. De Tracklytics library zou dit getal niet mogen overstijgen om de impact op de performance aanvaardbaar te houden. In de resultaten van de call duratie zien we dat bij elk meetobject 100 simultane uitvoeringen gedaan moeten worden om de 0.1 seconde vertraging te overstijgen indien de metingen op de harde schijf van de telefoon opgeslagen worden. \\
 
