@@ -3,7 +3,7 @@
 function getDatabase() {
 	$servername = "localhost";
 	$username = "root";
-	$password = "Rscanderlecht1993";
+	$password = "";
 	$db_name = "thesis";
 	// Create connection
 	$conn = mysql_connect("$servername", "$username", "$password")or die("cannot connect");
